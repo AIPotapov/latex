@@ -12,7 +12,7 @@ top = 20mm
 
 \begin{document}
 
-\title{Memo: Possible cross relaxation mechanisms in fluorine-containing sample under conditions of DNP.}
+\title{Possible cross relaxation mechanisms in fluorine-containing sample under conditions of DNP.}
 \author{Dr Alexey Potapov\\
 School of Physics and Astronomy\\
 Sir Peter Mansfield Imaging Centre \\
@@ -22,34 +22,38 @@ tel: 0115 951 4739 }
  
 %\doublespacing
  
-\section{Cross-relaxation in \textsuperscript{1}H- \textsuperscript{19}F  }
-While conducting his work on searching for optimal conditions for DNP in  \textsuperscript{19}F-containing sample, Antonio has stumbled upon a peculiar phenomenon of increased \textsuperscript{19}F magnetization in his build-up experiments. Even after a saturation on \textsuperscript{19}F nuclei there seem to be some magnetization left. This led us to investigate the phenomenon in more detail, in particular we decided to synchronise the moment when MW saturation shuts down with the pulses on 19F channel.
-In this experiment right before MW shutdown the magnetization of 19F is saturated with a train of pulses, followed by a variable delay and then a 90 pulse to probe the current magnetization state. The results show a build up of magnetization to a value higher than thermal polarization followed by a slower decay to thermal polarization. This results suggests that 19F nuclei are in contact with some other reservoir of energy, which is colder than lattice. The most obvious candidate for such a reservoir are abundant protons. This fact however, is yet to be fully confirmed.  
-In the following we'll try to take a closer look at the mechanisms, which might be responsible for this NOE-like transfer.
+\section{Cross-relaxation in \textsuperscript{1}H- \textsuperscript{19}F system.}
+While searching for optimal DNP conditions for DNP in fluorinated samples, we stumbled upon a peculiar phenomenon, where after shutting down the MW irradiation, the \textsuperscript{19}F magnetization builds up quickly to some higher than equilibrium value, then slowly reaches thermal equilibrium. These observations suggest that \textsuperscript{19}F nuclei are in contact with some other reservoir of energy, which is colder than lattice. The most obvious candidate for such a reservoir are abundant protons. This fact however, is yet to be fully confirmed.  
+In the following we'll try to take a closer look at the mechanisms, which might be responsible for this transfer process.
 \section{NOE.}
-NOE in solids has been observed quite a long ago, the latest reports which came to me were published by the groups of Corzillius and parallel to them by the group of Buntkowsky. Both observed NOE-like transfer from protons to carbons under conditions of MAS DNP (magnetic field of 9.4 T and temperature 100 K). Such transfer is induced by the motion of methyl groups under such conditions. Other report from the early days of NMR (Pines \& Waugh etc.) also attibute the transfer to some molecular motion. Our experiments however were carried at much lower temperatures of 1.4 K where any significant motion is very unlikely. 
-There is a very strong suspicion that the transfer is caused by the presence of paramagnetic dopant \textbf{TEMPO}. When we started using paramagnetic \textbf{TEMPOL} instead, we discovered that the described effect was either significantly suppressed, or disappeared altogether. In order to show that in more detail we need to demonstrate what happens to the cross-polarization effect, when TEMPO concentration varies.
+The transfer process resembles NOE (nuclear Overhauser effect), which has observed in solids quite a while ago. The latest reports published by the groups of Corzillius and Buntkowsky, describe NOE-like transfer from protons to carbons under conditions of MAS DNP (magnetic field of 9.4 T and temperature 100 K). Such transfer is induced by the motion of methyl groups, similarly other reports from the early days of NMR (Pines \& Waugh etc.) also attribute the transfer to some molecular motion. Our experiments however were carried at much lower temperatures of 1.4 K amplitudes, where motions are quite suppressed. 
+Our main hypothesis is that \textsuperscript{1}H to \textsuperscript{19}F transfer is caused by the presence of paramagnetic TEMPO radical. When we inadvertently used  TEMPOL instead, we discovered that the \textsuperscript{1}H to \textsuperscript{19}F transfer was either significantly suppressed, or disappeared altogether. In order to show that in more detail we need to demonstrate what happens to the cross-polarization effect, when TEMPO concentration varies.
+
 \section{Relaxation and Cross-relaxation.}
-Calculating the relaxation rates from the first principles uses the time-dependent perturbation theory (Ch. VIII.II.C on Abragam's book). Consider a two a levelsystem, with $\vert i \rangle$ - initial, and $\vert f \rangle$ - final states, and the time-dependent perturbation $V(t) = \hat{A} f(t)$, where $\overline{f(t)} = 0$. The transfer rate from the $\vert i \rangle$ - to  $\vert f \rangle$ state can be calculated as:
+In the following we estimate the rates of cross-relaxation based on the time-dependent perturbation theory (Ch. VIII.II.C on Abragam's book). Consider a two a levelsystem, with $\vert i \rangle$ - initial, and $\vert f \rangle$ - final states, and the time-dependent perturbation to a system Hamiltonian $V(t) = \hat{A} f(t)$, where $\overline{f(t)} = 0$. The transfer rate from the $\vert i \rangle$ - to  $\vert f \rangle$ state can be calculated as:
 \begin{equation} \label{eq:rate}
- W_{if} = \dfrac{ \vert A_{if} \vert ^2  }{\hbar^2} J(\omega_{if}),
+ W_{if} = \dfrac{ \vert A_{if} \vert ^2  }{\hbar^2} J(\omega_{if}) 
 \end{equation}
-where $\vert A_{if} \vert$ is the matrix element between the two states, and $J{\omega_{if}}$ is the spectral density at the transition frequency $\omega_{if} = \dfrac{E_f - E_i}{\hbar}$. 
-We will use this equation to evaluate some potential mechanisms for cross-relaxation.
+where $\vert A_{if} \vert$ is the matrix element between the two states, and $J({\omega_{if}})$ is the spectral density at the transition frequency $\omega_{if} = \dfrac{E_f - E_i}{\hbar}$. For a stationary random process with exponentially decaying correlation function, the spectral density has the following form:
+\begin{equation}
+J(\omega) = \dfrac{\tau_c}{1+\omega^2\tau_c^2}, 
+\end{equation} 
+where $\tau_c$ is the correlation time of the random process.
 \section{One hyperfine and one dipolar coupling}
-Consider a system consisting of three spins: one electrons, and two nuclei - protons and fluorines. Electron is hyperfine (predominantly dipolar) coupled to a nearby proton, which in turn is coupled to a fluorine. For such a system the Hamiltonian can written as: 
+In this section we will consider a cross-relaxation mechanism arising due to rapid changes of nuclear spin quantization axis due to random electron spin flips. Random tilting of quantization axis affects the dipolar interaction between nuclear spins, giving rise to rapidly changing flip-flop terms.
+In our calculation, we electron is coupled to a nearby proton via a hyperfine interaction, represented by a 2nd rank tensor $A_{ij}$ ($i,j=x,y,z$); the proton in turn is coupled to a nearby fluorine via a dipolar interaction with components $D_{ij}$. We neglect the hyperfine interactions of \textsuperscript{19}F nuclei at this stage to simplify the calculation and evaluate the effect of hyperfine and dipolar interaction on relaxation exclusively. The spin Hamiltonian for such coupled three spin system can written as: 
 \begin{equation}
-\mathcal{H} =  \omega_S \hat{S}_z + \sum A_{i,j} \hat{S}_i \hat{H}_j + \omega_H \hat{H}_z + \omega \hat{F}_z + \sum D_{i,j} \hat{H}_i \hat{F}_j,
+\mathcal{H} =  \omega_S \hat{S}_z + \sum_{i,j=x,y,z} A_{i,j} \hat{S}_i \hat{H}_j + \omega_H \hat{H}_z + \omega \hat{F}_z + \sum_{i,j=x,y,z} D_{ij} \hat{H}_i \hat{F}_j,
 \end{equation}
-where $\hat{H}_i, \hat{F}_i, \hat{S}_i$ - are the angular momenta of proton, fluorine and electron spins respectively. In the electron spin rotating frame and taking into account that electron Zeeman interaction, the Hamiltonian would take a form:
+where $\hat{H}_i, \hat{F}_i, \hat{S}_i$ - are the angular momenta of proton, fluorine and electron spins respectively. Taking into account that electron Zeeman interaction is greater than any other terms, the Hamiltonian in the electron spin rotating frame would take a form:
 \begin{equation}
-  \mathcal{H}  = A \hat{S}_z \hat{H}_z + B \hat{S}_z \hat{H}_x + D_{i,j} \hat{H}_i \hat{F}_j +  \omega_H \hat{H}_z + \omega \hat{F}_z + \sum D_{i,j} \hat{H}_i \hat{F}_j
+  \mathcal{H}  = A \hat{S}_z \hat{H}_z + B \hat{S}_z \hat{H}_x + D_{i,j} \hat{H}_i \hat{F}_j +  \omega_H \hat{H}_z + \omega \hat{F}_z + \sum D_{i,j} \hat{H}_i \hat{F}_j,
 \end{equation}
-The Hamiltonian can be rendered time-dependent dues to random flips of an electron spin, having random projection $m_S(t) = \pm \frac{1}{2}$:
+where $A$ and $B$ are the secular and non-secular terms of the hyperfine interaction (term proportional to $\hat{S}_z \hat{H}_y$ was eliminated by a rotation in the spin space). The time-dependence in this Hamiltonian arises due to random flips of an electron spin, having a projection $m_S(t)=\pm \frac{1}{2}$ projection on the z-axis:
 \begin{equation}
 \mathcal{H} = (\omega_H + A m_S(t)) H_z + B H_x m_S(t) + + \omega \hat{F}_z + \sum D_{i,j} \hat{H}_i \hat{F}_j
 \end{equation}
-The first two terms would collectively correspond to quantization of nuclear spin to a new field  with components $(\omega_H + A m_S(t)), B, 0)$. Bu rotating the spin operator around $H_y$ by a small angle $\phi(t)= arctan(\frac{B}{\omega_H + m_S(t) A} )  \approx \dfrac{m_S B}{\omega_H}$ one can rewrite this part of Hamiltonian along the new axis: $B_z(t) H_z + B_x(y) H_x = \tilde{\omega_H}(t) \tilde{H_z}$. Together with the fact that $H_y$ operator generates a rotation in the spin space, the dipolar part of the Hamiltonian will also be transformed as:
+The first two terms would collectively correspond to quantization of a nuclear spin along a new effective magnetic field $\tilde{\mathbf{B}}=\dfrac{1}{\gamma}(\omega_H + A m_S(t)), B, 0)$. By rotating the spin operator around $H_y$ by a small angle $\phi(t)= arctan(\dfrac{m_S(t)B}{\omega_H + m_S(t) A} )  \approx \dfrac{m_S B}{\omega_H}$ one can rewrite this part of Hamiltonian along the new axis: $B_z(t) H_z + B_x(y) H_x = \tilde{\omega_H}(t) \tilde{H_z}$. Together with the fact that $H_y$ operator generates a rotation in the spin space, the dipolar part of the Hamiltonian will also be transformed as:
 \begin{equation}
 \begin{array}{cc}
 H_{dip} (t) =  exp(-i \phi(t) H_y) \sum D_{i,j} H_i F_j exp(i \phi(t) H_y)  \approx  \\
