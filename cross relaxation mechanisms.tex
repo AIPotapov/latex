@@ -12,7 +12,7 @@ top = 20mm
 
 \begin{document}
 
-\title{Possible cross relaxation mechanisms in fluorine-containing sample under conditions of DNP.}
+\title{Cross relaxation mechanisms in fluorine-containing sample under conditions of DNP.}
 \author{Dr Alexey Potapov\\
 School of Physics and Astronomy\\
 Sir Peter Mansfield Imaging Centre \\
@@ -20,13 +20,13 @@ Sir Peter Mansfield Imaging Centre \\
 tel: 0115 951 4739 }
 \maketitle
  
-%\doublespacing
+\doublespacing
  
 \section{Cross-relaxation in \textsuperscript{1}H- \textsuperscript{19}F system.}
 While searching for optimal DNP conditions for DNP in fluorinated samples, we stumbled upon a peculiar phenomenon, where after shutting down the MW irradiation, the \textsuperscript{19}F magnetization builds up quickly to some higher than equilibrium value, then slowly reaches thermal equilibrium. These observations suggest that \textsuperscript{19}F nuclei are in contact with some other reservoir of energy, which is colder than lattice. The most obvious candidate for such a reservoir are abundant protons. This fact however, is yet to be fully confirmed.  
 In the following we'll try to take a closer look at the mechanisms, which might be responsible for this transfer process.
 \section{NOE.}
-The transfer process resembles NOE (nuclear Overhauser effect), which has observed in solids quite a while ago. The latest reports published by the groups of Corzillius and Buntkowsky, describe NOE-like transfer from protons to carbons under conditions of MAS DNP (magnetic field of 9.4 T and temperature 100 K). Such transfer is induced by the motion of methyl groups, similarly other reports from the early days of NMR (Pines \& Waugh etc.) also attribute the transfer to some molecular motion. Our experiments however were carried at much lower temperatures of 1.4 K amplitudes, where motions are quite suppressed. 
+The transfer process is very similar to NOE (nuclear Overhauser effect), which has observed in solids quite a while ago. The latest reports published by the groups of Corzillius and Buntkowsky, describe NOE-like transfer from protons to carbons under conditions of MAS DNP (magnetic field of 9.4 T and temperature 100 K). Such transfer is induced by the motion of methyl groups, similarly other reports from the early days of NMR (Pines \& Waugh etc.) also attribute the transfer to some molecular motion. Our experiments however were carried at much lower temperatures of 1.4 K amplitudes, where motions are quite suppressed. 
 Our main hypothesis is that \textsuperscript{1}H to \textsuperscript{19}F transfer is caused by the presence of paramagnetic TEMPO radical. When we inadvertently used  TEMPOL instead, we discovered that the \textsuperscript{1}H to \textsuperscript{19}F transfer was either significantly suppressed, or disappeared altogether. In order to show that in more detail we need to demonstrate what happens to the cross-polarization effect, when TEMPO concentration varies.
 
 \section{Relaxation and Cross-relaxation.}
@@ -39,11 +39,24 @@ where $\vert A_{if} \vert$ is the matrix element between the two states, and $J(
 J(\omega) = \dfrac{\tau_c}{1+\omega^2\tau_c^2}, 
 \end{equation} 
 where $\tau_c$ is the correlation time of the random process.
-\section{One hyperfine and one dipolar coupling}
+
+In a three spin system, consisting of an electron and two nuclei, the pairwise interactions between all of them should be taken into account. However, in order to simplify the calculation we split this into two separate cases. 
+\section{One hyperfine and one dipolar coupling} \label{sec: case A}
 In this section we will consider a cross-relaxation mechanism arising due to rapid changes of nuclear spin quantization axis due to random electron spin flips. Random tilting of quantization axis affects the dipolar interaction between nuclear spins, giving rise to rapidly changing flip-flop terms.
-In our calculation, we electron is coupled to a nearby proton via a hyperfine interaction, represented by a 2nd rank tensor $A_{ij}$ ($i,j=x,y,z$); the proton in turn is coupled to a nearby fluorine via a dipolar interaction with components $D_{ij}$. We neglect the hyperfine interactions of \textsuperscript{19}F nuclei at this stage to simplify the calculation and evaluate the effect of hyperfine and dipolar interaction on relaxation exclusively. The spin Hamiltonian for such coupled three spin system can written as: 
+In our calculation, we electron is coupled to a nearby proton via a hyperfine interaction, represented by a 2nd rank tensor $A_{ij}$ ($i,j=x,y,z$); the proton in turn is coupled to a nearby fluorine via a dipolar interaction with components $D_{ij}$ as shown schematically in Figure \ref{fig:coupling}A.
+
+%%%% FIGURE COUPLING
+\begin{figure}[b]
+\caption{Interactions used to calculation. (A) Electron spin is hyperfine coupled to a proton, which is dipolar coupled to nearby fluorine. (B) Electron spin is hyperfine coupled to both a proton and a fluorine nuclei.}
+\label{fig:coupling}
+\centering
+\includegraphics[scale=0.7]{text9330-7-6-8.png}
+\end{figure}
+%%%% END OF FIGURE
+
+ We neglect the hyperfine interactions of \textsuperscript{19}F nuclei at this stage to simplify the calculation and evaluate the effect of hyperfine and dipolar interaction on relaxation exclusively. The spin Hamiltonian for such coupled three spin system can be written as: 
 \begin{equation}
-\mathcal{H} =  \omega_S \hat{S}_z + \sum_{i,j=x,y,z} A_{i,j} \hat{S}_i \hat{H}_j + \omega_H \hat{H}_z + \omega \hat{F}_z + \sum_{i,j=x,y,z} D_{ij} \hat{H}_i \hat{F}_j,
+\mathcal{H} =  \omega_S \hat{S}_z + \sum_{i,j=x,y,z} A_{i,j} \hat{S}_i \hat{H}_j + \omega_H \hat{H}_z + \omega_F \hat{F}_z + \sum_{i,j=x,y,z} D_{ij} \hat{H}_i \hat{F}_j,
 \end{equation}
 where $\hat{H}_i, \hat{F}_i, \hat{S}_i$ - are the angular momenta of proton, fluorine and electron spins respectively. Taking into account that electron Zeeman interaction is greater than any other terms, the Hamiltonian in the electron spin rotating frame would take a form:
 \begin{equation}
@@ -53,53 +66,65 @@ where $A$ and $B$ are the secular and non-secular terms of the hyperfine interac
 \begin{equation}
 \mathcal{H} = (\omega_H + A m_S(t)) H_z + B H_x m_S(t) + + \omega \hat{F}_z + \sum D_{i,j} \hat{H}_i \hat{F}_j
 \end{equation}
-The first two terms would collectively correspond to quantization of a nuclear spin along a new effective magnetic field $\tilde{\mathbf{B}}=\dfrac{1}{\gamma}(\omega_H + A m_S(t)), B, 0)$. By rotating the spin operator around $H_y$ by a small angle $\phi(t)= arctan(\dfrac{m_S(t)B}{\omega_H + m_S(t) A} )  \approx \dfrac{m_S B}{\omega_H}$ one can rewrite this part of Hamiltonian along the new axis: $B_z(t) H_z + B_x(y) H_x = \tilde{\omega_H}(t) \tilde{H_z}$. Together with the fact that $H_y$ operator generates a rotation in the spin space, the dipolar part of the Hamiltonian will also be transformed as:
+The first two terms would collectively correspond to quantization of a nuclear spin along a new effective magnetic field $\tilde{\mathbf{B}}=\dfrac{1}{\gamma}(\omega_H + A m_S(t)), \gamma B, 0)$. By rotating the spin operator around $H_y$ by a small angle $\phi(t)= arctan(\dfrac{m_S(t)B}{\omega_H + m_S(t) A} )  \approx \dfrac{m_S B}{\omega_H}$ one can rewrite this part of Hamiltonian along the new axis: $B_z(t) \hat{H}_z + B_x(t) \hat{H}_x = \tilde{\omega}_H(t) \hat{\tilde{H_z}}$. The $\hat{H}_y$ operator generates a rotation in the spin space, the dipolar part of the Hamiltonian can will then be transformed as:
 \begin{equation}
 \begin{array}{cc}
-H_{dip} (t) =  exp(-i \phi(t) H_y) \sum D_{i,j} H_i F_j exp(i \phi(t) H_y)  \approx  \\
-\approx \phi(t)[ \sum D_{i,j} H_i F_j, H_y] = \dfrac{m_S(t) B}{\omega_H} [ \sum D_{i,j} H_i F_j, H_y]
+ \hat{\tilde{H}}_{dip} (t) =  exp(-i \phi(t) \hat{H}_y) \sum\limits_{i,j=x,y,z} D_{i,j} \hat{H}_i \hat{F}_j exp(i \phi(t) \hat{H}_y)  \approx  \\
+\approx \phi(t)[ \sum \limits_{i,j=x,y,z} D_{ij} \hat{H}_i \hat{F}_j, \hat{H}_y] = \dfrac{m_S(t) B}{\omega_H} [ \sum \limits_{i,j=x,y,z} D_{ij} \hat{H}_i \hat{F}_j, \hat{H}_y]
 \end{array}
 \end{equation}
-It is obvious that such time dependent hamiltonian is capable of inducing flip-flop transitions or zero quantum or double-quantum order. Using equation \ref{eq:rate} we can estimate the rate as:
+This time dependent Hamiltonian contains terms such as $\hat{H}_{\pm} \hat{F}_{\mp}$ and $\hat{H}_{\pm} \hat{F}_{\pm}$ is capable of inducing zero quantum (flip-flop) or double-quantum (flop-flop) transitions respectively. We will skip obtaining the exact equation for the rate, but rather focus in evaluating it by the order of magnitude. Using equation \ref{eq:rate} we can estimate the zero-quantum transfer rate as:
 \begin{equation}
 \begin{array}{cc}
 W_{ZQ}  \sim \vert \dfrac{B D}{\omega_H} \vert ^2 J(\omega_{ZQ}) \\
 J(\omega) = \dfrac{\tau_c}{1+\omega^2\tau_c^2}
 \end{array}
 \end{equation}
-where $A$ - is hyperfine, $D$ - dipolar coupling, $ZQ$ stands for zero-quantum (the case for double-quantum can be calculated in a similar manner), $tau_c$ - electron correlation time, which is our case is determined by electron spin-diffusion ($\tau_c$ should be smaller than 100 us based on my CPMG measurements outlined in 2012 JMR paper). At the same time, the electron-induced $W_n = \dfrac{1}{T_{1n}}$ relaxation of nuclei can be estimated as (Ch. IX.II.A Abragam):
+where $B$ - is non-secular proton hyperfine interaction, $D$ - dipolar coupling, $ZQ$ stands for zero-quantum ($\omega_{ZQ} = \omega_H - \omega_F$), $\tau_c$ - electron correlation time, which is case is determined by electron spin-diffusion ($\tau_c$ should be smaller than 100 $\mu s$ based on my CPMG measurements outlined in 2012 JMR paper - \textbf{this requires more explanations}). At the same time, the electron-induced $W_n = \dfrac{1}{T_{1n}}$ relaxation of \textsuperscript{19}F nuclei can be estimated as (Ch. IX.II.A Abragam):
 \begin{equation}
 W_{n}  \sim \vert B \vert ^2 J(\omega_F) \\
 \end{equation}
-Since $\omega \tau \gg 1$ ,  $J(\omega) \sim \dfrac{1}{\omega^2 \tau}$ . We can then look that the ratio of two rates:
+Since $\omega_F \tau_c \gg 1$ and $\omega_{ZQ} \tau_c \gg 1$ ,  the spectral densities are equal to $J(\omega_F) \approx \dfrac{1}{\omega_F^2 \tau_c}$ and $J(\omega_{ZQ}) \approx \dfrac{1}{\omega_{ZQ}^2 \tau_c}$ . We can then look that the ratio of two rates, assuming that $\omega_H \approx \omega_F$:
 \begin{equation}
 \dfrac{W_{ZQ}}{W_n} \sim \vert \dfrac{D}{\omega_H} \vert^2 (\dfrac{\omega_F}{\omega_{ZQ}})^2 \sim (\dfrac{D}{\omega_{ZQ}})^2
 \end{equation}
-Since t typical dipolar coupling is ~100 kHz and $\omega_{ZQ} ~ 8 MHz$, the ZQ process is several orders of magnitude slower than nuclear T1 observed in the sample. Similar argument applies to a DQ process. 
+Since a typical dipolar coupling is $D \sim 100 \text{ kHz}$ and $\omega_{ZQ} \sim 8 \text{ MHz}$, then $W_{ZQ} \ll W_n$ i.e. the $ZQ$ process is several orders of magnitude slower than nuclear relaxation rate $\dfrac{1}{T_1}$ due to presence of electrons. Similar argument is true for for a double-quantum process. 
 
 \section{Electron-induced proton-fluorine flip-flops}
-One could consider an electron hyperfine coupled to both nuclei. The hamiltonian for such a system would therefore be in the following  form:
+Now we will include the hyperfine interactions for both nuclei, while neglecting the dipolar interaction between them as shown schematically in Figure \ref{fig:coupling}B. The Hamiltonian for such a system would therefore be in the following form:
 \begin{equation}
-\mathcal{H} =  \omega_S \hat{S}_z + \sum A_{H i,j} \hat{S}_i \hat{H}_j +  \sum A_{F i,j} \hat{S}_i \hat{H}_j\omega_H \hat{H}_z + \omega \hat{F}_z ,
+\mathcal{H} =  \omega_S \hat{S}_z + \sum_{i,j=x,y,z} A_{ij}^{(H)} \hat{S}_i \hat{H}_j +  \sum_{i,j=x,y,z} A_{ij}^{(F)} \hat{S}_i \hat{H}_j + \omega_H \hat{H}_z + \omega \hat{F}_z ,
 \end{equation}
-where $A_H, A_F$ are the hyperfine couplings of protons and fluorines respectively. In the electron spin rotating frame, the Hamiltonian can be rewritten as:
+where $A_{ij}^{(H)}, A_{ij}^{(F)}$ are the hyperfine interaction tensors of protons and fluorines respectively. In the electron spin rotating frame, using $A_{H,F}$ and $B_{H,F}$ for secular and non-secular terms of a hyperfine interaction the Hamiltonian can be rewritten as:
 \begin{equation}
-\mathcal{H}  = A_H \hat{S}_z \hat{H}_z + B_H \hat{S}_z \hat{H}_x +  \omega_H \hat{H}_z + A_F \hat{S}_z \hat{F}_z + B_F \hat{S}_z \hat{F}_x + \omega \hat{F}_z
+\mathcal{H}  = A_H \hat{S}_z \hat{H}_z + B_H \hat{S}_z \hat{H}_x +  \omega_H \hat{H}_z + A_F \hat{S}_z \hat{F}_z + B_F \hat{S}_z \hat{F}_x + \omega_F \hat{F}_z
 \end{equation}
-Since $A_H, A_F, B_H, B_F \ll \omega_H, \omega_F $, the hyperfine terms can be regarded as a perturbation to the nuclear Zeeman interaction. If so, then increasing orders of perturbation theory corrections to the energy would produce terms of the order:
-\begin{equation}
-E ~ \sim \omega (1 + \dfrac{A}{\omega} + ()\dfrac{A}{\omega})^2 + ...)
-\end{equation}
-The zeroth order correponds to zeeman interaction and the first order to hyperfine interactions. The second order correction would produce affective three spin terms in the Hamiltonian proportional to $SzH_{\pm}F_{\mp}, SzH_{\pm}F_{\pm}$ and having a magnitude of $\dfrac{A^2}{\omega}$ Such terms are time dependent and are capable to producing nuclear zero-quantum and double-quantum transitions respectively.
-Similarly to section 4 we can estimate the ratio of zero-quantum relaxation rate and the nuclear relaxation rate. 
-\begin{equation}
-\dfrac{W_{ZQ}}{W_n} \sim \vert \dfrac{A}{\omega_H} \vert^2 (\dfrac{\omega_F}{\omega_{ZQ}})^2 \sim (\dfrac{A}{\omega_{ZQ}})^2
-\end{equation}
-Hyperfine couplings of protons can be estimated as $A \sim \dfrac{78 \text{ MHz} }{r^3 \AA^3}  $, which for a distance of 2 $\AA$ would produce  a hyperfine coupling of about 10 MHz. In addition, the protons of nitroxide methyl groups have isotropic hyperfine couplings of about 10 MHz. Altogether it means that nuclei with coupling on the order of  10 MHz are always present in the vicinity of TEMPO. Therefore the rate of ZQ transition, or a flip-flop could be on the order of $\dfrac{1}{T_1n}$ induced by the presence of electrons.
+Since $B_H, B_F \ll \omega_H, \omega_F $, the non-secular terms can be regarded as a perturbation to a secular Hamiltonian. For simplicity, let's consider the action of this perturbation of an eigestate $\vert \Psi^{(0)} = \rangle  \vert \alpha_H \beta_F \rangle$. In the first order of perturbation theory, this function will transform into:
 
-In other words the process can be viewed as a result of energy transfer between protons and fluorines in the vicinity of paramagnetic center. Such energy transfer takes place due to rapid level crossings induced by the fluctuations of the local magnetic field sensed by the nuclei. 
+\begin{equation}
+\Psi^{(1)}  =  \vert \alpha_H \beta_F \rangle  + c_1  \vert \beta_H \alpha_F \rangle + c_2  \vert \beta_H \alpha_F \rangle,
+\end{equation}
+where $c_1, c_2 \sim \dfrac{B_{H,F}}{\omega_{H,F}}$. All the mixed states differ from one another only by a flip of one nucleus. The second order of perturbation theory will mix addition states:
+\begin{equation}
+\Psi^{(2)}  =  \vert \alpha_H \beta_F \rangle  + c_1  \vert \alpha_H \alpha_F \rangle + c_2  \vert \beta_H \beta_F \rangle + d_1 \vert \beta_H \alpha_F \rangle + d_2(...\text{all other functions}...),
+\end{equation}
+The coefficient $d_1, d_2 \sim  \dfrac{B^2}{\omega^2}$, where $B$ is a combination of hyperfine couplings of protons and fluorines, and $\omega$ - the energy difference between the levels. 
 
-% 
+Also, then increasing orders of perturbation theory corrections to the energy would produce terms of the order:
+\begin{equation}
+E ~ \sim \omega (1 + \dfrac{B}{\omega} + (\dfrac{B}{\omega})^2 + ...)
+\end{equation}
+The zeroth order correponds to a Zeeman interaction, the first order should be zero in our case. The second order correction would produce affective three spin terms in the Hamiltonian proportional to $S_z H_{\pm}F_{\mp}, S_z H_{\pm}F_{\pm}$ and having a magnitude of $\dfrac{B^2}{\omega} \sim 1 \text{ MHz} \gg D$. Such terms are time dependent and are capable to producing nuclear zero-quantum and double-quantum transitions respectively.
+Similarly to section \ref{sec: case A} we can estimate the ratio of zero-quantum relaxation rate and the nuclear relaxation rate. 
+\begin{equation}
+\dfrac{W_{ZQ}}{W_n} \sim \vert \dfrac{B}{\omega_H} \vert^2 (\dfrac{\omega_F}{\omega_{ZQ}})^2 \sim (\dfrac{B}{\omega_{ZQ}})^2
+\end{equation}
+Hyperfine couplings of protons can be estimated as $B \sim \dfrac{78}{r^3} \dfrac{\text{ MHz} }{ \AA^3}  $, which for a distance of 2 $\AA$ would produce  a hyperfine coupling of about 10 MHz. In addition, the protons of nitroxide methyl groups have large anisotropic hyperfine couplings of about 10 MHz (J. Phys. Chem. 1982, 86, 4011). Altogether it means that proton nuclei with coupling on the order of  10 MHz are always present in the vicinity of TEMPO. Therefore the rate of a ZQ transition, or a flip-flop and relaxation rate due to presence of electrons,  will have the same order of magnitude as the electron-induce nuclear relaxation time $\dfrac{1}{T_{1n}}$.
+
+\section{Conclusions.}
+In this sketchy calculations we have compared two potential mechanisms for proton to fluorine magnetization transfer induced by the electron spin flips. When electron is strongly hyperfine coupled to both fluorine and proton nuclei, its fluctuations induce nuclei flip-flop transitions.
+
+ 
 %
 %\section{Definitions.}
 %Experiments based on creating double-quantum coherence are quite often used in solution and solid-state NMR. Below we will consider the main principles underlying such experiments.
