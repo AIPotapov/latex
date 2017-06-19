@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Introduction. Magnetic moment in magnetic field.}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introduction to Magnetic Resonance}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Applications of NMR}{3}{0}{1}
