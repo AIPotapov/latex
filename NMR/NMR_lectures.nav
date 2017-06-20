@@ -14,8 +14,26 @@
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\slideentry {1}{2}{3}{5/5}{Applications of NMR}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@partpages {1}{5}}
-\headcommand {\beamer@subsectionpages {3}{5}}
-\headcommand {\beamer@sectionpages {2}{5}}
-\headcommand {\beamer@documentpages {5}}
-\headcommand {\def \inserttotalframenumber {5}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{6}{Magnetic moments in magnetic field.}}\headcommand {\beamer@subsectionpages {3}{5}}
+\headcommand {\slideentry {1}{3}{1}{6/8}{Magnetic moments in magnetic field.}{0}}
+\headcommand {\beamer@framepages {6}{8}}
+\headcommand {\slideentry {1}{3}{2}{9/11}{Magnetic moments in magnetic field.}{0}}
+\headcommand {\beamer@framepages {9}{11}}
+\headcommand {\slideentry {1}{3}{3}{12/13}{Magnetic moments in magnetic field.}{0}}
+\headcommand {\beamer@framepages {12}{13}}
+\headcommand {\beamer@subsectionentry {0}{1}{4}{14}{Angular momentum operator}}\headcommand {\beamer@subsectionpages {6}{13}}
+\headcommand {\slideentry {1}{4}{1}{14/16}{Angular momentum operator}{0}}
+\headcommand {\beamer@framepages {14}{16}}
+\headcommand {\slideentry {1}{4}{2}{17/18}{Angular momentum operator}{0}}
+\headcommand {\beamer@framepages {17}{18}}
+\headcommand {\slideentry {1}{4}{3}{19/20}{Angular momentum operator}{0}}
+\headcommand {\beamer@framepages {19}{20}}
+\headcommand {\slideentry {1}{4}{4}{21/21}{Angular momentum operator}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {1}{4}{5}{22/22}{Angular momentum operator}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@partpages {1}{22}}
+\headcommand {\beamer@subsectionpages {14}{22}}
+\headcommand {\beamer@sectionpages {2}{22}}
+\headcommand {\beamer@documentpages {22}}
+\headcommand {\def \inserttotalframenumber {13}}
