@@ -1,6 +1,6 @@
 \documentclass{beamer}
 \usepackage[latin1]{inputenc}
-\usepackage{bm}
+\usepackage{bm, array, graphicx, hyperref, amsmath, setspace, geometry, wrapfig}
 \usetheme{Warsaw}
 \title{Introduction to Nuclear Magnetic Resonance Spectroscopy}
 \author{Dr Alexey Potapov}
@@ -18,6 +18,8 @@
 %{\begin{frame}[environment=slide]
 %		\frametitle{\insertsection-#1}}
 %	{\end{frame}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+
 
 
 \begin{document}
@@ -45,16 +47,10 @@
 	\end{frame}
 	
 	\subsection{Applications of NMR}
-	
-	  	
-	
 	\begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	
 	 \begin{itemize}
 	 	\item NMR spectroscopy is used for chemical analysis and for molecular structure determination	  	
 	 \end{itemize}
-	 
-	
 		
 		\begin{figure}[ht]
 			\begin{minipage}[t]{0.45\linewidth}
@@ -155,7 +151,7 @@
 	\begin{itemize}[<+>]
 		\item When a magnetic moment $\bm{M}$ is placed into an external uniform permanent magnetic field $\bm{B}$, its energy is given by:
 			
-			\begin{equation} \label{eq:2}
+			\begin{equation} \label{eq:classic_energy}
 			E = -\bm{M} \cdot \bm{B}
 			\end{equation} 
 		\item  The torque acting on the system:
@@ -211,7 +207,7 @@
 		
 \end{frame}
 
-\subsection{Angular momentum operator}
+\subsection{Orbital angular momentum operator}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	
 	\begin{itemize}[<+>]
@@ -220,7 +216,7 @@
 		\bm{L} = \sum_{n} \bm{p_n} \times \bm{r_n}  \longleftrightarrow \bm{\hat{L}} = \dfrac{1}{\hbar} \sum_{n} \bm{\hat{r}_n} \times \bm{\hat{p}_n} =   -i \sum_{n} \bm{\hat{r}_n} \times \bm{\nabla_n}
 		\end{equation}
 		\item Angular momentum operator properties. Commutation:
-		\begin{equation}
+		\begin{equation}\label{eq:Lz_commutation}
 		  [\hat{L}_y,\hat{L}_z] = i\hat{L}_x, [\hat{L}_z,\hat{L}_x] = i\hat{L}_y, [\hat{L}_x,\hat{L}_y] = i\hat{L}_z
     	\end{equation}
 		\item Angular momentum squared, and its commutation properties:
@@ -242,7 +238,7 @@
 		\item Another useful operator are raising and lowering operators:
 		\begin{align}
 		  &\hat{L}_{+} = \hat{L}_x + i\hat{L}_y, \hat{L}_{-} = \hat{L}_x - i\hat{L}_y\\
-		  &\langle lm \vert \hat{L}_{+} \vert l (m-1) \rangle = \langle l(m-1) \vert \hat{L}_{-} \vert lm \rangle = \sqrt{(l+m)(l-m+1)}
+		  &\langle lm \vert \hat{L}_{+} \vert l (m-1) \rangle = \langle l(m-1) \vert \hat{L}_{-} \vert lm \rangle = \sqrt{(l+m)(l-m+1)} \label{eq:L+}
 		\end{align}
 	\end{itemize}
 	
@@ -253,21 +249,175 @@
 	\begin{itemize}[<+>]
 		\item
 			Classical magnetic moment will have its own quantum analogue, the operator of angular momentum:
-			\begin{equation}
+			\begin{equation}\label{eq:orbital_angular_momentum}
 			\bm{M} = \gamma \bm{L}  \longleftrightarrow \bm{\hat{\mu}} = \gamma \hbar \bm{\hat{L}}
 			\end{equation} 
-		\item Bohr magneton:
+		\item Given the electron charge $e= 1.6 \cdot 10^{-19}$C, and mass $m = 9.1 \cdot 10^{-31}$kg   \alert{Bohr magneton}:
 		\begin{equation}
-			\beta = \dfrac{e\hbar}{2m} \approx 9.27 \cdot 10^{-24}  \text{J T}^{-1}
+			\beta_e = \gamma \hbar = \dfrac{e\hbar}{2m} \approx 9.27 \cdot 10^{-24}  \text{J$\cdot$T}^{-1}
 		\end{equation}
+		\item Similarly a \alert{nuclear magneton} could be calculated for a proton (\textsuperscript{1}H nucleus):
+		\begin{equation}
+		\beta = \gamma_N \hbar = \dfrac{e\hbar}{2m_p} \approx 5.05 \cdot 10^{-27}  \text{J$\cdot$T}^{-1}
+		\end{equation}
+		
 	\end{itemize}
 
 \end{frame}
 
+\subsection{Spin angular momentum operator}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	However, real nuclei and electrons have spins (intrinsic magnetic moment). Their z-axis projection $m$ takes integer and half-integer values: $m=\dfrac{1}{2}, 1, \dfrac{3}{2}, 2$ etc. Similar to the equation for the orbital angular momentum Eq.\ref{eq:orbital_angular_momentum}. For nuclei spins we get its magnetic moment as:
+	\begin{equation}
+		\bm{\hat{\mu}_N} = \gamma_N \hbar \bm{\hat{I}},
+	\end{equation}
+	where $ \bm{\hat{I}}$ stands for the nuclear spin operator. All the properties of angular momentum operators listed in Eqs.\ref{eq:Lz_commutation}-\ref*{eq:L+} will be true for $ \bm{\hat{I}}$.
+\end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	Free electron and many nuclei have spin. 
+	\begin{itemize}[<+>]
+		\item 	Many nuclei in the periodic table are magnetic, i.e. have spin $I \neq 0$. Their magnetic moments could be measured in units of $\beta_N$:
+		\begin{equation}
+		\bm{\hat{\mu}_N} = \gamma_N \hbar \bm{\hat{I}} = g_N \beta_N \bm{\hat{I}},
+		\end{equation}
+		where $g_N$ - dimensionless g-factor.
+		\item
+% TABLE OF MAGNETIC PROPERTIES
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{  C{1.0cm}  C{2.0cm}  C{1.0cm}  C{2.cm}  C{3cm}}
+		\hline\hline
+		Nucleus & Natural abundance \% & Nuclear spin (I) & $g_N$, g-factor & $\gamma_N$, Gyromagnetic ratio ($10^7$ rad/T*s) \\
+		\hline
+		\textsuperscript{1}H & 99.98 & $\frac{1}{2}$ & 5.585 & 26.7519 \\
+		\textsuperscript{2}H & 1.5*10\textsuperscript{-2} & 1 & 0.857 & 4.1066 \\
+		\textsuperscript{13}C & 1.108 & $\frac{1}{2}$ & 1.405 & 6.7283 \\
+		\textsuperscript{14}N & 99.635 & 1 & 0.403 & 1.9338 \\
+		\textsuperscript{15}N & 0.365 &  $\frac{1}{2}$ & -0.567 & -2.712 \\
+		\hline
+	\end{tabular}
+	%\caption{Magnetic properties of some common nuclei. More can be found at \url{http://www.bruker-nmr.de/guide/eNMR/chem/NMRnuclei.htm} }
+	\label{tab:mag_properties}		
+\end{table}
+%%%%% END OF TABLE	
+	\item
+    Electron magnetic moments can be measured in units of Bohr magnetons: $\bm{\hat{\mu}_S} = -\gamma_e \hbar \bm{\hat{S}} = -g_e \beta_e \bm{\hat{S}}$, and for a free electron spin $g_e \approx 2.0023$.		
+	\end{itemize}
 \end{frame}
+
+
+\subsection{Resonant absoption.}
+%%%%%RESONANT ABSORBTION SECTION
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{itemize}[<+>]
+		\item 
+			Let's apply oscillating magnetic field to our system. A spin system Hamiltonian becomes time-dependent and for an oscillation along the $x$-axis we obtain:
+			\begin{equation} \label{eq:oscillating_field}
+			\begin{array}{lcl}
+			\mathcal{H}(t) &=& -\bm{\hat{\mu}} \bm{(B_0+B(t))}=  \\
+			&=& -\gamma \hbar \hat{I_z} (B_0 + B_1(t)) =\\
+			&=&-\gamma \hbar \hat{I_z} B_0  -\gamma \hbar \hat{I_x} B_1 \cos(\omega t),
+			\end{array}
+			\end{equation}
+			where $H_1$ and $\omega$ are the amplitude and the frequency of the oscillating magnetic field.
+		\item
+		 According to perturbation theory the transition probability between the initial state $\vert a \rangle$ and the final state $\vert b \rangle$ with a time dependent Hamiltonian $ \hat{V} (t) = 2 \hat{F} \cos (\omega t ) $ is (Fermi's golden rule):
+		 \begin{equation} \label{eq:probability}
+		 P_{ab} = \frac{2 \pi}{\hbar} \vert \langle a \vert \hat{F} \vert \rangle b \vert ^2 \delta(E_{ab}-\hbar \omega),
+		 \end{equation}
+		 where $E_{ab} = E_a - E_b$ is an energy difference between the energies of levels $a$ and $b$. 
+
+		
+	\end{itemize}
+\end{frame}	
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{itemize}[]
+		\item 
+		For a two level system described before, the matrix element $\langle \alpha \vert \hat{I_x} \vert \beta \rangle = \frac{1}{2}$. The transition probability then becomes:
+		\begin{equation}
+		P_{\alpha \beta} = \frac{\pi}{2\hbar} (\gamma H_1)^2 \delta(E_{\alpha \beta}-\hbar \omega),
+		\end{equation}
+		\item
+		    \textbf{The effect of resonant absorption (and emission) of electromagnetic irradiation at the frequency matching the energy difference in a nuclear system is called Nuclear Magnetic Resonance (NMR).} 		    
+		    
+		    
+	\end{itemize}
+
+\end{frame}	
+\begin{frame}
+
+	
+
+\end{frame}
+%%%%% END OF RESONANT ABSORPTION
+
+
+
+\subsection{Spin in a magnetic field}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+		\begin{itemize}[<+>]
+		\item Let's quantum mechanically describe the system of spins in the magnetic field. Eq. \ref{eq:classic_energy} can be rewritten in a form of Hamiltonian:
+		\begin{equation}
+			E = -\bm{M} \cdot \bm{B}  \longleftrightarrow \mathcal{H}= - \bm{\hat{\mu}_N} \cdot \bm{B} 
+		\end{equation}
+		\item when the magnetic field is directed along z-axis $\bm{B}= (0,0,B_0)$:
+		\begin{equation}
+		\mathcal{H}= - \bm{\hat{\mu}_N} \cdot \bm{B} = -\gamma_N \hbar B_0 \hat{I}_z
+		\end{equation}
+		\item For spin $I=\dfrac{1}{2}$ such Hamiltonian produces a two-level system. Its energy levels corresponding to eigenfunctions $\vert \alpha \rangle$ and $\vert \beta \rangle$:
+		\begin{figure}
+		    \includegraphics[width=0.5\textwidth]{two-level_system.png}
+		\end{figure}
+		
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{itemize}[<+>]
+		\item The transition between the two states requires an energy quantum:
+		\begin{equation}
+			h \nu_L = \gamma \hbar B_0, \omega_L = \gamma B_0, \nu_L = \dfrac{\gamma B_0}{2 \pi}
+		\end{equation}
+		$\omega_L$ and $\nu_L$ is the Larmor frequency (anglular and cyclic respectively)
+		\item
+		
+% TABLE OF MAGNETIC PROPERTIES
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{  C{1.0cm}  C{2.5cm}  C{1.0cm}  C{2.0cm}  C{2.0cm}}
+		\hline\hline
+		Nucleus & Natural abundance \% & Nuclear spin (I) & Larmor frequency at 11.744T, MHz & $\gamma_N$, Gyromagnetic ratio ($10^7$ rad/T*s) \\
+		\hline
+		\textsuperscript{1}H & 99.98 & $\frac{1}{2}$ & 500 & 26.7519 \\
+		\textsuperscript{2}H & 1.5*10\textsuperscript{-2} & 1 & 76.753 & 4.1066 \\
+		\textsuperscript{13}C & 1.108 & $\frac{1}{2}$ & 125.721 & 6.7283 \\
+		\textsuperscript{14}N & 99.635 & 1 & 36.118 & 1.9338 \\
+		\textsuperscript{15}N & 0.365 &  $\frac{1}{2}$ & 50.664 & -2.712 \\
+		\hline
+	\end{tabular}
+\end{table}
+%%%%% END OF TABLE
+		
+	\end{itemize}
+\end{frame}
+
+\subsection{Equilibrium magnetization}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+  NMR measurements are generally made on bulk samples which contain very large numbers of nuclear spins (e.g. 1 cm$^3$ contains $N \approx 6.7 \cdot 10^{22}$ \textsuperscript{1}H atoms)
+  The measured signals therefore result from the collective effect of a large number of magnetic moments that can be described using a bulk magnetization.
+  At thermal equilibrium, the numbers of nuclei in the $\vert \alpha \rangle$ state $N_{\alpha}$ and  $\vert \beta \rangle$ state $N_{beta}$ follow Boltzmann distribution:
+  \begin{equation}
+    \dfrac{N_{\alpha}}{N_{\beta}} = e^{-\dfrac{\gamma B_0}{kT}} \approx (1 - \dfrac{\gamma B_0}{kT}),
+  \end{equation} 
+  when $\gamma B_0 \ll kT$. Overall magnetization then can be calculated as:
+  \begin{equation}
+    M_z = N_{\alpha}(-\dfrac{1}{2}\gamma \hbar) + N_{\beta}(\dfrac{1}{2}\gamma \hbar) = N \dfrac{\gamma^2 \hbar^2 B_0}{4kT} 
+  \end{equation}
+\end{frame}
+
+
 
 
 \begin{frame}

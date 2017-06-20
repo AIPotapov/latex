@@ -21,19 +21,37 @@
 \headcommand {\beamer@framepages {9}{11}}
 \headcommand {\slideentry {1}{3}{3}{12/13}{Magnetic moments in magnetic field.}{0}}
 \headcommand {\beamer@framepages {12}{13}}
-\headcommand {\beamer@subsectionentry {0}{1}{4}{14}{Angular momentum operator}}\headcommand {\beamer@subsectionpages {6}{13}}
-\headcommand {\slideentry {1}{4}{1}{14/16}{Angular momentum operator}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{4}{14}{Orbital angular momentum operator}}\headcommand {\beamer@subsectionpages {6}{13}}
+\headcommand {\slideentry {1}{4}{1}{14/16}{Orbital angular momentum operator}{0}}
 \headcommand {\beamer@framepages {14}{16}}
-\headcommand {\slideentry {1}{4}{2}{17/18}{Angular momentum operator}{0}}
+\headcommand {\slideentry {1}{4}{2}{17/18}{Orbital angular momentum operator}{0}}
 \headcommand {\beamer@framepages {17}{18}}
-\headcommand {\slideentry {1}{4}{3}{19/20}{Angular momentum operator}{0}}
-\headcommand {\beamer@framepages {19}{20}}
-\headcommand {\slideentry {1}{4}{4}{21/21}{Angular momentum operator}{0}}
-\headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {1}{4}{5}{22/22}{Angular momentum operator}{0}}
+\headcommand {\slideentry {1}{4}{3}{19/21}{Orbital angular momentum operator}{0}}
+\headcommand {\beamer@framepages {19}{21}}
+\headcommand {\beamer@subsectionentry {0}{1}{5}{22}{Spin angular momentum operator}}\headcommand {\beamer@subsectionpages {14}{21}}
+\headcommand {\slideentry {1}{5}{1}{22/22}{Spin angular momentum operator}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@partpages {1}{22}}
-\headcommand {\beamer@subsectionpages {14}{22}}
-\headcommand {\beamer@sectionpages {2}{22}}
-\headcommand {\beamer@documentpages {22}}
-\headcommand {\def \inserttotalframenumber {13}}
+\headcommand {\slideentry {1}{5}{2}{23/25}{Spin angular momentum operator}{0}}
+\headcommand {\beamer@framepages {23}{25}}
+\headcommand {\beamer@subsectionentry {0}{1}{6}{26}{Resonant absoption.}}\headcommand {\beamer@subsectionpages {22}{25}}
+\headcommand {\slideentry {1}{6}{1}{26/27}{Resonant absoption.}{0}}
+\headcommand {\beamer@framepages {26}{27}}
+\headcommand {\slideentry {1}{6}{2}{28/28}{Resonant absoption.}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\slideentry {1}{6}{3}{29/29}{Resonant absoption.}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\beamer@subsectionentry {0}{1}{7}{30}{Spin in a magnetic field}}\headcommand {\beamer@subsectionpages {26}{29}}
+\headcommand {\slideentry {1}{7}{1}{30/32}{Spin in a magnetic field}{0}}
+\headcommand {\beamer@framepages {30}{32}}
+\headcommand {\slideentry {1}{7}{2}{33/34}{Spin in a magnetic field}{0}}
+\headcommand {\beamer@framepages {33}{34}}
+\headcommand {\beamer@subsectionentry {0}{1}{8}{35}{Equilibrium magnetization}}\headcommand {\beamer@subsectionpages {30}{34}}
+\headcommand {\slideentry {1}{8}{1}{35/35}{Equilibrium magnetization}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\slideentry {1}{8}{2}{36/36}{Equilibrium magnetization}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\beamer@partpages {1}{36}}
+\headcommand {\beamer@subsectionpages {35}{36}}
+\headcommand {\beamer@sectionpages {2}{36}}
+\headcommand {\beamer@documentpages {36}}
+\headcommand {\def \inserttotalframenumber {20}}
