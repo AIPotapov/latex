@@ -28,37 +28,49 @@
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\slideentry {1}{4}{3}{11/11}{Orbital angular momentum operator}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{1}{5}{12}{Spin angular momentum operator}}\headcommand {\beamer@subsectionpages {9}{11}}
-\headcommand {\slideentry {1}{5}{1}{12/12}{Spin angular momentum operator}{0}}
+\headcommand {\slideentry {1}{4}{4}{12/12}{Orbital angular momentum operator}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {1}{5}{2}{13/13}{Spin angular momentum operator}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{5}{13}{Spin angular momentum operator}}\headcommand {\beamer@subsectionpages {9}{12}}
+\headcommand {\slideentry {1}{5}{1}{13/13}{Spin angular momentum operator}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {1}{5}{3}{14/14}{Spin angular momentum operator}{0}}
+\headcommand {\slideentry {1}{5}{2}{14/14}{Spin angular momentum operator}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsectionentry {0}{1}{6}{15}{Spin in a magnetic field}}\headcommand {\beamer@subsectionpages {12}{14}}
-\headcommand {\slideentry {1}{6}{1}{15/15}{Spin in a magnetic field}{0}}
+\headcommand {\slideentry {1}{5}{3}{15/15}{Spin angular momentum operator}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {1}{6}{2}{16/16}{Spin in a magnetic field}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{6}{16}{Spin in a magnetic field}}\headcommand {\beamer@subsectionpages {13}{15}}
+\headcommand {\slideentry {1}{6}{1}{16/16}{Spin in a magnetic field}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@subsectionentry {0}{1}{7}{17}{Equilibrium magnetization}}\headcommand {\beamer@subsectionpages {15}{16}}
-\headcommand {\slideentry {1}{7}{1}{17/17}{Equilibrium magnetization}{0}}
+\headcommand {\slideentry {1}{6}{2}{17/17}{Spin in a magnetic field}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\beamer@subsectionentry {0}{1}{8}{18}{Resonant energy absoption.}}\headcommand {\beamer@subsectionpages {17}{17}}
-\headcommand {\slideentry {1}{8}{1}{18/18}{Resonant energy absoption.}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{7}{18}{Equilibrium magnetization}}\headcommand {\beamer@subsectionpages {16}{17}}
+\headcommand {\slideentry {1}{7}{1}{18/18}{Equilibrium magnetization}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@subsectionentry {0}{1}{9}{19}{Populations dynamics in two-level system.}}\headcommand {\beamer@subsectionpages {18}{18}}
-\headcommand {\slideentry {1}{9}{1}{19/19}{Populations dynamics in two-level system.}{0}}
+\headcommand {\slideentry {1}{7}{2}{19/19}{Equilibrium magnetization}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {1}{9}{2}{20/20}{Populations dynamics in two-level system.}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{8}{20}{Resonant energy absoption.}}\headcommand {\beamer@subsectionpages {18}{19}}
+\headcommand {\slideentry {1}{8}{1}{20/20}{Resonant energy absoption.}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {1}{9}{3}{21/21}{Populations dynamics in two-level system.}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{9}{21}{Populations dynamics in two-level system.}}\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\slideentry {1}{9}{1}{21/21}{Populations dynamics in two-level system.}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {1}{9}{4}{22/22}{Populations dynamics in two-level system.}{0}}
+\headcommand {\slideentry {1}{9}{2}{22/22}{Populations dynamics in two-level system.}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {1}{9}{5}{23/23}{Populations dynamics in two-level system.}{0}}
+\headcommand {\slideentry {1}{9}{3}{23/23}{Populations dynamics in two-level system.}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\beamer@partpages {1}{23}}
-\headcommand {\beamer@subsectionpages {19}{23}}
-\headcommand {\beamer@sectionpages {2}{23}}
-\headcommand {\beamer@documentpages {23}}
-\headcommand {\def \inserttotalframenumber {23}}
+\headcommand {\slideentry {1}{9}{4}{24/24}{Populations dynamics in two-level system.}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {1}{9}{5}{25/25}{Populations dynamics in two-level system.}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\sectionentry {2}{Chemical shifts and J-couplings.}{26}{Chemical shifts and J-couplings.}{0}}
+\headcommand {\beamer@sectionpages {2}{25}}
+\headcommand {\beamer@subsectionpages {21}{25}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{26}{Chemical shifts.}}\headcommand {\beamer@subsectionpages {26}{25}}
+\headcommand {\slideentry {2}{1}{1}{26/26}{Chemical shifts.}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {2}{1}{2}{27/27}{Chemical shifts.}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\beamer@partpages {1}{27}}
+\headcommand {\beamer@subsectionpages {26}{27}}
+\headcommand {\beamer@sectionpages {26}{27}}
+\headcommand {\beamer@documentpages {27}}
+\headcommand {\def \inserttotalframenumber {27}}

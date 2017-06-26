@@ -41,7 +41,7 @@
 		\begin{itemize}
 		\item Magnetic resonance (MR) is a phenomenon of resonant energy absorption by a system of nuclei (and electrons). 
 		\item Nuclear magnetic resonance (NMR) results from the intrinsic magnetic moment of the
-		nuclei of some atoms. Magnetic moments of electrons are exploited in electron spin resonance.
+		nuclei of some atoms. Magnetic moments of electrons are exploited in electron spin resonance (ESR).
 		\item Magnetic resonance (MR) generally involves placing a sample in a strong magnetic
 		field (to generate polarisation at a fixed resonant frequency) and detecting signals
 		produced following application of pulsed radio-frequency electromagnetic fields (RF
@@ -140,7 +140,7 @@
 			\end{equation}
 			is the mechanical angular momentum.
 		\item 
-			\alert{Gyromagnetic ratio}(or magnetogyric): 
+			\alert{Gyromagnetic ratio} (or magnetogyric): 
 			\begin{equation}
 			\gamma = \dfrac{e}{2m}
 			\end{equation}
@@ -216,7 +216,7 @@
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	
 	\begin{itemize}[<+>]
-		\item     In quantum mechanics physical quantities $A$ are represented by their operators $\hat{A}$. The mechanical angular momentum is replaced by its corresponding operator:
+		\item     In quantum mechanics physical quantity $A$ ise represented by an operator $\hat{A}$. The mechanical angular momentum is replaced by its corresponding operator:
 		\begin{equation}
 		\bm{L} = \sum_{n} \bm{p_n} \times \bm{r_n}  \longleftrightarrow \bm{\hat{L}} = \dfrac{1}{\hbar} \sum_{n} \bm{\hat{r}_n} \times \bm{\hat{p}_n} =   -i \sum_{n} \bm{\hat{r}_n} \times \bm{\nabla_n}
 		\end{equation}
@@ -227,7 +227,7 @@
 		\item Angular momentum squared, and its commutation properties:
         \begin{align}
           &\hat{L}^2 = \hat{L}_x^2 + \hat{L}_y^2 + \hat{L}_z^2 \\
-          &[\hat{L}^2, \hat{L}_x^2]=[\hat{L}^2, \hat{L}_y^2]=[\hat{L}^2, \hat{L}_z^2]= 0       
+          &[\hat{L}^2, \hat{L}_x]=[\hat{L}^2, \hat{L}_y]=[\hat{L}^2, \hat{L}_z]= 0       
         \end{align}        
 	\end{itemize}
 
@@ -248,6 +248,24 @@
 	\end{itemize}
 	
 \end{frame}
+
+\begin{frame}
+		\begin{block}{Problem}
+			Calculate $[\hat{L}_{+}, \hat{L}_x ] = ?$ , $[\hat{L}_{+}, \hat{L}_{-} ] = ?$ 
+		\end{block}
+		\begin{equation*}
+		[\hat{L}_y,\hat{L}_z] = i\hat{L}_x, [\hat{L}_z,\hat{L}_x] = i\hat{L}_y, [\hat{L}_x,\hat{L}_y] = i\hat{L}_z
+		\end{equation*}
+		\begin{align*}
+		&\hat{L}^2 = \hat{L}_x^2 + \hat{L}_y^2 + \hat{L}_z^2 \\
+		&[\hat{L}^2, \hat{L}_x]=[\hat{L}^2, \hat{L}_y]=[\hat{L}^2, \hat{L}_z]= 0    \\   
+	    &\hat{L}_{+} = \hat{L}_x + i\hat{L}_y, \hat{L}_{-} = \hat{L}_x - i\hat{L}_y
+		\end{align*}        
+
+
+\end{frame}
+
+
 
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
@@ -318,6 +336,7 @@
 		\item Recap of angular momentum operator properties: commutation properties.
 		\item Nuclei have their own nuclear magnetic moment. Described using spin angular momentum operator.
 	\end{itemize}
+	\textbf{Suggested reading: } Harris: 1.1, 1.2, 1.3, 1.4, 1.6, 2.4
 \end{frame}
 
 
@@ -374,7 +393,7 @@
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
   NMR measurements are generally made on bulk samples which contain very large numbers of nuclear spins (e.g. 1 cm$^3$ contains $N \approx 6.7 \cdot 10^{22}$ \textsuperscript{1}H atoms)
   The measured signals therefore result from the collective effect of a large number of magnetic moments that can be described using a bulk magnetization.
-  At thermal equilibrium, the numbers of nuclei in the $\vert \alpha \rangle$ state $N_{\alpha}$ and  $\vert \beta \rangle$ state $N_{beta}$ follow Boltzmann distribution:
+  At thermal equilibrium, the numbers of nuclei in the $\vert \alpha \rangle$ state $N_{\alpha}$ and  $\vert \beta \rangle$ state $N_{\beta}$ follow Boltzmann distribution:
   \begin{equation}
     \dfrac{N_{\alpha}}{N_{\beta}} = e^{-\dfrac{\gamma B_0}{kT}} \approx (1 - \dfrac{\gamma B_0}{kT}),
   \end{equation} 
@@ -384,7 +403,30 @@
   \end{equation}
 \end{frame}
 
-
+\begin{frame}
+	\begin{block}{Problem}
+		\begin{itemize}
+			\item What is the value of $\dfrac{\gamma_N \hbar B_0}{kT}$ for proton nuclei (\textsuperscript{1}H) at $9.4$ T magnetic field at 300 K?
+			\item What is the value of $\dfrac{\gamma_e \hbar B_0}{kT}$ electron (\textsuperscript{1}H) at $9.4$ T magnetic field at 4 K?
+		\end {itemize}      
+	\end{block}
+	{\tiny
+	\begin{align*}
+	&\text{Electron charge } e = 1.602 \cdot 10^{-19} \text{C}\\
+	&\text{Electron mass } m_e = 9.109 \cdot 10^{-31} \text{kg} \\
+	&\text{Proton mass}  m_p =  1.673 \cdot 10^{-27} \text{kg}  \\
+	&\text{Plank constant}  \hbar =  1.054 \cdot 10^{-34} \dfrac{\text{J} \cdot \text{s}}{rad}  \\
+	&\text{Proton g-factor}  g_p =  5.585 \\
+	&\text{Electron g-factor}  g_e =  2.0023 \\
+	&\text{Nuclear magneton}  \beta_N =  5.05 \cdot 10^{-27}  \text{J}\cdot \text{T}^{-1} \\
+	&\text{Bohr magneton}  \beta_e =  9.27 \cdot 10^{-24}  \text{J}\cdot \text{T}^{-1} \\
+	&\text{Proton gyromagnetic ratio}  \gamma_N =  26.7519 \cdot 10^{7} \dfrac{\text{rad}}{T \cdot s}\\
+	&\text{Electron gyromagnetic ratio}  \gamma_e =  1.76 \cdot 10^{11} \dfrac{\text{rad}}{T \cdot s}\\
+	&\text{Boltzmann constant}  k =  1.38 \cdot 10^{-23} {\text{J}} \cdot \text{K}^{-1}\\
+	&\text{Avogadro's constant}  N_A =  6.023 \cdot 10^{23} \text{mol}^{-1}
+	\end{align*}
+    }%
+\end{frame}
 \subsection{Resonant energy absoption.}
 %%%%%RESONANT ABSORBTION SECTION
 
@@ -477,12 +519,12 @@
 		\begin{equation}
 		    \dfrac{dn}{dt} = - 2 n P -\dfrac{ (n - n_0)}{T_1},
 		\end{equation}
-		where $T_1 = \dfrac{1}{W}$ is called \alert{spin-lattice relaxation time} determines how quickly a spin system reaches a thermal equilibrium with environment.
+		where $T_1 = \dfrac{1}{2W}$ is called \alert{spin-lattice relaxation time} determines how quickly a spin system reaches a thermal equilibrium with environment.
 		\item In equilibrium, when $\dfrac{dn}{dt} = 0$:
 		\begin{equation}
 			n = \dfrac{n_0}{1 + 2 P T_1}
 		\end{equation}
-		when the power is very large $PT_1 \gg 1$, $n \rightarrow 0$, i.e. the system is saturated and no signal can be observed.
+		when the power is very large $PT_1 \gg 1$, $n \rightarrow 0$, i.e. the system is \alert{saturated} and no signal can be observed.
 			
 	\end{itemize}
 \end{frame}
@@ -493,6 +535,110 @@
 		\item System of spins in a magnetic field is capable of absorbing radiation at a resonant frequency.
 		\item Population dynamics in a two-level system. Signal as function of radiation power and saturation.
 	\end{itemize}
+	\textbf{Suggested reading: } Harris 1.5, 1.7, Slichter 1.3 \\
+	Harris 1.20 - CW NMR spectrometer
+\end{frame}
+
+\section{Chemical shifts and J-couplings.}
+\subsection{Chemical shifts.}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{itemize}[<+>]
+		\item 
+			The magnetic fields experienced by nuclei in atoms and molecules are affected by the interaction of the surrounding electrons orbitals with the applied magnetic field $B_0$. 
+			
+		
+		\item	
+		This effect slightly shifts the Larmor frequency in a chemical specific manner - this is known as the \alert{chemical shift}. It allows the identification of chemical species from NMR spectra.
+		
+		\item Classical illustration of diamagnetic chemical shift:	
+			
+				\begin{minipage}{0.4\textwidth}
+					{\tiny
+					\begin{align*}
+					&\bm{\omega} = \dfrac{e}{2 m_e} \bm{B_0} \\
+					&\bm{j} = -e[\bm{\omega} \times \bm{r}] \rho_e = -\dfrac{e^2}{2m_e}[B_0 \times \bm{r}] \rho_e \\				
+					&d \bm{B_i} =  \dfrac{\mu_0}{4 \pi r^3}[\bm{j} \times \bm{r}] dV	\\
+					&d \bm{B_i} = - \dfrac{\mu_0 e^2}{8 \pi m_e r^3}[[\bm{B_0} \times \bm{r}] \times \bm{r}] \rho_e dV	\\
+					& B_{iz}  = - B_0 \dfrac{\mu_0 e^2}{8 \pi m_e} \int \rho_e \dfrac{x^2 + y^2}{r^3}  dV \\ 	
+					&\text{Quantum mechanical result:}  \\
+					&\sigma = - \dfrac{\mu_0 e^2}{8 \pi m_e} \langle \Psi \vert \dfrac{x^2 + y^2}{r^3} \vert \Psi \rangle 
+					\end{align*}
+				    }%
+				\end{minipage}
+				\hspace{0.1 cm}
+				\begin{minipage}{0.45\textwidth}
+					\includegraphics[width = 0.8\textwidth]{diamagnetic_term.png}
+				\end{minipage}
+			
+			
+	
+	
+			
+	\end{itemize}
+\end{frame}
+
+	
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	Let's calculate the effect of ring current in cyclic aromatic molecules. Consider benzene molecule:
+	
+			\begin{minipage}{0.3\textwidth}
+				\begin{figure}
+					\includegraphics[width=1.0\textwidth]{benzene1.png} \\
+					\includegraphics[width=1.0\textwidth]{benzene2.png}
+					\caption{(top) Schematic repsresentation of electron orbitals in a benzene molecule, (bottom) local fields in a benzene molecule produced by electron currents induced by a magnetic field.}									
+				\end{figure}
+				
+			\end{minipage}
+			\hspace{0.1cm}
+			{\tiny
+			\begin{minipage}{0.65\textwidth}
+				\begin{itemize}[<+>]
+					\item
+									Larmor precession frequency of electrons $\omega_L = \frac{e B_0}{2 m_e}$. Current can be calculated as charge $6 e$, divided by precession period $\frac{2 \pi}{\omega_L}$:
+									\par
+									\begin{equation}				    
+									i = \dfrac{3e^2 B_0}{2 \pi m_e}
+									\end{equation}
+					\item 
+					Circular conductor creates a magnetic moment $\mu = i \cdot \pi r^2 $, totalling in:				
+									\begin{equation}
+									\mu = -\dfrac{3 e^2 B_0 r^2}{2 m_e}
+									\end{equation}
+					\item
+									The magnetic field created by a magnetic moment  $\bm{B} = \dfrac{\mu_0}{4 \pi}(\dfrac{\bm{r(mr)}}{r^5} - \dfrac{\bm{m}}{r^3}  )$ reduces to:
+									\begin{align}
+									B_i = -\dfrac{\mu_0}{4 \pi}\dfrac{m}{r^3} = \dfrac{3 \mu_0 e^2}{8 \pi} \dfrac{r^2}{(r+d)^3} B_0 \\
+									\sigma = --\dfrac{\mu_0}{4 \pi m_e}\dfrac{m}{r^3} = \dfrac{3 \mu_0 e^2}{8 \pi} \dfrac{r^2}{(r+d)^3}
+									\end{align}
+					\item
+									Given benzene molecule radius $r=1.4 \AA$, CH-bond length $d = 1.1 \AA$ we obtain:
+									\begin{equation}
+									\sigma \approx -5.3 \cdot 10^{-6}, \sigma_{iso} \approx -1.8 \cdot 10^{-6}
+									\end{equation}
+					
+				\end{itemize}
+
+			\end{minipage}
+			
+		    }%
+			%\caption{(top) Schematic repsresentation of electron orbitals in a benzene molecule, (bottom) local fields in a benzene molecule produced by electron currents induced by a magnetic field.}
+
+		
+		
+%		\item
+%	    In reality there is a diamagnetic and paramagnetic contributions to chemical shift, which can be calculated using quantum mechanics.
+%	    
+%	    					
+%		Diamagnetic shifts arise from $B_0$ induced precession of electron orbitals, which produces a circulating current that slightly reduces the field at the nucleus (shielding).
+%		
+%		\item	The degree of shielding is proportional to $B_0$ and depends on electron density near nucleusm which is affected by local bonding. It is also affected by bond orientation to the field, but in liquids, the orientation effects are averaged out by molecular motion.
+%		
+%		\item					
+%		Diamagnetic shifts arise from $B_0$ induced precession of electron orbitals, which produces a circulating current that slightly reduces the field at the nucleus (shielding).
+%		\item	The degree of shielding is proportional to $B_0$ and depends on electron density near nucleusm which is affected by local bonding. It is also affected by bond orientation to the field, but in liquids, the orientation effects are averaged out by molecular motion.
+
+	
 \end{frame}
 
 
