@@ -93,36 +93,164 @@ Since a typical dipolar coupling is $D \sim 100 \text{ kHz}$ and $\omega_{ZQ} \s
 \section{Electron-induced proton-fluorine flip-flops}
 Now we will include the hyperfine interactions for both nuclei, while neglecting the dipolar interaction between them as shown schematically in Figure \ref{fig:coupling}B. The Hamiltonian for such a system would therefore be in the following form:
 \begin{equation}
-\mathcal{H} =  \omega_S \hat{S}_z + \sum_{i,j=x,y,z} A_{ij}^{(H)} \hat{S}_i \hat{H}_j +  \sum_{i,j=x,y,z} A_{ij}^{(F)} \hat{S}_i \hat{H}_j + \omega_H \hat{H}_z + \omega \hat{F}_z ,
+\mathcal{H} =  \omega_S \hat{S}_z + \sum_{i,j=x,y,z} A_{ij}^{(H)} \hat{S}_i \hat{H}_j +  \sum_{i,j=x,y,z} A_{ij}^{(F)} \hat{S}_i \hat{H}_j - \omega_H \hat{H}_z - \omega \hat{F}_z ,
 \end{equation}
 where $A_{ij}^{(H)}, A_{ij}^{(F)}$ are the hyperfine interaction tensors of protons and fluorines respectively. In the electron spin rotating frame, using $A_{H,F}$ and $B_{H,F}$ for secular and non-secular terms of a hyperfine interaction the Hamiltonian can be rewritten as:
 \begin{equation}
-\mathcal{H}  = A_H \hat{S}_z \hat{H}_z + B_H \hat{S}_z \hat{H}_x +  \omega_H \hat{H}_z + A_F \hat{S}_z \hat{F}_z + B_F \hat{S}_z \hat{F}_x + \omega_F \hat{F}_z
+\mathcal{H}  = A_H \hat{S}_z \hat{H}_z + B_H \hat{S}_z \hat{H}_x -  \omega_H \hat{H}_z + A_F \hat{S}_z \hat{F}_z + B_F \hat{S}_z \hat{F}_x - \omega_F \hat{F}_z
 \end{equation}
-Since $B_H, B_F \ll \omega_H, \omega_F $, the non-secular terms can be regarded as a perturbation to a secular Hamiltonian. For simplicity, let's consider the action of this perturbation of an eigestate $\vert \Psi^{(0)} = \rangle  \vert \alpha_H \beta_F \rangle$. In the first order of perturbation theory, this function will transform into:
+Since $B_H, B_F \ll \omega_H, \omega_F $, the non-secular terms can be regarded as a perturbation to a secular Hamiltonian.
+Let's denote the eigenstates of unperturbed Hamiltonian as $\vert k \rangle  $: $\vert 1 \rangle = \vert \alpha_H \alpha_F \rangle$, $\vert 2 \rangle =   \vert \alpha_H \beta_F \rangle$, $\vert 3 \rangle =   \vert \beta_H \alpha_F \rangle$, $\vert 4 \rangle =   \vert \beta_H \beta_F \rangle$. In this basis the matrix of perturbation $\hat{V} = m_S B_H \hat{H}_x + m_S B_F \hat{F}_x =\dfrac{m_S}{2} ( B_H (H_{+} + H_{-})  + B_F (F_{+} + F_{-})) $ would have the following elements:
 
 \begin{equation}
-\Psi^{(1)}  =  \vert \alpha_H \beta_F \rangle  + c_1  \vert \beta_H \alpha_F \rangle + c_2  \vert \beta_H \alpha_F \rangle,
+	V_{ik} = \dfrac{m_S}{2} \begin{bmatrix}
+	0 & B_F & B_H & 0 \\
+	B_F & 0 & 0 & B_H \\
+	B_H & 0 & 0 & B_F \\
+	0 & B_H & B_F & 0 
+	\end{bmatrix}
 \end{equation}
-where $c_1, c_2 \sim \dfrac{B_{H,F}}{\omega_{H,F}}$. All the mixed states differ from one another only by a flip of one nucleus. The second order of perturbation theory will mix addition states:
-\begin{equation}
-\Psi^{(2)}  =  \vert \alpha_H \beta_F \rangle  + c_1  \vert \alpha_H \alpha_F \rangle + c_2  \vert \beta_H \beta_F \rangle + d_1 \vert \beta_H \alpha_F \rangle + d_2(...\text{all other functions}...),
-\end{equation}
-The coefficient $d_1, d_2 \sim  \dfrac{B^2}{\omega^2}$, where $B$ is a combination of hyperfine couplings of protons and fluorines, and $\omega$ - the energy difference between the levels. 
 
-Also, then increasing orders of perturbation theory corrections to the energy would produce terms of the order:
-\begin{equation}
-E ~ \sim \omega (1 + \dfrac{B}{\omega} + (\dfrac{B}{\omega})^2 + ...)
+The unperturbed energies will be:
+\begin{equation}\label{eq:level_energies}
+	\begin{array}{lll}
+  &E_1^{0} = - &\dfrac{\omega_H + \omega_F}{2} + \dfrac{m_S}{2}(A_H + A_F) \\
+  &E_2^{0} = - &\dfrac{\omega_H - \omega_F}{2} + \dfrac{m_S}{2}(A_H - A_F) \\
+  &E_3^{0} =  &\dfrac{\omega_H - \omega_F}{2} - \dfrac{m_S}{2}(A_H - A_F) \\
+  &E_4^{0} =  &\dfrac{\omega_H + \omega_F}{2} - \dfrac{m_S}{2}(A_H + A_F) \\
+
+	\end{array}
 \end{equation}
-The zeroth order correponds to a Zeeman interaction, the first order should be zero in our case. The second order correction would produce affective three spin terms in the Hamiltonian proportional to $S_z H_{\pm}F_{\mp}, S_z H_{\pm}F_{\pm}$ and having a magnitude of $\dfrac{B^2}{\omega} \sim 1 \text{ MHz} \gg D$. Such terms are time dependent and are capable to producing nuclear zero-quantum and double-quantum transitions respectively.
-Similarly to section \ref{sec: case A} we can estimate the ratio of zero-quantum relaxation rate and the nuclear relaxation rate. 
+
+
+The pertubation theory would produce the corrections to the eigenfunctions $\vert \Psi \rangle = \vert \phi^{(0)} \rangle + \vert \phi^{(1)} \rangle + \vert \phi^{(2)} \rangle ...$, where $\vert \phi^{(l)} \rangle$ is the $l$th order correction. The first order perturbation to the eigenfunction $\vert k^{(1)} \rangle $ can be written as:
+
 \begin{equation}
-\dfrac{W_{ZQ}}{W_n} \sim \vert \dfrac{B}{\omega_H} \vert^2 (\dfrac{\omega_F}{\omega_{ZQ}})^2 \sim (\dfrac{B}{\omega_{ZQ}})^2
+     \vert k^{(1)} \rangle = \sum_{l \neq k} \dfrac{\vert l^{(0)}  \rangle  \langle l^{(0)}  \vert \hat{V}  \vert k^{(0)} \rangle  }{E_k^{(0)} - E_l^{(0)}} = \sum_{l \neq k} \dfrac{\vert l^{(0)}  \rangle  V_{lk} }{E_k^{(0)} - E_l^{(0)}} 
 \end{equation}
-Hyperfine couplings of protons can be estimated as $B \sim \dfrac{78}{r^3} \dfrac{\text{ MHz} }{ \AA^3}  $, which for a distance of 2 $\AA$ would produce  a hyperfine coupling of about 10 MHz. In addition, the protons of nitroxide methyl groups have large anisotropic hyperfine couplings of about 10 MHz (J. Phys. Chem. 1982, 86, 4011). Altogether it means that proton nuclei with coupling on the order of  10 MHz are always present in the vicinity of TEMPO. Therefore the rate of a ZQ transition, or a flip-flop and relaxation rate due to presence of electrons,  will have the same order of magnitude as the electron-induce nuclear relaxation time $\dfrac{1}{T_{1n}}$.
+Such first order perturbation only produce mixing with functions differing by $\ m_H = \pm 1, \Delta m_F =0$, or  $\ m_H = 0, \Delta m_F =\pm 1$ because $V_{23} = V_{14} = 0$. The second order perturbation contains more additional terms:
+
+\begin{equation}
+\vert k^{(2)} \rangle = \sum_{l \neq k, m \neq l } \dfrac{\vert l^{(0)}  \rangle  \langle l^{(0)}  \vert \hat{V}  \vert m^{(0)} \rangle   \langle m^{(0)}  \vert \hat{V}  \vert k^{(0)} \rangle  }{(E_k^{(0)} - E_l^{(0)})(E_k^{(0)} - E_m^{(0)})} = \sum_{l \neq k, m \neq l} \dfrac{\vert l^{(0)}  \rangle  V_{lm} V_{mk} }{(E_k^{(0)} - E_l^{(0)})(E_k^{(0)} - E_m^{(0)})} 
+\end{equation}
+
+This interaction mixes states different by  $\ m_H = \pm 1, \Delta m_F =\mp 1$ and $\ m_H = \pm 1, \Delta m_F =\pm 1$. For $\vert 2 \rangle = \vert \alpha_H \beta_F \rangle  $, the mixing coefficient for $\vert 3 \rangle = \vert \beta_H \alpha_F \rangle  $ can be calculated as:
+
+\begin{align*}
+  &c_{23}^{(2)} = \sum_{ m \neq 3} \dfrac{\vert l^{(0)}  \rangle  V_{2m} V_{m3} }{(E_2^{(0)} - E_m^{(0)})(E_3^{(0)} - E_m^{(0)})} = \dfrac{V_{21} V_{13}}{(E_2^{(0)} - E_1^{(0)})(E_3^{(0)} - E_1^{(0)})} + \dfrac{V_{24} V_{43}}{(E_2^{(0)} - E_4^{(0)})(E_3^{(0)} - E_4^{(0)})}  \approx\\
+  &\approx \dfrac{m_S^2}{2} \dfrac{B_F B_H}{\omega_H \omega_H}
+\end{align*}
+
+Also we can calculate the second order corrections to energies:
+\begin{align}
+    &E_2^{(2)}  = \sum_{k \neq 2}  \dfrac{V_{2k}^2}{E_2^{(0)} - E_k^{(0)}} \approx  (\dfrac{m_S}{2})^2(\dfrac{B_H^2}{\omega_H}   -  \dfrac{B_F^2}{\omega_F}  )  \\
+    &E_3^{(2)}  = \sum_{k \neq 3}  \dfrac{V_{3k}^2}{E_3^{(0)} - E_k^{(0)}} \approx  (\dfrac{m_S}{2})^2(\dfrac{B_H^2}{\omega_H}   -  \dfrac{B_F^2}{\omega_F}  )  
+\end{align}
+
+Although $\hat{V}$ does produce mixing of states 2 and 3, the random jumps of an electron between states with $m_S = \pm \frac{1}{2}$ will not produce relaxation, because $m_S^2 = \frac{1}{4}$ for both. Nevertheless, the presence of such mixing implies that nuclei in the vicinity of an electron can be coupled even if they are spatially remote from one another. 
+
+Hyperfine couplings of protons (and fluorines similarly) can be estimated as $B \sim \dfrac{78}{r^3} \dfrac{\text{ MHz} }{ \AA^3}  $, which for a distance of 2 $\AA$ would produce  a hyperfine coupling of about 10 MHz. In addition, the protons of nitroxide methyl groups have large anisotropic hyperfine couplings of about 10 MHz (J. Phys. Chem. 1982, 86, 4011). Altogether it means that proton nuclei with coupling on the order of  10 MHz are always present in the vicinity of TEMPO. This implies that the mixing strength could achieve up to $D = \dfrac{B_H B_F}{8 \omega_H \omega_F} \approx 0.1$MHz at $3.3$ T field, while the dipolar couplings among methylene or methyl protons are $\approx 50$ kHz \footnote{Interestingly, the effect of mixing among nuclei in the vicinity of elecrton would be more pronounced for nuclei with lower $\gamma$, because the mixing coefficient does not scale with $\gamma$, while the dipolar couplings will scale as $\gamma^2$}.
+
+\section{Cross-relaxation due to level-crossings.}
+
+As appears from Eq.\ref{eq:rate} the energy levels $E_2$ and $E_3$ could be rather close in energy, and could momentarily cross during the electron flip. The effective Hamiltonian for a system of two nuclei ignoring non-secular hyperfine terms is:
+\begin{equation}
+	\mathcal{H}  = A_H m_S \hat{H}_z + B_H m_S \hat{H}_x -  \omega_H \hat{H}_z + A_F m_S \hat{F}_z + B_F m_S \hat{F}_x - \omega_F \hat{F}_z + D (\hat{H}_{+} \hat{F}_{-}  + \hat{H}_{-} \hat{F}_{+}),
+\end{equation}
+where $D$ is either a dipolar coupling, or a coupling emerging due to second order effects of the hyperfine interaction.
+The Hamiltonian matrix in basis $\vert 1 \rangle, \vert 2 \rangle, \vert 3 \rangle, \vert 4 \rangle$ is:
+{\tiny
+\begin{equation}
+    \hat{H}_{ik} = \begin{bmatrix}
+    -\dfrac{\omega_H+\omega_F}{2} + \dfrac{m_S}{2}(A_H + A_F) & 0 & 0 & 0 \\
+    0 & -\dfrac{\omega_H - \omega_F}{2} + \dfrac{m_S}{2}(A_H - A_F) & D & 0 \\
+    0 & D & \dfrac{\omega_H - \omega_F}{2} - \dfrac{m_S}{2}(A_H - A_F) & 0 \\
+    0 & 0 & 0 & \dfrac{\omega_H+\omega_F}{2} - \dfrac{m_S}{2}(A_H + A_F)    
+    \end{bmatrix}
+\end{equation}
+}%
+Let's focus on the evolution among states $\vert 2 \rangle$ and $\vert 3 \rangle$. Then we could introduce some effective spin $\hat{I}^{(23)}$. The effective Hamiltonian driving the evolution of such spin is:
+\begin{equation}
+   \hat{H}_{eff} = (-\dfrac{\omega_H- \omega_F}{2}  + \dfrac{m_S}{2}(A_H-A_F))\hat{I}_{z}^{(23)} + D   \hat{I}_{x}^{(23)}
+\end{equation}
+This Hamiltonian is very simple, which is why we could replace its action by the vector model. Effectively, the rotation of magnetization in this model takes place around effective fields $B_{+} = (D, 0, \Omega + a )$ and $B_{+} = (D, 0, \Omega - a )$ depending on the electron state $m_S$.
+Consider initial magnetization $M_z = 1$ at $t = 0$ aligned along z-axis, it rotates around $B_{+}$ field, followed by a an electron flip at time $\tau_1$, rotation around $B_{-}$ field for interval $\tau_2$ and a second electron flip. Since the electron flip is random, it is possible to show that the final magnetization would have be consist of two components, a defined projection along $B_{+}$ :
+\begin{equation}
+    q = \dfrac{D^2 + \Omega^2 - a^2}{\sqrt{D^2 + (\Omega + a )^2}  \sqrt{D^2 + (\Omega - a )^2}}
+\end{equation}
+and some vector $p$ which orientation is completely random due to the nature of electron flips. Realization of random process in different three spin systems is different, which is why $p$ averages to $0$. [\textbf{This part may need to be elaborated more, in effect it says that nuclear coherences decay very fast}]
+
+Lets consider several scenarios.
+
+\textbf{Scenario 1}.
+If $D<<\Omega, a, \mid \Omega - a \mid  $ the equation for $q$ simplifies to:
+\begin{equation}
+  q \approx 1 - \dfrac{D^2 a^2}{(\Omega^2 - a^2)^2}
+\end{equation}
+ After $n$ step of random electron jumps taking place during interval $t = 2 n \tau_c $, the magnetization will decrease by a factor:
+ \begin{equation}
+    q^2 = (1 - \dfrac{D^2 a^2}{(\Omega^2 - a^2)^2} )^n  = \exp \Big(-\ln (1 - \dfrac{D^2 a^2}{(\Omega^2 - a^2)^2}) n \Big) \approx \exp \Big[-\dfrac{D^2 a^2}{(\Omega^2 - a^2)^2} \dfrac{t}{ 2\tau_c} \Big]
+ \end{equation}
+ In other words the rate of nuclear flip-flop is $W_{ff} = -\dfrac{D^2 a^2}{(\Omega^2 - a^2)^2} \dfrac{1}{ 2\tau_c} $. Taking the ratio of a flip-flop rate and nuclear relaxation rate and assuming $B  \sim a$ one obtains:
+ \begin{equation}
+    \dfrac{W_{ff}}{W_n} \approx ( \dfrac{D \omega_H}{\Omega^2 - a^2} )^2
+ \end{equation}
+ For the smallest $a \ll \Omega$ under our experimental conditions is $ \dfrac{W_{ff}}{W_n} < 1$. For nuclei located closer to the electron and thus having larger hyperfine couplings $ \dfrac{W_{ff}}{W_n} \approx 1$. 
+ 
+\textbf{Scenario 2}.
+
+However, there is chance that some nuclear pairs have frequency difference  $a \approx \Omega$. For those the value of $q = \dfrac{D}{\sqrt{D^2 + 4 \Omega ^2}} \ll 1$. In practice it means that for one of the electron $m_S$ states the levels of nuclear subsystem become degenerate and large $D$ mixes them very rapidly.
+
+\textbf{Scenario 3}.
+Another interesting case is of $\Omega = 0$, i.e. when both nuclei have the same Larmor frequency. The $q$  then is:
+\begin{equation}
+  q = \dfrac{D^2 - a^2 }{D^2 + a^2}
+\end{equation}
+For small $D \ll a$ this can be simplified as $q \approx 1 - \dfrac{D^2}{a^2}$, and the ratio of a flip-flop rate to nuclear relaxation time is:
+\begin{equation}
+    \dfrac{W_{ff}}{W_n} \approx ( \dfrac{D \omega_H}{a^2} )^2
+\end{equation}
+For $a \approx 3$ this ratio becomes $\approx 1$ and for smaller $a$ it becomes even bigger. In practice it means that \textbf{flip-flops among nuclei of one kind are very likely to occur with nuclear magnetization lifetime}.
+
+\section{Conclusions.}
+We have shown that the flip-flip rate may be rather significant for fluorine-proton and proton-proton transfer.
+
+  
+%Therefore the rate of a ZQ transition, or a flip-flop and relaxation rate due to presence of electrons,  will have the same order of magnitude as the electron-induce nuclear relaxation time $\dfrac{1}{T_{1n}}$.
+
+
+
+
+
+
+%
+% For simplicity, let's consider the action of this perturbation of an eigestate $\vert \Psi^{(0)} = \rangle  \vert \alpha_H \beta_F \rangle$. In the first order of perturbation theory, this function will transform into:
+%
+%\begin{equation}
+%\Psi^{(1)}  =  \vert \alpha_H \beta_F \rangle  + c_1  \vert \beta_H \alpha_F \rangle + c_2  \vert \beta_H \alpha_F \rangle,
+%\end{equation}
+%where $c_1, c_2 \sim \dfrac{B_{H,F}}{\omega_{H,F}}$. All the mixed states differ from one another only by a flip of one nucleus. The second order of perturbation theory will mix addition states:
+%\begin{equation}
+%\Psi^{(2)}  =  \vert \alpha_H \beta_F \rangle  + c_1  \vert \alpha_H \alpha_F \rangle + c_2  \vert \beta_H \beta_F \rangle + d_1 \vert \beta_H \alpha_F \rangle + d_2(...\text{all other functions}...),
+%\end{equation}
+%The coefficient $d_1, d_2 \sim  \dfrac{B^2}{\omega^2}$, where $B$ is a combination of hyperfine couplings of protons and fluorines, and $\omega$ - the energy difference between the levels. 
+%
+%Also, then increasing orders of perturbation theory corrections to the energy would produce terms of the order:
+%\begin{equation}
+%E ~ \sim \omega (1 + \dfrac{B}{\omega} + (\dfrac{B}{\omega})^2 + ...)
+%\end{equation}
+%The zeroth order correponds to a Zeeman interaction, the first order should be zero in our case. The second order correction would produce affective three spin terms in the Hamiltonian proportional to $S_z H_{\pm}F_{\mp}, S_z H_{\pm}F_{\pm}$ and having a magnitude of $\dfrac{B^2}{\omega} \sim 1 \text{ MHz} \gg D$. Such terms are time dependent and are capable to producing nuclear zero-quantum and double-quantum transitions respectively.
+%Similarly to section \ref{sec: case A} we can estimate the ratio of zero-quantum relaxation rate and the nuclear relaxation rate. 
+%\begin{equation}
+%\dfrac{W_{ZQ}}{W_n} \sim \vert \dfrac{B}{\omega_H} \vert^2 (\dfrac{\omega_F}{\omega_{ZQ}})^2 \sim (\dfrac{B}{\omega_{ZQ}})^2
+%\end{equation}
+%Hyperfine couplings of protons can be estimated as $B \sim \dfrac{78}{r^3} \dfrac{\text{ MHz} }{ \AA^3}  $, which for a distance of 2 $\AA$ would produce  a hyperfine coupling of about 10 MHz. In addition, the protons of nitroxide methyl groups have large anisotropic hyperfine couplings of about 10 MHz (J. Phys. Chem. 1982, 86, 4011). Altogether it means that proton nuclei with coupling on the order of  10 MHz are always present in the vicinity of TEMPO. Therefore the rate of a ZQ transition, or a flip-flop and relaxation rate due to presence of electrons,  will have the same order of magnitude as the electron-induce nuclear relaxation time $\dfrac{1}{T_{1n}}$.
 
 \section{Conclusions.}
 In this sketchy calculations we have compared two potential mechanisms for proton to fluorine magnetization transfer induced by the electron spin flips. When electron is strongly hyperfine coupled to both fluorine and proton nuclei, its fluctuations induce nuclei flip-flop transitions.
+%\section{Conclusions.}
+%In this sketchy calculations we have compared two potential mechanisms for proton to fluorine magnetization transfer induced by the electron spin flips. When electron is strongly hyperfine coupled to both fluorine and proton nuclei, its fluctuations induce nuclei flip-flop transitions.
+
 
  
 %
