@@ -545,11 +545,11 @@
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	\begin{itemize}[<+>]
 		\item 
-			The magnetic fields experienced by nuclei in atoms and molecules are affected by the interaction of the surrounding electrons orbitals with the applied magnetic field $B_0$. 
-			
-		
-		\item	
-		This effect slightly shifts the Larmor frequency in a chemical specific manner - this is known as the \alert{chemical shift}. It allows the identification of chemical species from NMR spectra.
+			Electrons in atoms in molecules interact with external magnetic field and in turn produce their own magnetic field $B_0$. The Larmor frequency get shifted in a chemical specific manner - this is known as the \alert{chemical shift}.  The spin Hamiltonian for a nucleus is:
+		\begin{equation}
+			\hat{H} = -\gamma_N \hbar (1 - \sigma) B_0 \hat{I}_z,
+		\end{equation}
+	
 		
 		\item Classical illustration of diamagnetic chemical shift:	
 			
@@ -570,10 +570,6 @@
 				\begin{minipage}{0.45\textwidth}
 					\includegraphics[width = 0.8\textwidth]{diamagnetic_term.png}
 				\end{minipage}
-			
-			
-	
-	
 			
 	\end{itemize}
 \end{frame}
@@ -640,6 +636,114 @@
 
 	
 \end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{itemize}[<+>]
+		\item Chemical shifts are usually measured in ppm's and are referenced with respect to the signals of tetramethylsilane (TMS).		
+		
+		\begin{minipage}[b]{0.15\textwidth}
+            \centering
+		  	\includegraphics[scale=0.5]{tetramethylsilane.png}	
+		\end{minipage}
+		\hspace{0.3cm}
+		\begin{minipage}[b]{0.7\textwidth}
+			{\footnotesize
+		 	\begin{align}
+		   	\delta = \dfrac{\nu_{sample} - \nu_{TMS}}{\nu_{TMS}}\times 10^{6} \text{ppm} \\
+		   	\delta =  (\sigma_{TMS} - \sigma_{sample}) \times 10^{6} \text{ppm}
+		   	\end{align}
+		   }%	
+	    \end{minipage}
+			
+		
+			
+		
+	
+		\item 
+		In general the \textsuperscript{1}H chemical shift is greater for nuclei to atoms/bonds that reduce the electron density at the atom. 
+		\begin{figure}
+		 		\centering
+			 	\includegraphics[width=0.50\textwidth]{proton_chemical_shifts.png}
+			 	\caption{Chemical shifts in various organic molecules Source: \url{http://orgchem.colorado.edu/Spectroscopy/nmrtheory/protonchemshift.html}}
+	 	\end{figure}
+
+	\end{itemize}
+	...
+\end{frame}
+
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	Consider the \textsuperscript{1}H-spectrum of methyl acetate.
+	\begin{minipage}{0.4\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=1.0\textwidth]{methyl_acetate.png}
+			\caption{\textsuperscript{1}H spectrum of methyl acetate. Source: \url{http://chemwiki.ucdavies.edu/Organic_Chemistry}}
+		\end{figure}
+    \end{minipage}
+    \hspace{0.1cm}
+  	\begin{minipage}{0.55\textwidth}
+  			\begin{itemize}[<+>]
+  				\item the TMS appears at 0 ppm
+  				\item chemical shift increases from right to left
+  				\item two resonances correpond to protons of the two methyl groups
+  				\item the presence of electronegative oxygen atom in methoxy group produces weaker shielding ($\sigma$) thus makes bigger chemical shift $\delta$  
+  				\item three nuclei of methyl groups resonate at the same frequency. Peak heights are the same.
+  			\end{itemize}  		  		
+  		
+   	\end{minipage}
+   	
+\end{frame}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	For other nuclei, paramagnetic shifts which arise from mixing of excited state with the ground state dues to the effect of the applicaed field, $B_0$ on the Hamiltonian can be important, and the range of chemical shifts is usully larger than for \textsuperscript{1}H nuclei.
+  \begin{figure}
+  	\includegraphics[width=1.0\textwidth]{carbon_chemical_shifts.png}
+  	\caption{\textsuperscript{13}C chemical shifts, \url{https://www.chem.wisc.edu/areas/reich/nmr/}}
+  \end{figure}	
+	
+\end{frame}
+
+\subsection{J-couplings.}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	Nuclear spins interact with one another. In solution, one prominent spin-spin interaction is called \alert{J-coupling}.
+	
+	This intra-molecular scalar coupling is caused by the combination of two effects: the Pauli principle means that the electons in the bond have opposite spin-state(spin-up and spin-down), while hyperfine couplings (specifically Fermi contact interaction) meanse that it is energetically favourable for each nuclear spin to be anti-parallel to the electron spin. 
+	
+  \begin{figure}
+  	\includegraphics[scale =0.5]{J-coupling.png}
+  	\caption{Origin of J-couplings. Low energy configuration in which nuclear spins are antiparallel}
+  \end{figure}	
+
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{itemize}[<+>]
+		\item 
+			Hamiltonian of J-coupling in solution (all anisotropy is averaged):
+			\begin{equation}
+			\begin{array}{lcl}
+			\hat{H}  &=& J \bm{\hat{I}_{1}} \cdot  \bm{\hat{I}_{2}} = J ( \hat{I}_{1x} \hat{I}_{2x} + \hat{I}_{1y} \hat{I}_{2y} + \hat{I}_{1z} \hat{I}_{2z}   ) =	\\
+			&=&  J  \hat{I}_{1z} \hat{I}_{2z} +\dfrac{J}{2} (\hat{I}_{1+} \hat{I}_{2-} + \hat{I}_{1-} \hat{I}_{2+} )  	  
+			\end{array}
+			\end{equation}
+			J is usually measured in units of frequency, i.e. Hz. 
+			
+		\item
+		In frequency units the full spin Hamiltonian for a system of two nuclei A and B of the same kind would be:
+		\begin{equation}
+		\hat{H} = -\nu_0(1 - \sigma_A) - \nu_0(1- \sigma_B) + J  \hat{I}_{1z} \hat{I}_{2z} +\dfrac{J}{2} (\hat{I}_{1+} \hat{I}_{2-} + \hat{I}_{1-} \hat{I}_{2+} ) 
+		\end{equation}
+		
+		Let's consider nuclei of the same type (i.e. both \textsuperscript{1}H or both \textsuperscript{13}C ). When $\gamma_N \hbar \mid \omega_1 -\omega_2 \mid \ll J $,
+	\end{itemize}
+		
+	
+\end{frame}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	
+	
+\end{frame}
+
 
 
 %%%%% END OF RESONANT ABSORPTION

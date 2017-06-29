@@ -11,3 +11,4 @@
 \beamer@subsectionintoc {1}{9}{Populations dynamics in two-level system.}{21}{0}{1}
 \beamer@sectionintoc {2}{Chemical shifts and J-couplings.}{26}{0}{2}
 \beamer@subsectionintoc {2}{1}{Chemical shifts.}{26}{0}{2}
+\beamer@subsectionintoc {2}{2}{J-couplings.}{31}{0}{2}
