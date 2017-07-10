@@ -1,12 +1,16 @@
-\documentclass[handout]{beamer}
+\documentclass{beamer}
 \usepackage[latin1]{inputenc}
 \usepackage{bm, array, graphicx, hyperref, amsmath, setspace, geometry, wrapfig}
 \usepackage{hanging}
+%\usepackage{datetime}
 \usetheme{Warsaw}
 \title{Introduction to Nuclear Magnetic Resonance Spectroscopy}
 \author{Dr Alexey Potapov}
 \institute{University of Nottingham, School of Physics and Astronomy}
-\date{Jule 13, 2017}
+%\date{Jule 13, 2017}
+%\newdate{date}{06}{09}{2012}
+%\date{\displaydate{date}}
+\date{\today}
 
 \setbeamertemplate{headline}{}
 \setbeamertemplate{footline}{}
@@ -457,7 +461,7 @@
 	\begin{itemize}[]
 		\item 
 		For a two level system described before, the matrix element $\langle \alpha \vert \hat{I_x} \vert \beta \rangle = \frac{1}{2}$. The transition probability then becomes:
-		\begin{equation}
+		\begin{equation}\label{eq:two level transition probability}
 		P_{\alpha \beta} = \frac{\pi}{2\hbar} (\gamma H_1)^2 \delta(E_{\alpha \beta}-\hbar \omega),
 		\end{equation}
 		\begin{minipage}{1.0\textwidth}
@@ -731,22 +735,272 @@
 		\item
 		In frequency units the full spin Hamiltonian for a system of two nuclei A and B of the same kind would be:
 		\begin{equation}
-		\hat{H} = -\nu_0(1 - \sigma_A) - \nu_0(1- \sigma_B) + J  \hat{I}_{1z} \hat{I}_{2z} +\dfrac{J}{2} (\hat{I}_{1+} \hat{I}_{2-} + \hat{I}_{1-} \hat{I}_{2+} ) 
+		\hat{H} = -\nu_0(1 - \sigma_A) \hat{I}_{Az} - \nu_0(1- \sigma_B) \hat{I}_{Bz} + J  \hat{I}_{Az} \hat{I}_{Bz} +\dfrac{J}{2} (\hat{I}_{A+} \hat{I}_{B-} + \hat{I}_{A-} \hat{I}_{B+} ) 
 		\end{equation}
 		
-		Let's consider nuclei of the same type (i.e. both \textsuperscript{1}H or both \textsuperscript{13}C ). When $\gamma_N \hbar \mid \omega_1 -\omega_2 \mid \ll J $,
 	\end{itemize}
 		
 	
 \end{frame}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{itemize}[<+>]
+		\item 
+		For two coupled spins $\dfrac{1}{2}$ the Hamiltonian matrix in the basis of functions $\vert 1 \rangle =  \vert \alpha_1 \alpha_2 \rangle, \vert 2 \rangle =  \vert \alpha_1 \beta_2 \rangle, \vert 3 \rangle =  \vert \beta_1 \alpha_2 \rangle, \vert 4 \rangle =  \vert \beta_1 \beta_2 \rangle$
+		The energy levels of such a system are:
+		
+		{\tiny
+		\begin{equation}
+		  H_{ik}= \langle i \vert \hat{H} \vert k \rangle = 
+		   \begin{bmatrix}
+                 -\dfrac{\nu_A+ \nu_{B}  }{2} + \dfrac{J}{4}   & 0 & 0 & 0 \\
+                 0 & -\dfrac{\nu_A-\nu_B}{2} - \dfrac{J}{4}  & \dfrac{J}{2} & 0 \\
+                 0 & \dfrac{J}{2} & \dfrac{\nu_A-\nu_B}{2} - \dfrac{J}{4}  & 0 \\
+                 0 & 0 & 0 & -\dfrac{\nu_A+\nu_B}{2} + \dfrac{J}{4}                  
+		   \end{bmatrix}
+		\end{equation}
+	    }%
+	    when $\mid \nu_A -\nu_B \mid \gg J $ the off-diagonal terms due to $\hat{I}_{A\pm} \hat{I}_{B\mp}$ can be neglected. That is a called \alert{AX system}. When off-diagonal terms cannot be neglected, we deal with a so called \alert{AB system}.
+	
+		\item 
+		
+		Let's consider nuclei of the same type (i.e. both \textsuperscript{1}H or both \textsuperscript{13}C ). When $\gamma_N \hbar \mid \omega_1 -\omega_2 \mid \ll J $,
+		
+	\end{itemize}
 	
 	
+\end{frame}
+
+\subsection{J-couplings in AX system.}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+      Eq.\ref{eq:probability} is non-zero when corresponding matrix element is not zero. The selection rules for two nuclei then  : $\langle i \vert \hat{I}_{1x} + \hat{I}_{2x} \vert k \rangle \neq 0 $. 
+		
+		\begin{figure}[ht]
+				\centering
+				\includegraphics[width=0.8\textwidth]{AXsystem.png}
+				\caption{Level diagram for two J-coupled spins in AX system}
+				\label{fig1}
+
+		\end{figure}
+	
+	
+	...
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+  In a more general case, when $I_A, I_B \neq \dfrac{1}{2}$, the energy levels follow the following equation:
+  	\begin{equation}
+  	E =  -\nu_A m_1 - \nu_0(1- \sigma_B) m_2 + J  m_1 m_2 
+  	\end{equation}
+  	The allowed transitions for spin $A$ have the following frequencies:
+  	\begin{equation}
+  	   \nu = \nu_A + m_B J,
+   	\end{equation}
+   	where $m_B = -I_B, -(I_B-1) ... (I_B-1), I_B $ is the projection of nuclear spin $B$. The resonance line is therefore being split into several components. 
+   	Similarly, for spin $B$:
+   	\begin{equation}
+  	   \nu = \nu_B + m_A J,
+   	\end{equation}
+  
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+For one coupled nucleus:
+\begin{equation}
+\nu = \nu_A + m_B J,
+\end{equation}
+For two coupled nuclei:
+\begin{equation}
+\nu = \nu_A + m_B J + m_C J  ,
+\end{equation}
+For three:
+\begin{equation}
+\nu = \nu_A + m_B J + m_C J + m_D J  ,
+\end{equation}
+
+
+\begin{figure}
+		\centering
+		\includegraphics[scale = 0.2]{nmracetaldehyde.png}
+		\caption{Spectrum of acetaldehyde. Source: \url{https://chem242.wikispaces.com}}
+		\label{fig1}
+\end{figure}	
+	
+	
+\end{frame} 	
+  
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{block}{Problem}
+	  Draw schematically  \textsuperscript{1}H spectrum of ethyl alcohol? Treat as AX system.
+
+	\end{block}
+	\begin{itemize}[<+>]
+		\item[] 
+		    \includegraphics[scale=0.2]{ethyl_alcohol.jpg} \\
+		    $\delta_{CH3}=1.22$ ppm, $\delta_{CH2}=3.68$ ppm, $\delta_{OH}=2.61$ ppm, consider only $J_{CH2-CH3}=7.29$ Hz. 
+		 \item[] 
+		 \begin{figure}
+		     \includegraphics[scale=0.2]{ethyl_alcohol_nmr.png}  
+		     \caption{Ethanol spectrum at 90 MHz in CDCl \textsubscript{3}}
+		 \end{figure}
+
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{figure}
+		\includegraphics[scale=0.5]{j-couplings.png}
+		\caption{Typical J-couplings \url{	https://chem.libretexts.org/Textbook_Maps/Organic_Chemistry_Textbook_Maps/}}
+	\end{figure}
+
+
+
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+  Heteronuclear systems are automatically AX systems, i.e. $\mid \nu_A - \nu_B \mid \gg J$. \\
+  Example: trifluromethane (fluoroform) \\
+  \includegraphics[scale = 0.5]{CF3H.png}
+  
+\end{frame}
+
+\subsection{J-coupling in equivalent system.}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+
+Are protons in CH3 or CH2 groups coupled to one another? \\
+\textbf{Yes.} But they are equivalent and therefore not observed.
+
+\begin{itemize}[<+>]
+	\item 
+	
+	\begin{equation}
+	\hat{H} = - \nu_0 (\hat{I}_{1z} + \hat{I}_{2z}+ \hat{I}_{3z}) + J (\bm{I}_1 \bm{I}_2 + \bm{I}_2 \bm{I}_3  + \bm{I}_1 \bm{I}_3 )
+	\end{equation}
+	
+	\item
+	Let's rewrite the last term as:
+	\begin{equation}
+	\bm{I}_1 \bm{I}_2 + \bm{I}_2 \bm{I}_3  + \bm{I}_1 \bm{I}_3 = \dfrac{1}{2} (\bm{I}_1 + \bm{I}_2 + \bm{I}_3 )^2 - \dfrac{1}{2} ( \bm{I}_1^2 + \bm{I}_2^2 + \bm{I}_3^2)
+	\end{equation}
+	
+	\item	
+	We can introduce new operator: $\bm{F} =\bm{I}_1 + \bm{I}_2 + \bm{I}_3$. Given that $I_1=I_2=I_3=\dfrac{1}{2}$ the Hamiltonian can be rewritten using this new operator:
+	\begin{equation}
+	\hat{H} = - \nu_0 \hat{F}_{z} + J (\bm{F}^2 - \dfrac{9}{4} )    
+	\end{equation}
+	
+	\item	
+	Eigenfunctions of this Hamiltonian are functions $\vert F M_F \rangle$, where $F=\dfrac{1}{2}$ or $\dfrac{3}{2}$.
+\end{itemize}
+
+\end{frame}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+
+\begin{itemize}[<+>]
+	\item
+	
+	\begin{equation}\label{eq:equivalennce}
+	\hat{H} = - \nu_0 \hat{F}_{z} + J (\bm{F}^2 - \dfrac{9}{4} )    
+	\end{equation}
+	
+	Selection rules for transitions: $\langle i \vert  \hat{F}_x \vert k \rangle \neq 0$, since $\hat{F}_x = \dfrac{\hat{F}_{+} + \hat{F}_{-}}{2}$, the selection rules then are: $\langle i \vert  \hat{F}_{\pm} \vert k \rangle \neq 0$
+	Since $\hat{F}_{\pm} = const \vert F M_F\pm1 \rangle$, the allowed transition does not change the second term in Eq.\ref{eq:equivalennce}.
+	
+	\item
+	Strictly speaking if a molecule contains only nuclei of one type, and no other $J$-splitting will not be observed. Examples: tetramethylsilane (TMS), benzene
+    \includegraphics[scale = 0.5]{tetramethylsilane.png}
+    \includegraphics[scale = 0.15]{Benzene-2D-flat.png}
+\end{itemize}
+\end{frame}
+
+\subsection{J-coupling in AB system.}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	What happens if $\nu_A - \nu_B \gg J$ is no longer true?
+	
+	\begin{itemize}[<+>]
+		\item 
+		The matrix of spin Hamiltonian is:
+		
+			
+			{\tiny
+				\begin{equation}				
+				\begin{bmatrix}
+				-\dfrac{\nu_A+ \nu_{B}  }{2} + \dfrac{J}{4}   & 0 & 0 & 0 \\
+				0 & -\dfrac{\nu_A-\nu_B}{2} - \dfrac{J}{4}  & \dfrac{J}{2} & 0 \\
+				0 & \dfrac{J}{2} & \dfrac{\nu_A-\nu_B}{2} - \dfrac{J}{4}  & 0 \\
+				0 & 0 & 0 & -\dfrac{\nu_A+\nu_B}{2} + \dfrac{J}{4}                  
+				\end{bmatrix}
+				\end{equation}
+			}%
+		\item The general way of solving is finding the eigenvalues and eigenvalues and eigenfunctions of this Hamiltonian.
+		\item
+		the solution can be represented by following replacements:
+		\begin{equation}
+		\begin{array}{l}
+		\dfrac{\nu_A - \nu_B}{2} = \dfrac{\delta}{2} = C \cos 2\theta \\
+		\dfrac{J}{2} = C \sin 2\theta \\
+		C = \dfrac{1}{2}\sqrt{\delta^2 + J^2}, \tan 2\theta = \dfrac{J}{\delta}, \bar{\nu} = \dfrac{\nu_A + \nu_B}{2}
+		\end{array}
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	  In this notation the eigenvalues and eigenfunctions are:
+	  {\small
+	  	\begin{equation}
+	  	\begin{array}{ll}
+	  	E_1 = -\bar{\nu}+\dfrac{J}{4} & \phi_1 = \vert \alpha_A \alpha_B \rangle \\
+	  	E_2 = -\dfrac{J}{4} - C & \phi_2 =  \sin \theta \vert \alpha_A \beta_B \rangle - \cos \theta \vert \beta_1 \alpha_2 \rangle \\
+	  	E_3 = -\dfrac{J}{4} + C & \phi_2 =  \cos \theta \vert \alpha_A \beta_B \rangle + \sin \theta \vert \beta_1 \alpha_2 \rangle \\
+	  	E_4 = \bar{\nu} + \dfrac{J}{4}& \phi_4 = \vert \beta_A \beta_B \rangle 
+	  	\end{array}
+	  	\end{equation}
+	  }%
+	    \begin{minipage}[t]{0.65\textwidth}
+	    	\begin{figure}
+	    		\includegraphics[scale=0.2]{ABsystem.png}
+	    		\caption{Level diagram for AB system of J-coupled nuclei.}
+	    	\end{figure}
+	    \end{minipage}
+	    \hspace{0.1cm}
+	    \begin{minipage}[t]{0.3\textwidth}
+	    	\begin{block}{Problem}
+               Calculate the transition probability between levels 1 and 2?(Hint: use Eq.\ref{eq:probability} )
+	    	\end{block}	    	
+	    \end{minipage}	   	  
+
+\end{frame}
+\begin{frame}
+  \begin{block}{Problem}
+     Calculate the transition probability between levels 1 and 2?(Hint: use Eq.\ref{eq:probability} )
+  \end{block}	    	
+  For transition $1 \leftrightarrow 2$ we have:
+  \begin{equation}
+  \begin{split}
+      I_{1 \leftrightarrow 2} &\sim \mid \langle 1 \vert \hat{I}_{Ax} + \hat{I}_{Bx} \vert 2 \rangle  \mid^2 = \\
+      &= \langle 1 \vert \dfrac{\hat{I}_{A+} + \hat{I}_{A-}}{2}  + \dfrac{\hat{I}_{B+} + \hat{I}_{B-}}{2}   \vert 2 \rangle ^2 =\\
+      &= \Big( \langle \alpha_A  \alpha_B  \vert \dfrac{\hat{I}_{A+} + \hat{I}_{A-}}{2}  + \dfrac{\hat{I}_{B+} + \hat{I}_{B-}}{2}   \vert  \sin \theta \vert \alpha_A \beta_B  \rangle + \cos \theta \vert  \beta_A \alpha_B  \rangle  \Big) ^2 =\\
+      &= \Big( \dfrac{\cos \theta + \sin \theta}{2}    \Big)^2 = \dfrac{1 + \sin 2\theta}{4}
+  \end{split}
+  \end{equation}
+\end{frame}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	For all the transitions we obtain:
+	\begin{center}
+		\begin{tabular}{ccc}
+           Transition & Frequency & Intensity: \\ \hline
+           $4 \leftrightarrow 2$  & $\bar{\nu}+C+\dfrac{J}{2} $ & $ \dfrac{1-\sin 2 \theta}{2}$ \\
+           $3 \leftrightarrow 1$  & $\bar{\nu}+C-\dfrac{J}{2} $ & $ \dfrac{1+\sin 2 \theta}{2}$ \\
+           $4 \leftrightarrow 3$  & $\bar{\nu}-C+\dfrac{J}{2} $ & $ \dfrac{1+\sin 2 \theta}{2}$ \\
+           $2 \leftrightarrow 1$  & $\bar{\nu}-C-\dfrac{J}{2} $ & $ \dfrac{1-\sin 2 \theta}{2}$ \\			         
+		\end{tabular}
+	\end{center}
 \end{frame}
 
 
 
 %%%%% END OF RESONANT ABSORPTION
+
 
 
 %\begin{frame}
