@@ -13,5 +13,7 @@
 \beamer@subsectionintoc {2}{1}{Chemical shifts.}{45}{0}{2}
 \beamer@subsectionintoc {2}{2}{J-couplings.}{59}{0}{2}
 \beamer@subsectionintoc {2}{3}{J-couplings in AX system.}{64}{0}{2}
-\beamer@subsectionintoc {2}{4}{J-coupling in equivalent system.}{71}{0}{2}
-\beamer@subsectionintoc {2}{5}{J-coupling in AB system.}{77}{0}{2}
+\beamer@subsectionintoc {2}{4}{Interpreting simple NMR spectra}{66}{0}{2}
+\beamer@subsectionintoc {2}{5}{Range of J-couplings. Are they useful for structure determination?}{69}{0}{2}
+\beamer@subsectionintoc {2}{6}{J-coupling in equivalent system.}{71}{0}{2}
+\beamer@subsectionintoc {2}{7}{J-coupling in AB system.}{77}{0}{2}

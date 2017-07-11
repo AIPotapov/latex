@@ -803,6 +803,7 @@
   
 \end{frame}
 
+\subsection{Interpreting simple NMR spectra}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 For one coupled nucleus:
 \begin{equation}
@@ -846,13 +847,18 @@ For three:
 	\end{itemize}
 \end{frame}
 
+\subsection{Range of J-couplings. Are they useful for structure determination?}
+
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	\begin{figure}
 		\includegraphics[scale=0.5]{j-couplings.png}
 		\caption{Typical J-couplings \url{	https://chem.libretexts.org/Textbook_Maps/Organic_Chemistry_Textbook_Maps/}}
 	\end{figure}
 
-
+   Is there any simple meaning to J-couplings? Karplus equation is an empiric formula for $J$ coupling as a function of a dihedral angle $\phi$. 
+   \begin{equation}
+      J = A \cos \phi + B \cos 2\phi + C
+   \end{equation}
 
 \end{frame}
 
@@ -970,7 +976,7 @@ Are protons in CH3 or CH2 groups coupled to one another? \\
 	    \end{minipage}	   	  
 
 \end{frame}
-\begin{frame}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
   \begin{block}{Problem}
      Calculate the transition probability between levels 1 and 2?(Hint: use Eq.\ref{eq:probability} )
   \end{block}	    	
@@ -984,17 +990,70 @@ Are protons in CH3 or CH2 groups coupled to one another? \\
   \end{split}
   \end{equation}
 \end{frame}
+
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+For all the transitions we obtain:
+{\tiny
+	\begin{center}
+		\begin{tabular}{ccc}
+			Transition & Frequency & Intensity: \\ \hline
+			$4 \leftrightarrow 2$  & $\bar{\nu}+C+\dfrac{J}{2} $ & $ \dfrac{1-\sin 2 \theta}{4}$ \\
+			$3 \leftrightarrow 1$  & $\bar{\nu}+C-\dfrac{J}{2} $ & $ \dfrac{1+\sin 2 \theta}{4}$ \\
+			$4 \leftrightarrow 3$  & $\bar{\nu}-C+\dfrac{J}{2} $ & $ \dfrac{1+\sin 2 \theta}{4}$ \\
+			$2 \leftrightarrow 1$  & $\bar{\nu}-C-\dfrac{J}{2} $ & $ \dfrac{1-\sin 2 \theta}{4}$ \\			         
+		\end{tabular}
+	\end{center}
+}%
+
+\begin{figure}\label{fig:dibromethiophene}
+	\centering
+	\includegraphics[scale=0.25]{bromothiophene.png}
+	\caption{100 MHz \textsuperscript{1}H NMR spectrum of 2,3-dibromothiophene, $\mid \nu_A-\nu_B  \mid = 30.5$ Hz, $J= 5.7$ Hz}
+\end{figure}
+
+\end{frame}
+
+
+
+
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	For all the transitions we obtain:
+	{\tiny
 	\begin{center}
 		\begin{tabular}{ccc}
            Transition & Frequency & Intensity: \\ \hline
-           $4 \leftrightarrow 2$  & $\bar{\nu}+C+\dfrac{J}{2} $ & $ \dfrac{1-\sin 2 \theta}{2}$ \\
-           $3 \leftrightarrow 1$  & $\bar{\nu}+C-\dfrac{J}{2} $ & $ \dfrac{1+\sin 2 \theta}{2}$ \\
-           $4 \leftrightarrow 3$  & $\bar{\nu}-C+\dfrac{J}{2} $ & $ \dfrac{1+\sin 2 \theta}{2}$ \\
-           $2 \leftrightarrow 1$  & $\bar{\nu}-C-\dfrac{J}{2} $ & $ \dfrac{1-\sin 2 \theta}{2}$ \\			         
+           $4 \leftrightarrow 2$  & $\bar{\nu}+C+\dfrac{J}{2} $ & $ \dfrac{1-\sin 2 \theta}{4}$ \\
+           $3 \leftrightarrow 1$  & $\bar{\nu}+C-\dfrac{J}{2} $ & $ \dfrac{1+\sin 2 \theta}{4}$ \\
+           $4 \leftrightarrow 3$  & $\bar{\nu}-C+\dfrac{J}{2} $ & $ \dfrac{1+\sin 2 \theta}{4}$ \\
+           $2 \leftrightarrow 1$  & $\bar{\nu}-C-\dfrac{J}{2} $ & $ \dfrac{1-\sin 2 \theta}{4}$ \\			         
 		\end{tabular}
 	\end{center}
+    }%
+    {\tiny
+    Consider following scenarios:\\
+    1.  $J \ll \delta$ means that $\sin 2\theta \ll 1$ and $C \approx \dfrac{\delta}{2}$. The leads to AX system shown Fig.\ref{fig:AXABcouplings}B  \\
+    2. $\delta \ll J$ means that $\sin 2\theta \approx 1$. A strong double and two weak sattelite lines in Fig.\ref{fig:AXABcouplings}C. 
+    }%
+	\begin{figure}\label{fig:AXABcouplings}
+		\centering
+		\includegraphics[scale=0.25]{ABspectra.png}
+		\caption{Schematic spectra in  several cases (A) $\mid \nu_A - \nu_B \mid \sim J$ ,(B) weakly coupled nuclei $\mid \nu_A - \nu_B \mid \gg J$ , (C) very weak J-coupling $\mid \nu_A - \nu_B \mid \ll J$ }
+	\end{figure}
+	
+	
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{ABspectra2.png}
+		\caption{Spectra of spin $\dfrac{1}{2}$ pairs for $J = 10$ Hz as a function of Larmor frequency difference.}
+	\end{figure}	
+\end{frame}
+
+\begin{frame}
+	content...
 \end{frame}
 
 
