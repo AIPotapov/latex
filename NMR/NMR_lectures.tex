@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[handout]{beamer}
 \usepackage[latin1]{inputenc}
 \usepackage{bm, array, graphicx, hyperref, amsmath, setspace, geometry, wrapfig}
 \usepackage{hanging}
@@ -435,8 +435,11 @@
 %%%%%RESONANT ABSORBTION SECTION
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
+
 	\begin{itemize}[<+>]
-		\item 
+
+		\item[]
+		{\small
 		Let's apply oscillating magnetic field to our system. A spin system Hamiltonian becomes time-dependent and for an oscillation along the $x$-axis we obtain:
 		\begin{equation} \label{eq:oscillating_field}
 		\begin{array}{lcl}
@@ -446,15 +449,19 @@
 		\end{array}
 		\end{equation}
 		where $H_1$ and $\omega$ are the amplitude and the frequency of the oscillating magnetic field.
-		\item
+	}%
+		\item[]
+				{\small
 		According to perturbation theory the transition probability between the initial state $\vert a \rangle$ and the final state $\vert b \rangle$ with a time dependent Hamiltonian $ \hat{V} (t) = 2 \hat{F} \cos (\omega t ) $ is (Fermi's golden rule):
 		\begin{equation} \label{eq:probability}
 		P_{ab} = \frac{2 \pi}{\hbar} \vert \langle a \vert \hat{F} \vert \rangle b \vert ^2 \delta(E_{ab}-\hbar \omega),
 		\end{equation}
-		where $E_{ab} = E_a - E_b$ is an energy difference between the energies of levels $a$ and $b$. 
-		
-		
+		where $E_{ab} = E_a - E_b$ is an energy difference between the energies of levels $a$ and $b$. \\		
+		\textbf{Note!} The matrix element $\vert \langle a \vert \hat{F} \vert \rangle b \vert$ represents the selection rules for various levels, if it equals to zero, the transition in 
+		forbidden, otherwise - allowed.		    
+	}%
 	\end{itemize}
+
 \end{frame}	
 \subsection{Populations dynamics in two-level system.}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
@@ -612,7 +619,7 @@
 									\sigma = --\dfrac{\mu_0}{4 \pi m_e}\dfrac{m}{r^3} = \dfrac{3 \mu_0 e^2}{8 \pi} \dfrac{r^2}{(r+d)^3}
 									\end{align}
 					\item
-									Given benzene molecule radius $r=1.4 \AA$, CH-bond length $d = 1.1 \AA$ we obtain:
+									Given benzene molecule radius $r=1.4$ \AA, CH-bond length $d = 1.1$ \AA we obtain:
 									\begin{equation}
 									\sigma \approx -5.3 \cdot 10^{-6}, \sigma_{iso} \approx -1.8 \cdot 10^{-6}
 									\end{equation}
@@ -746,7 +753,7 @@
 	\begin{itemize}[<+>]
 		\item 
 		For two coupled spins $\dfrac{1}{2}$ the Hamiltonian matrix in the basis of functions $\vert 1 \rangle =  \vert \alpha_1 \alpha_2 \rangle, \vert 2 \rangle =  \vert \alpha_1 \beta_2 \rangle, \vert 3 \rangle =  \vert \beta_1 \alpha_2 \rangle, \vert 4 \rangle =  \vert \beta_1 \beta_2 \rangle$
-		The energy levels of such a system are:
+		The Hamiltonian matrix of such a system are:
 		
 		{\tiny
 		\begin{equation}
@@ -831,19 +838,18 @@ For three:
   
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	\begin{block}{Problem}
-	  Draw schematically  \textsuperscript{1}H spectrum of ethyl alcohol? Treat as AX system.
+	  Draw schematically  \textsuperscript{1}H spectrum of ethyl alcohol?  Proton Larmor frequency is 90 MHz (i.e. treat as AX system).
 
 	\end{block}
 	\begin{itemize}[<+>]
 		\item[] 
 		    \includegraphics[scale=0.2]{ethyl_alcohol.jpg} \\
-		    $\delta_{CH3}=1.22$ ppm, $\delta_{CH2}=3.68$ ppm, $\delta_{OH}=2.61$ ppm, consider only $J_{CH2-CH3}=7.29$ Hz. 
+		    $\delta_{CH3}=1.22$ ppm, $\delta_{CH2}=3.68$ ppm, $\delta_{OH}=2.61$ ppm, consider only $J_{CH2-CH3}=7.29$ Hz.
 		 \item[] 
 		 \begin{figure}
 		     \includegraphics[scale=0.2]{ethyl_alcohol_nmr.png}  
 		     \caption{Ethanol spectrum at 90 MHz in CDCl \textsubscript{3}}
 		 \end{figure}
-
 	\end{itemize}
 \end{frame}
 
@@ -851,22 +857,52 @@ For three:
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	\begin{figure}
-		\includegraphics[scale=0.5]{j-couplings.png}
+		\includegraphics[scale=0.4]{j-couplings.png}
 		\caption{Typical J-couplings \url{	https://chem.libretexts.org/Textbook_Maps/Organic_Chemistry_Textbook_Maps/}}
 	\end{figure}
+   {\small
+   Is there any simple meaning to J-couplings? \alert{Karplus equation} is an empiric formula for $J$ coupling as a function of a dihedral angle $\phi$. 
+   }%
+	
+   \begin{minipage}[t]{0.4\textwidth}
+   	   \begin{equation}
+   	   J = A \cos \phi + B \cos 2\phi + C
+   	   \end{equation}   	      	
+   \end{minipage}
+   \hspace{0.1cm}
+   \begin{minipage}[t]{0.5\textwidth}
+   	\begin{figure}
+   		\centering
+   		\includegraphics[scale = 0.12]{C2H2Cl4.png}
+   		\caption{Dihedral angle in 1,1,2,2-tetrachlorethane}
+   		\label{fig1}
+   	\end{figure}   	
+   \end{minipage}
+      
 
-   Is there any simple meaning to J-couplings? Karplus equation is an empiric formula for $J$ coupling as a function of a dihedral angle $\phi$. 
-   \begin{equation}
-      J = A \cos \phi + B \cos 2\phi + C
-   \end{equation}
+
+   
 
 \end{frame}
+
+\subsection{Heteronuclear J-couplings.}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
   Heteronuclear systems are automatically AX systems, i.e. $\mid \nu_A - \nu_B \mid \gg J$. \\
   Example: trifluromethane (fluoroform) \\
   \includegraphics[scale = 0.5]{CF3H.png}
   
+\end{frame}
+
+\begin{frame}{Summary of lecture 3.}
+	\begin{itemize}
+		\item J-couplings and chemical shift to an extent are unique in different molecules, and NMR spectra help in identifying chemical compounds by their spectra.
+		\item Chemical shifts originate from magnetic field shielding by electrons.
+		\item CS report on the chemical environment of a nucleus
+		\item J-couplings cause spectral splittings. \\
+		\textbf{Suggested reading: } Harris 1.8, 1.9, 1.11, 1.12, 1.13, 8.2, 8.9., 8.23 \\
+		For more detailed quantum mechanical theory of chemical shifts: Slichter 4.1-4.5, for detailed theory of J-couplings: Slichter 4.9 
+	\end{itemize}
 \end{frame}
 
 \subsection{J-coupling in equivalent system.}
@@ -1052,8 +1088,12 @@ For all the transitions we obtain:
 	\end{figure}	
 \end{frame}
 
-\begin{frame}
-	content...
+\begin{frame}{Summary of Lecture 4.}
+	\begin{itemize}
+		\item Splittings in equivalent systems are not observed.
+		\item The case of strong J-couplings can be treated exactly.\\
+	\end{itemize}
+    \textbf{Suggested reading: } Harris 1.14, 2.17, 2.10 \\
 \end{frame}
 
 

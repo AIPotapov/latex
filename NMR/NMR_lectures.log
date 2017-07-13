@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.10)  11 JUL 2017 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.10)  13 JUL 2017 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -771,6 +771,9 @@ LaTeX Warning: Label `fig1' multiply defined.
 
 LaTeX Warning: Label `fig1' multiply defined.
 
+
+LaTeX Warning: Label `fig1' multiply defined.
+
 )
 \openout1 = `NMR_lectures.aux'.
 
@@ -945,7 +948,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-<wine_spectrum.jpg, id=156, 722.7pt x 542.025pt>
+<wine_spectrum.jpg, id=116, 722.7pt x 542.025pt>
 File: wine_spectrum.jpg Graphic file (type jpg)
  <use wine_spectrum.jpg>
 Package pdftex.def Info: wine_spectrum.jpg used on input line 79.
@@ -960,7 +963,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 79.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<prion.jpg, id=159, 1284.8pt x 1055.945pt>
+<prion.jpg, id=119, 1284.8pt x 1055.945pt>
 File: prion.jpg Graphic file (type jpg)
  <use prion.jpg>
 Package pdftex.def Info: prion.jpg used on input line 79.
@@ -978,19 +981,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--79
 [3
 
  <./wine_spectrum.jpg> <./prion.jpg>]
-<well_logging1.jpg, id=196, 147.46986pt x 415.0642pt>
+<well_logging1.jpg, id=133, 147.46986pt x 415.0642pt>
 File: well_logging1.jpg Graphic file (type jpg)
  <use well_logging1.jpg>
 Package pdftex.def Info: well_logging1.jpg used on input line 112.
 (pdftex.def)             Requested size: 46.0916pt x 129.72623pt.
 
-<well_logging2.png, id=197, 198.7425pt x 326.21875pt>
+<well_logging2.png, id=134, 198.7425pt x 326.21875pt>
 File: well_logging2.png Graphic file (type png)
  <use well_logging2.png>
 Package pdftex.def Info: well_logging2.png used on input line 112.
 (pdftex.def)             Requested size: 46.0916pt x 75.65591pt.
 
-<well_logging3.png, id=199, 361.35pt x 864.22874pt>
+<well_logging3.png, id=136, 361.35pt x 864.22874pt>
 File: well_logging3.png Graphic file (type png)
  <use well_logging3.png>
 Package pdftex.def Info: well_logging3.png used on input line 112.
@@ -999,7 +1002,7 @@ Package pdftex.def Info: well_logging3.png used on input line 112.
 [4
 
  <./well_logging1.jpg> <./well_logging2.png> <./well_logging3.png>]
-<mri.jpeg, id=229, 1499.6025pt x 1220.56pt>
+<mri.jpeg, id=147, 1499.6025pt x 1220.56pt>
 File: mri.jpeg Graphic file (type jpg)
  <use mri.jpeg>
 Package pdftex.def Info: mri.jpeg used on input line 124.
@@ -1019,27 +1022,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 
 ] [7
 
-] [8
-
-] [9
-
-] [10
-
-] [11
-
-] <precession.png, id=430, 170.0754pt x 205.2468pt>
-File: precession.png Graphic file (type png)
-
-<use precession.png>
-Package pdftex.def Info: precession.png used on input line 217.
-(pdftex.def)             Requested size: 86.03946pt x 103.83514pt.
-
-Overfull \vbox (0.33116pt too high) detected at line 217
- []
-
-[12
-
- <./precession.png>]
+] <precession.png, id=177, 170.0754pt x 205.2468pt>
 File: precession.png Graphic file (type png)
  <use precession.png>
 Package pdftex.def Info: precession.png used on input line 217.
@@ -1048,94 +1031,42 @@ Package pdftex.def Info: precession.png used on input line 217.
 Overfull \vbox (0.33116pt too high) detected at line 217
  []
 
-[13
+[8
 
-] [14
+ <./precession.png>] [9
+
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+]
+Overfull \hbox (7.16524pt too wide) in paragraph at lines 333--333
+ []|\OT1/cmss/m/n/10.95 Nucleus| 
+ []
+
+
+Overfull \hbox (6.00941pt too wide) in paragraph at lines 333--333
+ []|\OT1/cmss/m/n/10.95 Nuclear 
+ []
+
+
+Overfull \hbox (30.68494pt too wide) in paragraph at lines 333--333
+ [] 
+ []
+
+
+Overfull \vbox (1.57938pt too high) detected at line 333
+ []
+
+[14
 
 ] [15
 
-] [16
-
-] [17
-
-] [18
-
-] [19
-
-] [20
-
-] [21
-
-] [22
-
-] [23
-
-]
-Overfull \hbox (7.16524pt too wide) in paragraph at lines 333--333
- []|\OT1/cmss/m/n/10.95 Nucleus| 
- []
-
-
-Overfull \hbox (6.00941pt too wide) in paragraph at lines 333--333
- []|\OT1/cmss/m/n/10.95 Nuclear 
- []
-
-
-Overfull \hbox (30.68494pt too wide) in paragraph at lines 333--333
- [] 
- []
-
-
-Overfull \vbox (1.57938pt too high) detected at line 333
- []
-
-[24
-
-]
-Overfull \hbox (7.16524pt too wide) in paragraph at lines 333--333
- []|\OT1/cmss/m/n/10.95 Nucleus| 
- []
-
-
-Overfull \hbox (6.00941pt too wide) in paragraph at lines 333--333
- []|\OT1/cmss/m/n/10.95 Nuclear 
- []
-
-
-Overfull \hbox (30.68494pt too wide) in paragraph at lines 333--333
- [] 
- []
-
-
-Overfull \vbox (1.57938pt too high) detected at line 333
- []
-
-[25
-
-]
-Overfull \hbox (7.16524pt too wide) in paragraph at lines 333--333
- []|\OT1/cmss/m/n/10.95 Nucleus| 
- []
-
-
-Overfull \hbox (6.00941pt too wide) in paragraph at lines 333--333
- []|\OT1/cmss/m/n/10.95 Nuclear 
- []
-
-
-Overfull \hbox (30.68494pt too wide) in paragraph at lines 333--333
- [] 
- []
-
-
-Overfull \vbox (1.57938pt too high) detected at line 333
- []
-
-[26
-
-] [27
-
-] <two-level_system.png, id=866, 446.6286pt x 298.2342pt>
+] <two-level_system.png, id=242, 446.6286pt x 298.2342pt>
 File: two-level_system.png Graphic file (type png)
 
 <use two-level_system.png>
@@ -1145,744 +1076,377 @@ Package pdftex.def Info: two-level_system.png used on input line 365.
 Overfull \vbox (4.47081pt too high) detected at line 365
  []
 
-[28
+[16
 
  <./two-level_system.png>]
-File: two-level_system.png Graphic file (type png)
- <use two-level_system.png>
-Package pdftex.def Info: two-level_system.png used on input line 365.
-(pdftex.def)             Requested size: 153.64493pt x 102.59511pt.
+Underfull \hbox (badness 10000) in paragraph at lines 394--394
+[][]\OT1/cmss/m/n/9 More can be found in Bruker Al-manac at
+ []
 
-Overfull \vbox (4.47081pt too high) detected at line 365
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--394
+\OT1/cmss/m/n/9 https://lsa.umich.edu/content/dam/chem-assets/chem-
+ []
+
+
+Overfull \hbox (7.16524pt too wide) in paragraph at lines 394--394
+ []|\OT1/cmss/m/n/10.95 Nucleus| 
+ []
+
+
+Overfull \hbox (6.00941pt too wide) in paragraph at lines 394--394
+ []|\OT1/cmss/m/n/10.95 Nuclear 
+ []
+
+
+Overfull \hbox (16.45856pt too wide) in paragraph at lines 394--394
+ [] 
+ []
+
+[17
+
+] [18
+
+]
+Overfull \vbox (6.85196pt too high) detected at line 433
+ []
+
+[19
+
+] [20
+
+] <two-level_excite.png, id=283, 445.1832pt x 298.2342pt>
+File: two-level_excite.png Graphic file (type png)
+
+<use two-level_excite.png>
+Package pdftex.def Info: two-level_excite.png used on input line 484.
+(pdftex.def)             Requested size: 153.64493pt x 102.9273pt.
+
+Overfull \hbox (21.90005pt too wide) in paragraph at lines 484--484
+$[]$  
+ []
+
+[21
+
+ <./two-level_excite.png>]
+<two_level_population.png, id=292, 306.9066pt x 232.7094pt>
+File: two_level_population.png Graphic file (type png)
+
+<use two_level_population.png>
+Package pdftex.def Info: two_level_population.png used on input line 500.
+(pdftex.def)             Requested size: 92.1879pt x 69.90211pt.
+
+Overfull \hbox (21.90005pt too wide) in paragraph at lines 500--500
+[]$ 
+ []
+
+[22
+
+ <./two_level_population.png>] [23
+
+]
+Overfull \vbox (6.78758pt too high) detected at line 541
+ []
+
+[24
+
+] [25
+
+] <diamagnetic_term.png, id=319, 245.718pt x 246.6816pt>
+File: diamagnetic_term.png Graphic file (type png)
+
+<use diamagnetic_term.png>
+Package pdftex.def Info: diamagnetic_term.png used on input line 586.
+(pdftex.def)             Requested size: 110.62401pt x 111.05838pt.
+
+Overfull \vbox (4.11382pt too high) detected at line 586
+ []
+
+[26
+
+ <./diamagnetic_term.png>] <benzene1.png, id=329, 516.4896pt x 159.9576pt>
+File: benzene1.png Graphic file (type png)
+
+<use benzene1.png>
+Package pdftex.def Info: benzene1.png used on input line 649.
+(pdftex.def)             Requested size: 92.1879pt x 28.54948pt.
+ <benzene2.png, id=330, 468.7914pt x 384.9582pt>
+File: benzene2.png Graphic file (type png)
+
+<use benzene2.png>
+Package pdftex.def Info: benzene2.png used on input line 649.
+(pdftex.def)             Requested size: 92.1879pt x 75.698pt.
+
+Underfull \hbox (badness 1622) in paragraph at lines 649--649
+[]\OT1/cmss/m/n/8 Fig.5: (top) Schematic
+ []
+
+
+Underfull \hbox (badness 4595) in paragraph at lines 649--649
+\OT1/cmss/m/n/8 rep-sre-sen-ta-tion of elec-
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 649--649
+\OT1/cmss/m/n/8 tron or-bitals in a ben-
+ []
+
+
+Underfull \hbox (badness 4595) in paragraph at lines 649--649
+\OT1/cmss/m/n/8 lo-cal fields in a ben-
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 649--649
+\OT1/cmss/m/n/8 zene molecule pro-duced
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 649--649
+\OT1/cmss/m/n/8 by elec-tron cur-rents in-
+ []
+
+[27
+
+ <./benzene1.png> <./benzene2.png>]
+<tetramethylsilane.png, id=341, 99.31142pt x 76.3517pt>
+File: tetramethylsilane.png Graphic file (type png)
+
+<use tetramethylsilane.png>
+Package pdftex.def Info: tetramethylsilane.png used on input line 683.
+(pdftex.def)             Requested size: 49.65558pt x 38.17575pt.
+
+Overfull \hbox (3.56398pt too wide) in paragraph at lines 683--683
+ [][] 
+ []
+
+<proton_chemical_shifts.png, id=342, 418.13358pt x 264.99pt>
+File: proton_chemical_shifts.png Graphic file (type png)
+
+<use proton_chemical_shifts.png>
+Package pdftex.def Info: proton_chemical_shifts.png used on input line 683.
+(pdftex.def)             Requested size: 153.64493pt x 97.3695pt.
+
+Overfull \vbox (23.82095pt too high) detected at line 683
+ []
+
+[28
+
+ <./tetramethylsilane.png> <./proton_chemical_shifts.png>]
+<methyl_acetate.png, id=357, 410.53375pt x 238.8925pt>
+File: methyl_acetate.png Graphic file (type png)
+
+<use methyl_acetate.png>
+Package pdftex.def Info: methyl_acetate.png used on input line 707.
+(pdftex.def)             Requested size: 122.91406pt x 71.52249pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--707
+[]\OT1/cmss/m/n/8 Fig.7: $[]$H spec-trum of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--707
+\OT1/cmss/m/n/8 methyl ac-etate. Source:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--707
+[]$\OT1/cmtt/m/n/8 http : / / chemwiki . ucdavies .
  []
 
 [29
 
-]
-File: two-level_system.png Graphic file (type png)
- <use two-level_system.png>
-Package pdftex.def Info: two-level_system.png used on input line 365.
-(pdftex.def)             Requested size: 153.64493pt x 102.59511pt.
+ <./methyl_acetate.png>]
+<carbon_chemical_shifts.png, id=368, 688.5725pt x 211.79124pt>
+File: carbon_chemical_shifts.png Graphic file (type png)
 
-Overfull \vbox (4.47081pt too high) detected at line 365
- []
+<use carbon_chemical_shifts.png>
+Package pdftex.def Info: carbon_chemical_shifts.png used on input line 715.
+(pdftex.def)             Requested size: 307.28987pt x 94.51665pt.
+ [30
 
-[30
+ <./carbon_chemical_shifts.png>]
+<J-coupling.png, id=377, 436.9926pt x 185.0112pt>
+File: J-coupling.png Graphic file (type png)
+ <use J-coupling.png>
+Package pdftex.def Info: J-coupling.png used on input line 728.
+(pdftex.def)             Requested size: 218.49576pt x 92.50537pt.
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 394--394
-[][]\OT1/cmss/m/n/9 More can be found in Bruker Al-manac at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 394--394
-\OT1/cmss/m/n/9 https://lsa.umich.edu/content/dam/chem-assets/chem-
- []
-
-
-Overfull \hbox (7.16524pt too wide) in paragraph at lines 394--394
- []|\OT1/cmss/m/n/10.95 Nucleus| 
- []
-
-
-Overfull \hbox (6.00941pt too wide) in paragraph at lines 394--394
- []|\OT1/cmss/m/n/10.95 Nuclear 
- []
-
-
-Overfull \hbox (16.45856pt too wide) in paragraph at lines 394--394
- [] 
+Overfull \vbox (4.98111pt too high) detected at line 728
  []
 
 [31
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 394--394
-[][]\OT1/cmss/m/n/9 More can be found in Bruker Al-manac at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 394--394
-\OT1/cmss/m/n/9 https://lsa.umich.edu/content/dam/chem-assets/chem-
- []
-
-
-Overfull \hbox (7.16524pt too wide) in paragraph at lines 394--394
- []|\OT1/cmss/m/n/10.95 Nucleus| 
- []
-
-
-Overfull \hbox (6.00941pt too wide) in paragraph at lines 394--394
- []|\OT1/cmss/m/n/10.95 Nuclear 
- []
-
-
-Overfull \hbox (16.45856pt too wide) in paragraph at lines 394--394
- [] 
+ <./J-coupling.png>]
+Overfull \hbox (13.27818pt too wide) detected at line 751
+[] \OT1/cmss/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@\OML/cmm/m/it/10.95 ^^W[]\OT1/c
+mss/m/n/10.95 (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^[[]\OT1/cmss/m/n
+/10.95 )[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^W[]\OT1/cmss/m/n/10.95
+ (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^[[]\OT1/cmss/m/n/10.95 )[] + 
+\OT1/cmss/m/it/10.95 J[][] \OT1/cmss/m/n/10.95 + []([][] + [][])
  []
 
 [32
 
 ] [33
 
-]
-Overfull \vbox (6.85196pt too high) detected at line 433
- []
-
-[34
-
-] [35
-
-] [36
-
-] <two-level_excite.png, id=1115, 445.1832pt x 298.2342pt>
-File: two-level_excite.png Graphic file (type png)
-
-<use two-level_excite.png>
-Package pdftex.def Info: two-level_excite.png used on input line 477.
-(pdftex.def)             Requested size: 153.64493pt x 102.9273pt.
-
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 477--477
-$[]$  
- []
-
-[37
-
- <./two-level_excite.png>]
-<two_level_population.png, id=1146, 306.9066pt x 232.7094pt>
-File: two_level_population.png Graphic file (type png)
-
-<use two_level_population.png>
-Package pdftex.def Info: two_level_population.png used on input line 493.
-(pdftex.def)             Requested size: 92.1879pt x 69.90211pt.
-
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 493--493
-[]$ 
- []
-
-[38
-
- <./two_level_population.png>]
-File: two_level_population.png Graphic file (type png)
- <use two_level_population.png>
-Package pdftex.def Info: two_level_population.png used on input line 493.
-(pdftex.def)             Requested size: 92.1879pt x 69.90211pt.
-
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 493--493
-[]$ 
- []
-
-[39
-
-] [40
-
-] [41
-
-]
-Overfull \vbox (6.78758pt too high) detected at line 534
- []
-
-[42
-
-]
-Overfull \vbox (6.78758pt too high) detected at line 534
- []
-
-[43
-
-] [44
-
-] <diamagnetic_term.png, id=1329, 245.718pt x 246.6816pt>
-File: diamagnetic_term.png Graphic file (type png)
-
-<use diamagnetic_term.png>
-Package pdftex.def Info: diamagnetic_term.png used on input line 579.
-(pdftex.def)             Requested size: 110.62401pt x 111.05838pt.
-
-Overfull \vbox (4.11382pt too high) detected at line 579
- []
-
-[45
-
- <./diamagnetic_term.png>]
-File: diamagnetic_term.png Graphic file (type png)
- <use diamagnetic_term.png>
-Package pdftex.def Info: diamagnetic_term.png used on input line 579.
-(pdftex.def)             Requested size: 110.62401pt x 111.05838pt.
-
-Overfull \vbox (4.11382pt too high) detected at line 579
- []
-
-[46
-
-] <benzene1.png, id=1388, 516.4896pt x 159.9576pt>
-File: benzene1.png Graphic file (type png)
- <use benzene1.png>
-Package pdftex.def Info: benzene1.png used on input line 642.
-(pdftex.def)             Requested size: 92.1879pt x 28.54948pt.
-
-<benzene2.png, id=1389, 468.7914pt x 384.9582pt>
-File: benzene2.png Graphic file (type png)
- <use benzene2.png>
-Package pdftex.def Info: benzene2.png used on input line 642.
-(pdftex.def)             Requested size: 92.1879pt x 75.698pt.
-
-Underfull \hbox (badness 1622) in paragraph at lines 642--642
-[]\OT1/cmss/m/n/8 Fig.5: (top) Schematic
- []
-
-
-Underfull \hbox (badness 4595) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 rep-sre-sen-ta-tion of elec-
- []
-
-
-Underfull \hbox (badness 1616) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 tron or-bitals in a ben-
- []
-
-
-Underfull \hbox (badness 4595) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 lo-cal fields in a ben-
- []
-
-
-Underfull \hbox (badness 2111) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 zene molecule pro-duced
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 by elec-tron cur-rents in-
- []
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 642.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 642.
-
-[47
-
- <./benzene1.png> <./benzene2.png>]
-File: benzene1.png Graphic file (type png)
- <use benzene1.png>
-Package pdftex.def Info: benzene1.png used on input line 642.
-(pdftex.def)             Requested size: 92.1879pt x 28.54948pt.
-File: benzene2.png Graphic file (type png)
- <use benzene2.png>
-Package pdftex.def Info: benzene2.png used on input line 642.
-(pdftex.def)             Requested size: 92.1879pt x 75.698pt.
-
-Underfull \hbox (badness 1622) in paragraph at lines 642--642
-[]\OT1/cmss/m/n/8 Fig.5: (top) Schematic
- []
-
-
-Underfull \hbox (badness 4595) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 rep-sre-sen-ta-tion of elec-
- []
-
-
-Underfull \hbox (badness 1616) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 tron or-bitals in a ben-
- []
-
-
-Underfull \hbox (badness 4595) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 lo-cal fields in a ben-
- []
-
-
-Underfull \hbox (badness 2111) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 zene molecule pro-duced
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 by elec-tron cur-rents in-
- []
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 642.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 642.
-
-[48
-
-]
-File: benzene1.png Graphic file (type png)
- <use benzene1.png>
-Package pdftex.def Info: benzene1.png used on input line 642.
-(pdftex.def)             Requested size: 92.1879pt x 28.54948pt.
-File: benzene2.png Graphic file (type png)
- <use benzene2.png>
-Package pdftex.def Info: benzene2.png used on input line 642.
-(pdftex.def)             Requested size: 92.1879pt x 75.698pt.
-
-Underfull \hbox (badness 1622) in paragraph at lines 642--642
-[]\OT1/cmss/m/n/8 Fig.5: (top) Schematic
- []
-
-
-Underfull \hbox (badness 4595) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 rep-sre-sen-ta-tion of elec-
- []
-
-
-Underfull \hbox (badness 1616) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 tron or-bitals in a ben-
- []
-
-
-Underfull \hbox (badness 4595) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 lo-cal fields in a ben-
- []
-
-
-Underfull \hbox (badness 2111) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 zene molecule pro-duced
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 by elec-tron cur-rents in-
- []
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 642.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 642.
-
-[49
-
-]
-File: benzene1.png Graphic file (type png)
- <use benzene1.png>
-Package pdftex.def Info: benzene1.png used on input line 642.
-(pdftex.def)             Requested size: 92.1879pt x 28.54948pt.
-File: benzene2.png Graphic file (type png)
- <use benzene2.png>
-Package pdftex.def Info: benzene2.png used on input line 642.
-(pdftex.def)             Requested size: 92.1879pt x 75.698pt.
-
-Underfull \hbox (badness 1622) in paragraph at lines 642--642
-[]\OT1/cmss/m/n/8 Fig.5: (top) Schematic
- []
-
-
-Underfull \hbox (badness 4595) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 rep-sre-sen-ta-tion of elec-
- []
-
-
-Underfull \hbox (badness 1616) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 tron or-bitals in a ben-
- []
-
-
-Underfull \hbox (badness 4595) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 lo-cal fields in a ben-
- []
-
-
-Underfull \hbox (badness 2111) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 zene molecule pro-duced
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 642--642
-\OT1/cmss/m/n/8 by elec-tron cur-rents in-
- []
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 642.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 642.
-
-[50
-
-] <tetramethylsilane.png, id=1500, 99.31142pt x 76.3517pt>
-File: tetramethylsilane.png Graphic file (type png)
-
-<use tetramethylsilane.png>
-Package pdftex.def Info: tetramethylsilane.png used on input line 676.
-(pdftex.def)             Requested size: 49.65558pt x 38.17575pt.
-
-Overfull \hbox (3.56398pt too wide) in paragraph at lines 676--676
- [][] 
- []
-
-<proton_chemical_shifts.png, id=1501, 418.13358pt x 264.99pt>
-File: proton_chemical_shifts.png Graphic file (type png)
-
-<use proton_chemical_shifts.png>
-Package pdftex.def Info: proton_chemical_shifts.png used on input line 676.
-(pdftex.def)             Requested size: 153.64493pt x 97.3695pt.
-
-Overfull \vbox (23.82095pt too high) detected at line 676
- []
-
-[51
-
- <./tetramethylsilane.png> <./proton_chemical_shifts.png>]
-File: tetramethylsilane.png Graphic file (type png)
-
-<use tetramethylsilane.png>
-Package pdftex.def Info: tetramethylsilane.png used on input line 676.
-(pdftex.def)             Requested size: 49.65558pt x 38.17575pt.
-
-Overfull \hbox (3.56398pt too wide) in paragraph at lines 676--676
- [][] 
- []
-
-File: proton_chemical_shifts.png Graphic file (type png)
-<use proton_chemical_shifts.png>
-Package pdftex.def Info: proton_chemical_shifts.png used on input line 676.
-(pdftex.def)             Requested size: 153.64493pt x 97.3695pt.
-
-Overfull \vbox (23.82095pt too high) detected at line 676
- []
-
-[52
-
-] <methyl_acetate.png, id=1565, 410.53375pt x 238.8925pt>
-File: methyl_acetate.png Graphic file (type png)
-
-<use methyl_acetate.png>
-Package pdftex.def Info: methyl_acetate.png used on input line 700.
-(pdftex.def)             Requested size: 122.91406pt x 71.52249pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-[]\OT1/cmss/m/n/8 Fig.7: $[]$H spec-trum of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-\OT1/cmss/m/n/8 methyl ac-etate. Source:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-[]$\OT1/cmtt/m/n/8 http : / / chemwiki . ucdavies .
- []
-
-[53
-
- <./methyl_acetate.png>]
-File: methyl_acetate.png Graphic file (type png)
- <use methyl_acetate.png>
-Package pdftex.def Info: methyl_acetate.png used on input line 700.
-(pdftex.def)             Requested size: 122.91406pt x 71.52249pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-[]\OT1/cmss/m/n/8 Fig.7: $[]$H spec-trum of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-\OT1/cmss/m/n/8 methyl ac-etate. Source:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-[]$\OT1/cmtt/m/n/8 http : / / chemwiki . ucdavies .
- []
-
-[54
-
-]
-File: methyl_acetate.png Graphic file (type png)
- <use methyl_acetate.png>
-Package pdftex.def Info: methyl_acetate.png used on input line 700.
-(pdftex.def)             Requested size: 122.91406pt x 71.52249pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-[]\OT1/cmss/m/n/8 Fig.7: $[]$H spec-trum of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-\OT1/cmss/m/n/8 methyl ac-etate. Source:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-[]$\OT1/cmtt/m/n/8 http : / / chemwiki . ucdavies .
- []
-
-[55
-
-]
-File: methyl_acetate.png Graphic file (type png)
- <use methyl_acetate.png>
-Package pdftex.def Info: methyl_acetate.png used on input line 700.
-(pdftex.def)             Requested size: 122.91406pt x 71.52249pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-[]\OT1/cmss/m/n/8 Fig.7: $[]$H spec-trum of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-\OT1/cmss/m/n/8 methyl ac-etate. Source:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-[]$\OT1/cmtt/m/n/8 http : / / chemwiki . ucdavies .
- []
-
-[56
-
-]
-File: methyl_acetate.png Graphic file (type png)
- <use methyl_acetate.png>
-Package pdftex.def Info: methyl_acetate.png used on input line 700.
-(pdftex.def)             Requested size: 122.91406pt x 71.52249pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-[]\OT1/cmss/m/n/8 Fig.7: $[]$H spec-trum of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-\OT1/cmss/m/n/8 methyl ac-etate. Source:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
-[]$\OT1/cmtt/m/n/8 http : / / chemwiki . ucdavies .
- []
-
-[57
-
-] <carbon_chemical_shifts.png, id=1714, 688.5725pt x 211.79124pt>
-File: carbon_chemical_shifts.png Graphic file (type png)
-
-<use carbon_chemical_shifts.png>
-Package pdftex.def Info: carbon_chemical_shifts.png used on input line 708.
-(pdftex.def)             Requested size: 307.28987pt x 94.51665pt.
- [58
-
- <./carbon_chemical_shifts.png>]
-<J-coupling.png, id=1742, 436.9926pt x 185.0112pt>
-File: J-coupling.png Graphic file (type png)
- <use J-coupling.png>
-Package pdftex.def Info: J-coupling.png used on input line 721.
-(pdftex.def)             Requested size: 218.49576pt x 92.50537pt.
-
-Overfull \vbox (4.98111pt too high) detected at line 721
- []
-
-[59
-
- <./J-coupling.png>]
-Overfull \hbox (13.27818pt too wide) detected at line 744
-[] \OT1/cmss/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@\OML/cmm/m/it/10.95 ^^W[]\OT1/c
-mss/m/n/10.95 (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^[[]\OT1/cmss/m/n
-/10.95 )[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^W[]\OT1/cmss/m/n/10.95
- (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^[[]\OT1/cmss/m/n/10.95 )[] + 
-\OT1/cmss/m/it/10.95 J[][] \OT1/cmss/m/n/10.95 + []([][] + [][])
- []
-
-[60
-
-]
-Overfull \hbox (13.27818pt too wide) detected at line 744
-[] \OT1/cmss/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@\OML/cmm/m/it/10.95 ^^W[]\OT1/c
-mss/m/n/10.95 (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^[[]\OT1/cmss/m/n
-/10.95 )[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^W[]\OT1/cmss/m/n/10.95
- (1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^[[]\OT1/cmss/m/n/10.95 )[] + 
-\OT1/cmss/m/it/10.95 J[][] \OT1/cmss/m/n/10.95 + []([][] + [][])
- []
-
-[61
-
-] [62
-
-] [63
-
-] <AXsystem.png, id=1877, 840.741pt x 628.749pt>
+] <AXsystem.png, id=399, 840.741pt x 628.749pt>
 File: AXsystem.png Graphic file (type png)
-
-<use AXsystem.png>
-Package pdftex.def Info: AXsystem.png used on input line 787.
+ <use AXsystem.png>
+Package pdftex.def Info: AXsystem.png used on input line 794.
 (pdftex.def)             Requested size: 245.83282pt x 183.83878pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig1}) has be
 en already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.787 \end{frame}
+l.794 \end{frame}
                  
-Overfull \vbox (23.52281pt too high) detected at line 787
+Overfull \vbox (23.52281pt too high) detected at line 794
  []
 
-[64
+[34
 
- <./AXsystem.png>] [65
+ <./AXsystem.png>] [35
 
 ]
-<nmracetaldehyde.png, id=1932, 970.3452pt x 443.7378pt>
+<nmracetaldehyde.png, id=413, 970.3452pt x 443.7378pt>
 File: nmracetaldehyde.png Graphic file (type png)
 
 <use nmracetaldehyde.png>
-Package pdftex.def Info: nmracetaldehyde.png used on input line 830.
+Package pdftex.def Info: nmracetaldehyde.png used on input line 837.
 (pdftex.def)             Requested size: 194.0656pt x 88.74599pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig1}) has be
 en already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.830 \end{frame}
-                  [66
+l.837 \end{frame}
+                  [36
 
  <./nmracetaldehyde.png>]
-<ethyl_alcohol.jpg, id=1963, 200.75pt x 200.75pt>
+<ethyl_alcohol.jpg, id=422, 200.75pt x 200.75pt>
 File: ethyl_alcohol.jpg Graphic file (type jpg)
  <use ethyl_alcohol.jpg>
-Package pdftex.def Info: ethyl_alcohol.jpg used on input line 848.
+Package pdftex.def Info: ethyl_alcohol.jpg used on input line 854.
 (pdftex.def)             Requested size: 40.14928pt x 40.14928pt.
 
-<ethyl_alcohol_nmr.png, id=1964, 622.325pt x 456.70625pt>
+<ethyl_alcohol_nmr.png, id=423, 622.325pt x 456.70625pt>
 File: ethyl_alcohol_nmr.png Graphic file (type png)
 
 <use ethyl_alcohol_nmr.png>
-Package pdftex.def Info: ethyl_alcohol_nmr.png used on input line 848.
+Package pdftex.def Info: ethyl_alcohol_nmr.png used on input line 854.
 (pdftex.def)             Requested size: 124.46278pt x 91.33963pt.
 
-Overfull \vbox (7.53972pt too high) detected at line 848
+Overfull \vbox (8.14804pt too high) detected at line 854
  []
 
-[67
+[37
 
  <./ethyl_alcohol.jpg> <./ethyl_alcohol_nmr.png>]
-File: ethyl_alcohol.jpg Graphic file (type jpg)
- <use ethyl_alcohol.jpg>
-Package pdftex.def Info: ethyl_alcohol.jpg used on input line 848.
-(pdftex.def)             Requested size: 40.14928pt x 40.14928pt.
-File: ethyl_alcohol_nmr.png Graphic file (type png)
-
-<use ethyl_alcohol_nmr.png>
-Package pdftex.def Info: ethyl_alcohol_nmr.png used on input line 848.
-(pdftex.def)             Requested size: 124.46278pt x 91.33963pt.
-
-Overfull \vbox (7.53972pt too high) detected at line 848
- []
-
-[68
-
-] <j-couplings.png, id=2018, 385.44pt x 166.6225pt>
+<j-couplings.png, id=432, 385.44pt x 166.6225pt>
 File: j-couplings.png Graphic file (type png)
  <use j-couplings.png>
-Package pdftex.def Info: j-couplings.png used on input line 863.
-(pdftex.def)             Requested size: 192.71953pt x 83.31104pt.
+Package pdftex.def Info: j-couplings.png used on input line 886.
+(pdftex.def)             Requested size: 154.17326pt x 66.64781pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 863--863
+Underfull \hbox (badness 10000) in paragraph at lines 886--886
 []\OT1/cmss/m/n/8 Fig.13: Typ-i-cal J-couplings []$\OT1/cmtt/m/n/8 https : / / 
 chem . libretexts . org / Textbook _ Maps /
  []
 
-[69
+<C2H2Cl4.png, id=435, 820.9872pt x 399.4122pt>
+File: C2H2Cl4.png Graphic file (type png)
+ <use C2H2Cl4.png>
+Package pdftex.def Info: C2H2Cl4.png used on input line 886.
+(pdftex.def)             Requested size: 98.5142pt x 47.92738pt.
 
- <./j-couplings.png>] <CF3H.png, id=2051, 466.8642pt x 383.031pt>
-File: CF3H.png Graphic file (type png)
-
-<use CF3H.png>
-Package pdftex.def Info: CF3H.png used on input line 870.
-(pdftex.def)             Requested size: 233.43152pt x 191.51503pt.
-
-Overfull \vbox (8.0435pt too high) detected at line 870
+Underfull \hbox (badness 10000) in paragraph at lines 886--886
+[]\OT1/cmss/m/n/8 Fig.14: Di-he-dral an-gle in 1,1,2,2-
  []
 
-[70
+pdfTeX warning (ext4): destination with the same identifier (name{fig1}) has be
+en already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.886 \end{frame}
+                 
+Overfull \vbox (6.36618pt too high) detected at line 886
+ []
 
- <./CF3H.png>] [71
+[38
 
-] [72
+ <./j-couplings.png> <./C2H2Cl4.png>]
+<CF3H.png, id=446, 466.8642pt x 383.031pt>
+File: CF3H.png Graphic file (type png)
+ <use CF3H.png>
+Package pdftex.def Info: CF3H.png used on input line 895.
+(pdftex.def)             Requested size: 233.43152pt x 191.51503pt.
+ [39
 
-] [73
+ <./CF3H.png>]
+[40
 
-] [74
+] [41
 
 ]
 File: tetramethylsilane.png Graphic file (type png)
  <use tetramethylsilane.png>
-Package pdftex.def Info: tetramethylsilane.png used on input line 919.
+Package pdftex.def Info: tetramethylsilane.png used on input line 955.
 (pdftex.def)             Requested size: 49.65558pt x 38.17575pt.
 
-<Benzene-2D-flat.png, id=2188, 275.0275pt x 295.1025pt>
+<Benzene-2D-flat.png, id=466, 275.0275pt x 295.1025pt>
 File: Benzene-2D-flat.png Graphic file (type png)
 
 <use Benzene-2D-flat.png>
-Package pdftex.def Info: Benzene-2D-flat.png used on input line 919.
+Package pdftex.def Info: Benzene-2D-flat.png used on input line 955.
 (pdftex.def)             Requested size: 41.25233pt x 44.26346pt.
- [75
+ [42
 
- <./Benzene-2D-flat.png>]
-File: tetramethylsilane.png Graphic file (type png)
-
-<use tetramethylsilane.png>
-Package pdftex.def Info: tetramethylsilane.png used on input line 919.
-(pdftex.def)             Requested size: 49.65558pt x 38.17575pt.
-File: Benzene-2D-flat.png Graphic file (type png)
- <use Benzene-2D-flat.png>
-Package pdftex.def Info: Benzene-2D-flat.png used on input line 919.
-(pdftex.def)             Requested size: 41.25233pt x 44.26346pt.
- [76
-
-] [77
-
-] [78
-
-] [79
+ <./Benzene-2D-flat.png>] [43
 
 ]
-<ABsystem.png, id=2322, 796.8972pt x 619.5948pt>
+<ABsystem.png, id=483, 796.8972pt x 619.5948pt>
 File: ABsystem.png Graphic file (type png)
  <use ABsystem.png>
-Package pdftex.def Info: ABsystem.png used on input line 978.
+Package pdftex.def Info: ABsystem.png used on input line 1014.
 (pdftex.def)             Requested size: 159.37662pt x 123.91676pt.
 
-Overfull \vbox (11.36858pt too high) detected at line 978
+Overfull \vbox (11.36858pt too high) detected at line 1014
  []
 
-[80
+[44
 
  <./ABsystem.png>]
-Overfull \hbox (27.82126pt too wide) in paragraph at lines 992--992
+Overfull \hbox (27.82126pt too wide) in paragraph at lines 1028--1028
 []  
  []
 
-[81
+[45
 
-] <bromothiophene.png, id=2379, 596.2275pt x 445.665pt>
+] <bromothiophene.png, id=499, 596.2275pt x 445.665pt>
 File: bromothiophene.png Graphic file (type png)
 
 <use bromothiophene.png>
-Package pdftex.def Info: bromothiophene.png used on input line 1015.
+Package pdftex.def Info: bromothiophene.png used on input line 1051.
 (pdftex.def)             Requested size: 149.0565pt x 111.41597pt.
- [82
+ [46
 
  <./bromothiophene.png>]
-<ABspectra.png, id=2410, 1009.8528pt x 276.0714pt>
+<ABspectra.png, id=510, 1009.8528pt x 276.0714pt>
 File: ABspectra.png Graphic file (type png)
  <use ABspectra.png>
-Package pdftex.def Info: ABspectra.png used on input line 1045.
+Package pdftex.def Info: ABspectra.png used on input line 1081.
 (pdftex.def)             Requested size: 252.46259pt x 69.01767pt.
- [83
+ [47
 
- <./ABspectra.png>] <ABspectra2.png, id=2439, 442.2924pt x 470.7186pt>
+ <./ABspectra.png>] <ABspectra2.png, id=519, 442.2924pt x 470.7186pt>
 File: ABspectra2.png Graphic file (type png)
 
 <use ABspectra2.png>
-Package pdftex.def Info: ABspectra2.png used on input line 1053.
+Package pdftex.def Info: ABspectra2.png used on input line 1089.
 (pdftex.def)             Requested size: 176.91382pt x 188.28409pt.
- [84
+ [48
 
- <./ABspectra2.png>] [85
+ <./ABspectra2.png>] [49
 
 ]
 \tf@nav=\write6
@@ -1894,21 +1458,15 @@ Package pdftex.def Info: ABspectra2.png used on input line 1053.
 \tf@snm=\write8
 \openout8 = `NMR_lectures.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1087.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1087.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1127.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1127.
  (./NMR_lectures.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1087.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1087.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1127.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1127.
 
+Package rerunfilecheck Info: File `NMR_lectures.out' has not changed.
+(rerunfilecheck)             Checksum: E10F6D66AFC69C1CD2E50AF49AC67AA7;1505.
 
-
-Package rerunfilecheck Warning: File `NMR_lectures.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `NMR_lectures.out':
-(rerunfilecheck)             Before: F94496ED9398E73A348FE24A0BB734CB;1384
-(rerunfilecheck)             After:  7D26DC8F1FBB12F939C9AC75CF30E862;1429.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1919,14 +1477,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1087.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1127.
  ) 
 Here is how much of TeX's memory you used:
- 17570 strings out of 494953
- 333375 string characters out of 6180976
- 408203 words of memory out of 5000000
- 20178 multiletter control sequences out of 15000+600000
- 23321 words of font info for 84 fonts, out of 8000000 for 9000
+ 17507 strings out of 494953
+ 332657 string characters out of 6180976
+ 403667 words of memory out of 5000000
+ 20185 multiletter control sequences out of 15000+600000
+ 23909 words of font info for 86 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,20n,59p,477b,663s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
@@ -1955,10 +1513,10 @@ fonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sbm7.pfb>
-Output written on NMR_lectures.pdf (85 pages, 2672076 bytes).
+Output written on NMR_lectures.pdf (49 pages, 2870268 bytes).
 PDF statistics:
- 2625 PDF objects out of 2984 (max. 8388607)
- 2408 compressed objects within 25 object streams
- 207 named destinations out of 1000 (max. 500000)
- 386 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 650 PDF objects out of 1000 (max. 8388607)
+ 493 compressed objects within 5 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 393 words of extra memory for PDF output out of 10000 (max. 10000000)
 
