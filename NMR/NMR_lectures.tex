@@ -794,7 +794,7 @@
 	
 \end{frame}
 
-\subsection{J-couplings in AX system.}
+\subsection{J-couplings in AX system.} \label{sec: J-couplings in AX system}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
       Eq.\ref{eq:probability} is non-zero when corresponding matrix element is not zero. The selection rules for two nuclei then  : $\langle i \vert \hat{I}_{1x} + \hat{I}_{2x} \vert k \rangle \neq 0 $. 
 		
@@ -1130,31 +1130,184 @@ For all the transitions we obtain:
 \end{frame}
 
 \section{NMR spectra of solids.}
+\subsection{Dipolar coupling.}
 
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	\begin{itemize}[<+>]
 		\item Nuclear magnetic moments of nuclei interact via dipolar interaction. (It is averaged to zero in liquids). Classical expression for such interaction is:
-		\begin{equation}
-		  E  = \dfrac{\mu_0}{4 \pi} \Big(  \dfrac{ 3 (\bm{m_1}  \bm{r})  (\bm{m_2} \bm{r}) }{r^5} - \dfrac{  \bm{m_1} \bm{m_2}}{r^3}  \Big)
-		\end{equation}
-		\item In quantum mechanics the magnetic moments $\bm{m_1}$,$\bm{m_2}$ are replaced with operators  $g_{1,2} \beta_{1,2} \hat{I}_{1,2} = \gamma_{1,2} \hbar \hat{I}_{1,2}$, giving rise to a spin Hamiltonian:
-		\begin{equation}
-		   \hat{H} = \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar^2  }{r^3} \sum_{i,j=x,y,z} ( 3 \hat{I}_{1i} \hat{I}_{2j} - \bm{\hat{I}_{1} \hat{I}_{2}} )
-		\end{equation}
 		
+		\begin{minipage}[t]{0.45\textwidth}
+			\begin{align*}
+			&E  = -(\bm{m_1} \bm{B_{dip}})=  \\
+			 &=\dfrac{\mu_0}{4 \pi} \Big(  \dfrac{ 3 (\bm{m_1}  \bm{r})  (\bm{m_2} \bm{r}) }{r^5} - \dfrac{  \bm{m_1} \bm{m_2}}{r^3}  \Big),
+			\end{align*}
+			
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}[t]{0.40\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.1]{dipolar_fields.png}
+			\end{figure}
+    	\end{minipage}
+		
+		\item The field induced by another one proton at the location of other proton spaced apart by 1.6 \AA  is $B_{dip} \sim \dfrac{m}{r^3} \approx 0.7$mT or $\dfrac{g_N \beta_N B_{dip}}{2 \pi \hbar} \approx 30$ kHz.
+				
+		
+		\item In quantum mechanics the magnetic moments $\bm{m_1}$,$\bm{m_2}$ are replaced with operators  $g_{1,2} \beta_{1,2} \hat{I}_{1,2} = \gamma_{1,2} \hbar \hat{I}_{1,2}$, giving rise to a spin Hamiltonian of dipolar interaction:
+		\begin{equation}
+		   \hat{H}_{dip} = \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar^2  }{r^3} \sum_{i,j=x,y,z} ( 3 \hat{I}_{1i} \hat{I}_{2j} - \bm{\hat{I}_{1} \hat{I}_{2}} )
+		\end{equation}
+
 	\end{itemize}
+
 \end{frame}
 
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	content...
+	Expanding the spin operator products and using spherical polar coordinates ($r$, $\theta$, $\phi$):
+	\begin{equation}
+	\hat{H}_{dip} = \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3} (A+B+C+D+E+F)  \text{, where} 
+	\end{equation}
+	\begin{equation}
+	\begin{array}{cll}
+	   A &=& -\hat{I}_{1z} \hat{I}_{2z} (3 \cos^2 \theta - 1) \\
+	   B &=& \dfrac{1}{4} ( \hat{I}_{1+} \hat{I}_{2-} + \hat{I}_{1-} \hat{I}_{2+}) (3 \cos^2 \theta - 1) \\
+	   C &=& -\dfrac{3}{2} ( \hat{I}_{1z} \hat{I}_{2+} + \hat{I}_{1+} \hat{I}_{2z}) \sin \theta \cos \theta e^{-i\phi} \\
+   	   D &=& -\dfrac{3}{2} ( \hat{I}_{1z} \hat{I}_{2-} + \hat{I}_{1-} \hat{I}_{2z}) \sin \theta \cos \theta e^{i\phi} \\
+   	   E &=& -\dfrac{3}{4} \hat{I}_{1+} \hat{I}_{2+} \sin^2 \theta e^{-i 2 \phi} \\
+   	   F &=& -\dfrac{3}{4} \hat{I}_{1-} \hat{I}_{2-} \sin^2 \theta e^{i 2 \phi} \\
+	\end{array}
+	\end{equation}
+	Each of these terms is a product of a combination of spin operator products with geometrical factor, that depends on $\theta$ and $\phi$. Only $A$ commutes with the two-spin Zeeman Hamiltonian.
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	content...
+	In liquids the dipolar interaction rapidly fluctuates dues to molecular reorientation
+	\begin{block}{Problem}
+		Show that dipolar interaction terms averaged over many orientations are zero.
+	\end{block}
 \end{frame}
 
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	The spin Hamiltonian of two dipolar coupled nuclei including the nuclear Zeeman interactions has the following form:
+	
+	\begin{equation}
+	  \hat{H} = -\gamma_1 B_0 \hat{I}_{1z} -\gamma_2 B_0 \hat{I}_{1z}  + H_{dip} 
+	\end{equation}
+	If  $\mid \nu_1 -\nu_2 \mid \gg \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3}$ then all non-diagonal terms in the Hamiltonian can be neglected:
+	
+	\begin{align}
+	\hat{H} &= -\gamma_1 B_0 \hat{I}_{1z} -\gamma_2 B_0 \hat{I}_{1z}  + \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3} (3 \cos^2 \theta -1)  \hat{I}_{1z} \hat{I}_{2z} =  \\
+	&= -\nu_1 m_1 - \nu_2 m_2 + \Delta m_1 m_2,
+	\end{align}
+	where $\Delta = \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3} (3 \cos^2 \theta -1)$.
+	The spectrum then would consist of two doublets centered around $\nu_1$ and $\nu_2$ and split by $\Delta$.
+	
+	
+	
+	
+
+%	\begin{align}
+%	    &H_{ik} = \\
+%	    & \dfrac{\mu_0}{4 \pi}\dfrac{\gamma_1 \gamma_2 \hbar}{2 \pi r^3} 
+%	    \begin{bmatrix}
+%          a & c & c & e \\
+%          d & a & b & c \\
+%          d & b & a & c \\
+%          f & d & d & a \\
+%	      \end{bmatrix} +
+%	      \begin{bmatrix}
+%	      -\nu_1 - \nu_2 & 0 & 0 & 0 \\
+%	      0 & -\nu_1 + \nu_2 & 0 & 0 \\
+%	      0 & 0 & \nu_1 - \nu_2 & 0 \\
+%	      0 & 0 & 0 & \nu_1 + \nu_2 \\
+%	      \end{bmatrix},
+%	\end{align}
+    
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+   If  $\mid \nu_1 -\nu_2 \mid \sim \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3}$ then we need to include $A$ and $B$ terms, yeilding a Hamiltonian:
+   \begin{equation}
+     \hat{H} = -\gamma_1 B_0 \hat{I}_{1z} -\gamma_2 B_0 \hat{I}_{1z}  + \Delta ( \hat{I}_{1z} \hat{I}_{1z}  - \dfrac{1}{4} (\hat{I}_{1+} \hat{I}_{2-} + \hat{I}_{1-} \hat{I}_{2+} ) )  
+   \end{equation}
+   If $\nu_1 = \nu_2 $ this Hamiltonian can be diagonalized in the siglet and triplet functions with their respective energies:
+   \begin{equation}
+	   \begin{array}{clcl}	      
+     	   \vert s \rangle &= \dfrac{\vert \alpha \beta \rangle - \vert  \beta \alpha \rangle}{\sqrt{2}} &  E_s &= 0 \\
+	      \vert t_1 \rangle &=  \vert \alpha \alpha \rangle & E_{t1} &= -\gamma B_0 - \dfrac{\Delta}{4}\\
+	      \vert t_0 \rangle &=  \dfrac{\vert \alpha \beta \rangle + \vert  \beta \alpha \rangle}{\sqrt{2}} & E_{t0} &= \dfrac{\Delta}{2} \\
+	      \vert t_{-1} \rangle &= \vert \beta \beta \rangle	& E_{t1} &= \gamma B_0 + \dfrac{\Delta}{4}\\      
+	   \end{array}   
+   \end{equation}
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+    \begin{block}{Problem}
+    	Which transitions are allowed? (Hint: use Eq.\ref{eq:probability})
+    \end{block}    
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{block}{Problem}
+		Which transitions are allowed? (Hint: use Eq.\ref{eq:probability})
+	\end{block}
+	Singlet and triplet functions belong have a total spin of 0 and 1 respectively.  
+	Introduce an operator of total spin $\bm{\hat{F}} = \bm{\hat{I}_{1}} + \bm{\hat{I}_2}$.  Its eigenfunctions $\vert F M_F \rangle$ coincide with singlet (F = 0) and triplet (F=1) functions. 
+	$F_{+} \vert F M_F \rangle = \sqrt{F(F+1)-M_F(M_F+1)} \vert F M_F+1 \rangle$ operator can only change functions within one manifold, i.e a transition between singlet and triplet is forbidden.
+	The only allowed transitions are in triplet manifold, changing $\delta M_F = \pm 1$. These are $\vert t_0 \rangle \leftrightarrow \vert t_1 \rangle$ and  $\vert t_0 \rangle \leftrightarrow \vert t_{-1} \rangle$.
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	The transition frequencies are:
+	\begin{equation}
+	   \begin{array}{lcl}
+	   \nu_{0,1} &=& \gamma B_0 - \dfrac{3}{4}\Delta \\
+	   \nu_{0,-1} &=& \gamma B_0 + \dfrac{3}{4}\Delta \\	   
+	   \end{array}
+	\end{equation}
+    The two limiting cases were treated analytically and correponding schematic spectra are shown in Fig.\ref{fig:NMRdoublets}.
+    \begin{figure} \label{fig:NMRdoublets}
+    	\centering
+    	\includegraphics[scale=0.3]{NMRdoublets.png}
+    	\caption{Schematic representation of single orientation spectra for (A) $\mid \nu_1 - \nu_2 \mid  \gg \Delta$ and (B) $\nu_1 = \nu_2$.  }
+    \end{figure}
+\end{frame}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{minipage}[c]{0.3\textwidth}
+		\begin{figure} \label{fig:powder_pattern}
+			\centering
+			\includegraphics[scale=0.3]{powder_pattern.png}
+			\caption{Powder patter dues to a pair of dipolar coupled spins (a) Dotted and continuous lines correspond to different transition. Angles shows related to continous line. (b) Sum of contributions. $d = \dfrac{3 \Delta}{2}$}
+		\end{figure}
+	\end{minipage}
+	\hspace{0.1cm}
+	\begin{minipage}[c]{0.65\textwidth}
+       In most solids  multiple spins interact via dipolar couplings, but in crystals of CaSO\textsubscript{4}$\cdot$2H\textsubscript{2}O the water molecules are rather isolated from one another approximating an isolated pair. Studying the spectra as a function of crystal orientation help obtain orientational information. \\
+       In polycrystalline samples (powders) all values of $\theta$ will be simultaneously present and the spectrum is formed from a weighted superposition of the lines generated by the two transitions for all $\theta$-values. The weighting related to the number of spin-pairs whose inter-nuclear vector takes a particular values of $\theta$. This varies as $\sin \theta$ so that a "powder pattern" in the spectrum takes the form shown in Fig.\ref{fig:powder_pattern}
+.       
+	\end{minipage}
+	
+
+\end{frame}
+
+	
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+		The characteristic spectra shape is called \alert{"powder pattern"}. The two sharp features are called \alert{Pake doublet}.
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.3]{powder_pattern2.png}
+				\caption{Schematic representation of polycrystalline spectra for (A) $\mid \nu_1 - \nu_2 \mid  \gg \Delta_0$,  and (B) $\nu_1 = \nu_2$, where $\Delta_0= \dfrac{\mu_0}{8 \pi^2} \dfrac{ \gamma_1 \gamma_2 \hbar}{ r^3}$ }
+		\end{figure}
+\end{frame}
+
+\subsection{Chemical shift anisotropy.}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	content...
+\end{frame}
 %%%%% END OF RESONANT ABSORPTION
 
 

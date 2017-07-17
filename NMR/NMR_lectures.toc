@@ -19,3 +19,5 @@
 \beamer@subsectionintoc {2}{7}{J-coupling in equivalent system.}{43}{0}{2}
 \beamer@subsectionintoc {2}{8}{J-coupling in AB system.}{47}{0}{2}
 \beamer@sectionintoc {3}{NMR spectra of solids.}{54}{0}{3}
+\beamer@subsectionintoc {3}{1}{Dipolar coupling.}{55}{0}{3}
+\beamer@subsectionintoc {3}{2}{Chemical shift anisotropy.}{65}{0}{3}
