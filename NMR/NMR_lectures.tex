@@ -29,6 +29,22 @@
 	\makebox[2em][1]{\insertfootnotemark}\footnotesize\insertfootnotetext\par%
 }
 
+%%%%%%%%define the begin section slide
+\AtBeginSection[]{
+	\begin{frame}
+		\vfill
+		\centering
+		\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+			\usebeamerfont{title}\insertsectionhead\par%
+		\end{beamercolorbox}
+		\vfill
+       \tableofcontents[
+       sectionstyle=hide/hide,
+       subsectionstyle=show/show/hide]
+	\end{frame}
+}
+%%%%%%%%%%
+
 
 
 \begin{document}
@@ -550,8 +566,9 @@
 	Harris 1.20 - CW NMR spectrometer
 \end{frame}
 
-\section{Chemical shifts and J-couplings.}
+\section{Chemical shifts and J-couplings. NMR spectra in liquids.}
 \subsection{Chemical shifts.}
+
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	\begin{itemize}[<+>]
@@ -954,6 +971,22 @@ Are protons in CH3 or CH2 groups coupled to one another? \\
 \end{itemize}
 \end{frame}
 
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{block}{Problem}
+		Sketch the \textsuperscript{1}H NMR spectra of 2,3-dibromothiophene and 2,5-dibromothiophene?  \textsuperscript{79}Br and \textsuperscript{81}Br are quadrupolar nuclei, and their J-couplings can be ignored.\\
+		\centering
+		\includegraphics[scale=0.3]{DBTproblem1.png}
+	\end{block}
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\centering
+	\includegraphics[scale=0.4]{DBTproblem1.png}\\
+	\includegraphics[scale=0.4]{DBTproblem2.png}
+	
+\end{frame}
+
+
 \subsection{J-coupling in AB system.}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	What happens if $\nu_A - \nu_B \gg J$ is no longer true?
@@ -1096,7 +1129,27 @@ For all the transitions we obtain:
     \textbf{Suggested reading: } Harris 1.14, 2.17, 2.10 \\
 \end{frame}
 
+\section{NMR spectra of solids.}
 
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{itemize}[<+>]
+		\item Nuclear magnetic moments of nuclei interact via dipolar interaction. (It is averaged to zero in liquids). Classical expression for such interaction is:
+		\begin{equation}
+		  E  = \dfrac{\mu_0}{4 \pi} \Big(  \dfrac{  (\bm{m_1}  \bm{r})  (\bm{m_2} \bm{r}) }{r^5} - \dfrac{ 3 \bm{m_1} \bm{m_2}}{r^3}  \Big)
+		\end{equation}
+		
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	content...
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	content...
+\end{frame}
 
 %%%%% END OF RESONANT ABSORPTION
 
