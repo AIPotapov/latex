@@ -1136,7 +1136,11 @@ For all the transitions we obtain:
 	\begin{itemize}[<+>]
 		\item Nuclear magnetic moments of nuclei interact via dipolar interaction. (It is averaged to zero in liquids). Classical expression for such interaction is:
 		\begin{equation}
-		  E  = \dfrac{\mu_0}{4 \pi} \Big(  \dfrac{  (\bm{m_1}  \bm{r})  (\bm{m_2} \bm{r}) }{r^5} - \dfrac{ 3 \bm{m_1} \bm{m_2}}{r^3}  \Big)
+		  E  = \dfrac{\mu_0}{4 \pi} \Big(  \dfrac{ 3 (\bm{m_1}  \bm{r})  (\bm{m_2} \bm{r}) }{r^5} - \dfrac{  \bm{m_1} \bm{m_2}}{r^3}  \Big)
+		\end{equation}
+		\item In quantum mechanics the magnetic moments $\bm{m_1}$,$\bm{m_2}$ are replaced with operators  $g_{1,2} \beta_{1,2} \hat{I}_{1,2} = \gamma_{1,2} \hbar \hat{I}_{1,2}$, giving rise to a spin Hamiltonian:
+		\begin{equation}
+		   \hat{H} = \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar^2  }{r^3} \sum_{i,j=x,y,z} ( 3 \hat{I}_{1i} \hat{I}_{2j} - \bm{\hat{I}_{1} \hat{I}_{2}} )
 		\end{equation}
 		
 	\end{itemize}

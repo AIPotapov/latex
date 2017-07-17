@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.10)  15 JUL 2017 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.10)  17 JUL 2017 11:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1500,11 +1500,11 @@ Package pdftex.def Info: ABspectra2.png used on input line 1122.
 \tf@snm=\write8
 \openout8 = `NMR_lectures.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1180.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1180.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1184.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1184.
  (./NMR_lectures.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1180.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1180.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1184.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1184.
 
 Package rerunfilecheck Info: File `NMR_lectures.out' has not changed.
 (rerunfilecheck)             Checksum: 6FC1C26F9B3418E4D47D3AF69036C43A;1588.
@@ -1519,7 +1519,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1180.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1184.
  ) 
 Here is how much of TeX's memory you used:
  17581 strings out of 494953
@@ -1555,7 +1555,7 @@ fonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sbm7.pfb>
-Output written on NMR_lectures.pdf (57 pages, 2922090 bytes).
+Output written on NMR_lectures.pdf (57 pages, 2922908 bytes).
 PDF statistics:
  729 PDF objects out of 1000 (max. 8388607)
  559 compressed objects within 6 object streams
