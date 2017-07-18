@@ -1306,7 +1306,146 @@ For all the transitions we obtain:
 
 \subsection{Chemical shift anisotropy.}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	content...
+	Raw NMR spectra from solids often form single broad peaks due to dipolar effects, along with the effects of chemical shift anisotropy, which often makes interpretation of spectra more complicated.
+    \begin{figure}
+    	\centering
+    	\includegraphics[scale=0.1]{solid-liquid_NMR.png}
+    	\caption{\textsuperscript{13}C NMR spectrum of 13C-labelled glycine: (a) 125 MHz solid state; (b) 75 MHz liquid state. From D.D. Laws, H.-M. Bitter, A.Jerschow., Angew. Chem. Int. Ed. 41, 3096 (2002) }
+    \end{figure}
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	Chemical shift anisotropy results from the dependence of the level of shielding of a nucleus on the orientation of nearby bonds with respect to the magnetic field.
+	
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.1]{CSA1.png}
+		\caption{Dependence of shielding on the molecular orientation with respect to external magnetic field. (\url{www.solidstatenmr.org.uk})}
+	\end{figure}	
+	
+	The effect is characterized by a shielding tensor which relates the induced shielding $\bm{\delta B}$ to the applied field $B_0$ taking into account the orientational dependence.
+	
+	\begin{equation}
+       \begin{bmatrix}
+          \delta B_x \\
+          \delta B_y \\
+          \delta B_z \\
+       \end{bmatrix} = -
+       \begin{bmatrix}
+       \sigma_{xx} & \sigma_{xy} & \sigma_{xz} \\
+       \sigma_{yx} & \sigma_{yy} & \sigma_{yz} \\
+       \sigma_{zx} & \sigma_{zy} & \sigma_{zz} \\
+       \end{bmatrix} 
+       \begin{bmatrix}
+       0 \\ 
+       0 \\
+       B_0 \\
+       \end{bmatrix}        
+	\end{equation}
+	
+	This introduces a term in the Hamiltonian of the form, $\hat{H}_{CSA} = - \gamma (\bm{\delta B} \cdot \bm{\hat{I}})$.
+	
+	
+\end{frame}
+
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+    In secular approximation, when the nuclear Zeeman interaction $\gamma B_0 \gg \gamma \sigma_{i,j} B_0$, which is why the secular spin Hamiltonian is truncated to:
+    \begin{equation}
+       \hat{H_{CSA}} = \gamma \sigma_{zz} B_0
+    \end{equation}
+    In the laboratory frame in order  $\sigma_{zz}$ component can be found from a full tensor using a product with a unit vector along the direction of $B_0$:
+    \begin{equation} \label{eq:sigma_zz}
+       \sigma_{zz}^{lab}= 
+       \begin{bmatrix}
+          0 & 0 & 1
+       \end{bmatrix}       
+      \begin{bmatrix}
+      \sigma_{xx} & \sigma_{xy} & \sigma_{xz} \\
+      \sigma_{yx} & \sigma_{yy} & \sigma_{yz} \\
+      \sigma_{zx} & \sigma_{zy} & \sigma_{zz} \\
+      \end{bmatrix}       
+      \begin{bmatrix}
+      0 \\
+      0 \\
+      1 \\
+      \end{bmatrix} = \bm{b_0}^{\rm T} \bm{\sigma} \bm{b_0}
+    \end{equation}
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+
+   In the principle axis system the tensor has the following form:
+   \begin{equation}
+     \bm{\sigma}=
+      \begin{bmatrix}
+  	\sigma_{1} & 0 & 0 \\
+  	0 & \sigma_{2} & 0 \\
+  	0 & 0 & \sigma_{3} \\
+  \end{bmatrix}    
+   \end{equation}
+   The expression in Eq.\ref{eq:sigma_zz} is a true scalar, i.e. it does not depend in which reference frame it is written. We can write it in the principle axis system of the tensor, where the direction of magnetic field is $\bm{b_{PAS}} = \begin{bmatrix} \sin \theta \cos \phi, & \sin \theta \sin \phi,   & \cos \theta \end{bmatrix}  $.
+   \begin{align}
+      \sigma_zz^{lab} &= \bm{b_0}^{\rm T} \bm{\sigma^{lab}} \bm{b_0} = \bm{b_{PAS}}^{\rm T} \bm{\sigma^{PAS}} \bm{b_{PAS}} = \\
+      &= \sigma_1 \sin^2 \theta \cos^2 \phi + \sigma_2 \sin^2 \theta \sin^2 \phi + \sigma_3 \cos^2 \theta 
+   \end{align}
+
+\end{frame}   
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+    PAS axis are usually chosen such that  $\sigma_3$ component is the largest. We can use a more convenient notation, by replacing:
+    \begin{align}
+       \sigma_{iso} &= \dfrac{\sigma_1  + \sigma_2 + \sigma_3}{3}  \text{- isotropic chemical shift} \\
+       \Delta &= \sigma_3 - \sigma_{iso} \text{- anisotropy} \\
+       \eta &= \dfrac{\sigma_1 - \sigma_2}{\sigma_3} \text{- asymmetry}
+    \end{align}
+    Using this notation the $\sigma_{zz}^{lab}$ can be found using a compact equation:
+    \begin{equation}
+       \sigma_{zz}^{lab} = \sigma_{iso} + \dfrac{\Delta}{2}(3 \cos^2 \theta -1 + \eta \sin^2 \theta \cos 2 \phi)
+    \end{equation}
+\end{frame}
+
+\subsection{Magic angle spinning.}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+    Magic angle spinning is a technique where the sample is rapidly spun around the axis tilted with respect to $54.5 \deg$ with respect to magnetic field. It allows to removing (almost) all anisotropy arising from the dipolar and CSA interactions. 
+    For instance, for dipolar interaction consider two nuclei $A$ and $B$. Place the beginning of coordinates at $A$, $Z$-axis is pointed along the rotation axis and choose $X,Y$-axis such that magnetic field $\bm{B}$ is in $xz$-plane  $\bm{B} = B_0 \begin{bmatrix} 
+    \sin \alpha,  &  0, & \cos \alpha
+    \end{bmatrix}$.
+    
+     The radius-vector connecting the two nuclei:
+    \begin{equation}
+      \bm{r_{AB}} = r_{AB} 
+      \begin{bmatrix} 
+        \sin \gamma_{AB} \cos \phi_{AB},  &  \sin \gamma_{AB} \phi_{AB}, & \cos \gamma_{AB}
+      \end{bmatrix}
+    \end{equation}
+    Since the sample is spinning, then:
+    \begin{equation}
+       \phi_{AB} = \phi_{AB}^0 + \Omega t,
+    \end{equation}
+    where $\phi_{AB}^0$ is some initial phase. 
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+   We are interested averaging of $(1 - 3 \cos^2 \theta_{AB})$. Since:
+   \begin{equation}
+      \cos \theta_{AB} = \dfrac{(\bm{r_{AB}}  \bm{B})}{r_{AB} B_0} = \sin \gamma_{AB} \cos \phi_{AB} \sin \alpha + \cos \gamma_{AB} \cos \alpha
+   \end{equation}
+   then:
+   \begin{align}
+     1 - 3 \cos^2 \theta &= 1 - 3 \sin^2 \gamma_{AB} \cos^2 \phi_{AB} \sin^2 \alpha -3 \cos^2 \gamma_{AB} \cos^2 \alpha - \\
+     &- 6 \sin \gamma_{AB} \cos_{AB} \sin \alpha \cos \gamma_{AB} \cos \alpha
+   \end{align}
+   For phases linearly varying with time $\overline{\cos \phi_{AB}} = 0 $,  $\overline{\cos^2 \phi_{AB}} = \dfrac{1}{2} $, therefore:
+   \begin{equation} \label{eq: MAS}
+      \overline{1-3 \cos^2 \theta_{AB}} = -\dfrac{1}{2}(1 - 3 \cos^2 \alpha)(1 - 3 \cos^2 \gamma_{AB})
+   \end{equation}
+
+   
+\end{frame}
+
+\begin{frame}
+	 When $\alpha$ is to the "magic angle" of $\theta_m =54.7 \deg$, $\cos^2 \theta_m = \dfrac{1}{3}$ and the expression in Eq.\ref{eq: MAS} is zero and independet on $\gamma_{AB}$. It means the dipolar interaction is averaged to zero and it does not show up in the spectrum. 
+	 So if the spinning is fast enough (i.e. $\Omega \gg \ \dfrac{\gamma_1 \gamma2 \hbar}{r^3} \text{ or } \gamma \sigma_{max} B_0$  )instead of wide lines due to CSA or dipolar only sharp lines (liquid-state like) spectrum arises. 
 \end{frame}
 %%%%% END OF RESONANT ABSORPTION
 
