@@ -172,8 +172,15 @@
 \headcommand {\beamer@framepages {71}{71}}
 \headcommand {\slideentry {3}{3}{3}{72/72}{Magic angle spinning.}{0}}
 \headcommand {\beamer@framepages {72}{72}}
-\headcommand {\beamer@partpages {1}{72}}
-\headcommand {\beamer@subsectionpages {70}{72}}
-\headcommand {\beamer@sectionpages {54}{72}}
-\headcommand {\beamer@documentpages {72}}
-\headcommand {\def \inserttotalframenumber {72}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{73}{Quadrupolar interaction.}}\headcommand {\beamer@subsectionpages {70}{72}}
+\headcommand {\slideentry {3}{4}{1}{73/73}{Quadrupolar interaction.}{0}}
+\headcommand {\beamer@framepages {73}{73}}
+\headcommand {\slideentry {3}{4}{2}{74/74}{Quadrupolar interaction.}{0}}
+\headcommand {\beamer@framepages {74}{74}}
+\headcommand {\slideentry {3}{4}{3}{75/75}{Quadrupolar interaction.}{0}}
+\headcommand {\beamer@framepages {75}{75}}
+\headcommand {\beamer@partpages {1}{75}}
+\headcommand {\beamer@subsectionpages {73}{75}}
+\headcommand {\beamer@sectionpages {54}{75}}
+\headcommand {\beamer@documentpages {75}}
+\headcommand {\def \inserttotalframenumber {75}}

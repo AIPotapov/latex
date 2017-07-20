@@ -1447,6 +1447,43 @@ For all the transitions we obtain:
 	 When $\alpha$ is to the "magic angle" of $\theta_m =54.7 \deg$, $\cos^2 \theta_m = \dfrac{1}{3}$ and the expression in Eq.\ref{eq: MAS} is zero and independet on $\gamma_{AB}$. It means the dipolar interaction is averaged to zero and it does not show up in the spectrum. 
 	 So if the spinning is fast enough (i.e. $\Omega \gg \ \dfrac{\gamma_1 \gamma2 \hbar}{r^3} \text{ or } \gamma \sigma_{max} B_0$  )instead of wide lines due to CSA or dipolar only sharp lines (liquid-state like) spectrum arises. 
 \end{frame}
+
+\subsection{Quadrupolar interaction.}
+\begin{frame}
+	All nuclei with a spin greated that $\dfrac{1}{2}$ have an electric quadrupole moment in a ddition to the magnetic dipole moment, possessed by spin-$\dfrac{1}{2}$ nuclei. Electric quadrupoles interact with electric field gradients. 
+	In atoms and molecules the electrons and nuclei create electric fields (and electric field gradients) at the location of a nucleus. Effectively, one can say that electric fields of a molecule tend to reorient a nucleus in a certain way.  Quadrupolar moment is a tensor and is proportional to a tensor combined of spin components (Wigner-Eckart theorem). We will not derive the equation for such coupling, but go straight to the result. The quadrupolar coupling Hamiltonian is:
+	\begin{equation}
+	   \hat{H_Q} = \dfrac{eQ}{6I(2I-1)\hbar} \sum_{i,j=x,y,z} \hat{I}_i e q_{ij}  \hat{I}_j, 
+	\end{equation}
+	where $eQ$ is a quadrupole moment, a constant depends only on a nuclear species, $e q_{ij}$ are the components of electric field gradient tensor. 
+\end{frame}
+\begin{frame}
+	
+	The quadrupolar interaction tensor is traceless, i.e. has only two independent components. If its principal components are defined as $q_{xx}^{PAS}, q_{yy}^{PAS}, q_{zz}^{PAS}$, then two parameters describing the tensor can be introduced:
+	\begin{align}
+	   \chi &= \dfrac{e^2 q_{zz}^{PAS} Q}{\hbar}  \text{   -quadrupole coupling constant} \\
+	   \eta_Q &= \dfrac{q_{xx}^{PAS} - q_{yy}^{PAS}}{q_{zz}^{PAS}} \text{  -asymmetry parameter}
+	\end{align}
+	
+	In the PAS the hamiltonian has a form:
+	\begin{equation}
+		\hat{H}_Q = \dfrac{\chi }{4 I (2I-1)}\Big(3 \hat{I}_z^2 - I(I+1) ) + \eta_Q(\hat{I}_x^2 -\hat{I}_x^2)  \Big)
+	\end{equation}
+
+\end{frame}	
+\begin{frame}
+
+
+	In case of axial symmetry,$\eta_Q = 0$, the Hamiltonian of a quadrupolar nucleus in the magnetic field:
+	\begin{equation}
+	   \hat{H} = - \nu_0 \hat{I}_z + \dfrac{\chi}{8} (3 \cos^2 \theta - 1) \dfrac{3 \hat{I}_z^2  -I(I+1) }{I(2I-1)},
+	\end{equation}
+	where $\theta$ is the direction of the magnetic field in the PAS of quadrupolar tensor. Since the selection rule is $\Delta m_I = \pm1$ the transition frequencies are:
+	\begin{equation}
+	  \nu = \nu_0 -\dfrac{3}{8} \chi \dfrac{2 m_I -1}{I(2I -1)}(3 \cos^2 \theta - 1)
+	\end{equation}
+	 
+\end{frame}
 %%%%% END OF RESONANT ABSORPTION
 
 
