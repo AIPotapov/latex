@@ -55,10 +55,12 @@
 	
 	\section{Introduction. Magnetic moment in magnetic field.}
 	\subsection{Introduction to Magnetic Resonance}	
+	
+	
 	\begin{frame}{\thesection.\thesubsection. \insertsubsection}
 
 		
-		\begin{itemize}
+		\begin{itemize}[<+>]
 		\item Magnetic resonance (MR) is a phenomenon of resonant energy absorption by a system of nuclei (and electrons). 
 		\item Nuclear magnetic resonance (NMR) results from the intrinsic magnetic moment of the
 		nuclei of some atoms. Magnetic moments of electrons are exploited in electron spin resonance (ESR).
@@ -67,7 +69,6 @@
 		produced following application of pulsed radio-frequency electromagnetic fields (RF
 		pulses).
 		\item MR is a very powerful method for studying the structure of materials: used in physics, chemistry, biology, medicine etc.
-
 		\end{itemize}
 	\end{frame}
 	
@@ -142,15 +143,18 @@
 
 \subsection{Magnetic moments in magnetic field.}
 
-\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+\begin{frame}[shrink=5]{\thesection.\thesubsection. \insertsubsection}
+    
+    \textbf{How magnetic moments interact with magnetic field? What equations determine the motion?}
 	
-	\begin{itemize}[<+>]
-		\item Consider charges moving in a limited volume. The position of a charge $\bm{e_n}$ will be given by a vector $\bm{r_n}$ and its velocity by $\bm{v_n}$. The overall magnetic moment of such a system is defined as:
+	\onslide<2->
+	 Consider charges moving in a limited volume. The position of a charge $\bm{e_n}$ will be given by a vector $\bm{r_n}$ and its velocity by $\bm{v_n}$. The overall magnetic moment of such a system is defined as:
 			
 			\begin{equation}
 			\bm{M} = \frac{1}{2} \sum_{n} e_n\bm{r_n} \times \bm{v_n}
 			\end{equation}
-		\item 	If all the charges and masses are the same, then $\bm{M}$ can be rewritten as:	
+	\onslide<3->
+		If all the charges and masses are the same, then $\bm{M}$ can be rewritten as:	
 			\begin{equation} \label{eq:1}
 			\bm{M} = \frac{e}{2m} \sum_{n} m\bm{r_n} \times \bm{v_n} = \gamma \bm{L},
 			\end{equation}
@@ -159,42 +163,37 @@
 			\bm{L} = \sum_{n} \bm{p_n} \times \bm{r_n}
 			\end{equation}
 			is the mechanical angular momentum.
-		\item 
+    \onslide<4->
 			\alert{Gyromagnetic ratio} (or magnetogyric): 
 			\begin{equation}
 			\gamma = \dfrac{e}{2m}
 			\end{equation}
 			
-	
-	\end{itemize}
-	
 
 
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item When a magnetic moment $\bm{M}$ is placed into an external uniform permanent magnetic field $\bm{B}$, its energy is given by:
+ When a magnetic moment $\bm{M}$ is placed into an external uniform permanent magnetic field $\bm{B}$, its energy is given by:
 			
 			\begin{equation} \label{eq:classic_energy}
 			E = -\bm{M} \cdot \bm{B}
 			\end{equation} 
-		\item  The torque acting on the system:
+	\onslide<2->  The torque acting on the system:
 			\begin{equation}
 			\frac{d\bm{L}}{dt} = \bm{M} \times \bm{B}
 			\end{equation}
 			  
-		 \item  	Now using equation \ref{eq:1} we can obtain the equation describing the motion of vector $\bm{M}$:
+	\onslide<3->	Now using equation \ref{eq:1} we can obtain the equation describing the motion of vector $\bm{M}$:
 			
 			\begin{equation} \label{eq:precession_compact}
 			\frac{d\bm{M}}{dt} = \gamma \bm{M} \times \bm{B}
 			\end{equation}
 			
-	\end{itemize}
+
 \end{frame}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item 
+
 		    In a uniform magnetic field directed along $z$-axis $\bm{B} = (0, 0, B_0)$, the equation for individual components of $\bm{M}$ follow the equations:
 		    
 		    \begin{minipage}[b][4cm]{0.4\textwidth}
@@ -216,7 +215,7 @@
 		    \end{minipage}
 		    
 		    
-		\item
+		\onslide<2->
 			A solution to this system of differential equations with initial values of $M_x(0), M_y(0), M_z(0)$ has the following form:
 						
 			\begin{equation} 
@@ -225,47 +224,45 @@
 			M_y(t) &=& -M_y(0) \sin(\omega_L t) + M_y(0) \cos (\omega_L t) \\
 			M_z(t) &=& M_z(0) 
 			\end{array}
-			\end{equation}
+			\end{equation}		
 		
-		
-	\end{itemize}
 		
 \end{frame}
 
 \subsection{Orbital angular momentum operator}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	
-	\begin{itemize}[<+>]
-		\item     In quantum mechanics physical quantity $A$ ise represented by an operator $\hat{A}$. The mechanical angular momentum is replaced by its corresponding operator:
+     
+     In quantum mechanics physical quantity $A$ ise represented by an operator $\hat{A}$. The mechanical angular momentum is replaced by its corresponding operator:
 		\begin{equation}
 		\bm{L} = \sum_{n} \bm{p_n} \times \bm{r_n}  \longleftrightarrow \bm{\hat{L}} = \dfrac{1}{\hbar} \sum_{n} \bm{\hat{r}_n} \times \bm{\hat{p}_n} =   -i \sum_{n} \bm{\hat{r}_n} \times \bm{\nabla_n}
 		\end{equation}
-		\item Angular momentum operator properties. Commutation:
+    \onslide<2-> Angular momentum operator properties. Commutation:
 		\begin{equation}\label{eq:Lz_commutation}
 		  [\hat{L}_y,\hat{L}_z] = i\hat{L}_x, [\hat{L}_z,\hat{L}_x] = i\hat{L}_y, [\hat{L}_x,\hat{L}_y] = i\hat{L}_z
     	\end{equation}
-		\item Angular momentum squared, and its commutation properties:
+    \onslide<3-> Angular momentum squared, and its commutation properties:
         \begin{align}
           &\hat{L}^2 = \hat{L}_x^2 + \hat{L}_y^2 + \hat{L}_z^2 \\
           &[\hat{L}^2, \hat{L}_x]=[\hat{L}^2, \hat{L}_y]=[\hat{L}^2, \hat{L}_z]= 0       
         \end{align}        
-	\end{itemize}
+
 
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item Eigenfunctions of both $\hat{L}^2$ and $\hat{L}_z$ operators can be characterized by integer quantum numbers $l$  and $m$ respectively. These eigen functions will be denoted as $\vert lm \rangle$. Their eigenvalues are:
+    Eigenfunctions of both $\hat{L}^2$ and $\hat{L}_z$ operators can be characterized by integer quantum numbers $l$  and $m$ respectively. These eigen functions will be denoted as $\vert lm \rangle$. Their eigenvalues are:
 		\begin{align}
 		\hat{L}_z \vert lm \rangle &= m \vert lm \rangle \\
 		\hat{L}^2 \vert lm \rangle &= l(l+1) \vert lm \rangle
 		\end{align}
-		\item Another useful operator are raising and lowering operators:
+   \onslide<2->
+    Another useful operator are raising and lowering operators:
 		\begin{align}
 		  &\hat{L}_{+} = \hat{L}_x + i\hat{L}_y, \hat{L}_{-} = \hat{L}_x - i\hat{L}_y\\
 		  &\langle lm \vert \hat{L}_{+} \vert l (m-1) \rangle = \langle l(m-1) \vert \hat{L}_{-} \vert lm \rangle = \sqrt{(l+m)(l-m+1)} \label{eq:L+}
 		\end{align}
-	\end{itemize}
+
 	
 \end{frame}
 
@@ -273,7 +270,9 @@
 		\begin{block}{Problem}
 			Calculate $[\hat{L}_{+}, \hat{L}_x ] = ?$ , $[\hat{L}_{+}, \hat{L}_{-} ] = ?$ 
 		\end{block}
-		\begin{equation*}
+
+\only<1>{
+		\begin{equation*}        
 		[\hat{L}_y,\hat{L}_z] = i\hat{L}_x, [\hat{L}_z,\hat{L}_x] = i\hat{L}_y, [\hat{L}_x,\hat{L}_y] = i\hat{L}_z
 		\end{equation*}
 		\begin{align*}
@@ -281,6 +280,8 @@
 		&[\hat{L}^2, \hat{L}_x]=[\hat{L}^2, \hat{L}_y]=[\hat{L}^2, \hat{L}_z]= 0    \\   
 	    &\hat{L}_{+} = \hat{L}_x + i\hat{L}_y, \hat{L}_{-} = \hat{L}_x - i\hat{L}_y
 		\end{align*}        
+	}
+\only<2>{Solution}
 
 
 \end{frame}
@@ -289,22 +290,22 @@
 
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item
+
+		
 			Classical magnetic moment will have its own quantum analogue, the operator of angular momentum:
 			\begin{equation}\label{eq:orbital_angular_momentum}
 			\bm{M} = \gamma \bm{L}  \longleftrightarrow \bm{\hat{\mu}} = \gamma \hbar \bm{\hat{L}}
 			\end{equation} 
-		\item Given the electron charge $e= 1.6 \cdot 10^{-19}$C, and mass $m = 9.1 \cdot 10^{-31}$kg   \alert{Bohr magneton}:
+		\onslide<2-> Given the electron charge $e= 1.6 \cdot 10^{-19}$C, and mass $m = 9.1 \cdot 10^{-31}$kg   \alert{Bohr magneton}:
 		\begin{equation}
 			\beta_e = \gamma \hbar = \dfrac{e\hbar}{2m} \approx 9.27 \cdot 10^{-24}  \text{J$\cdot$T}^{-1}
 		\end{equation}
-		\item Similarly a \alert{nuclear magneton} could be calculated for a proton (\textsuperscript{1}H nucleus):
+		\onslide<3-> Similarly a \alert{nuclear magneton} could be calculated for a proton (\textsuperscript{1}H nucleus):
 		\begin{equation}
 		\beta = \gamma_N \hbar = \dfrac{e\hbar}{2m_p} \approx 5.05 \cdot 10^{-27}  \text{J$\cdot$T}^{-1}
 		\end{equation}
 		
-	\end{itemize}
+
 
 \end{frame}
 
@@ -318,13 +319,13 @@
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item 	Many nuclei in the periodic table are magnetic, i.e. have spin $I \neq 0$. Their magnetic moments could be measured in units of $\beta_N$:
+
+ 	Many nuclei in the periodic table are magnetic, i.e. have spin $I \neq 0$. Their magnetic moments could be measured in units of $\beta_N$:
 		\begin{equation}
 		\bm{\hat{\mu}_N} = \gamma_N \hbar \bm{\hat{I}} = g_N \beta_N \bm{\hat{I}},
 		\end{equation}
 		where $g_N$ - dimensionless g-factor.
-		\item
+		\onslide<2->
 % TABLE OF MAGNETIC PROPERTIES
 \begin{table}[ht]
 	\centering
@@ -343,9 +344,9 @@
 	\label{tab:mag_properties}		
 \end{table}
 %%%%% END OF TABLE	
-	\item
+	\onslide<3->
     Electron magnetic moments can be measured in units of Bohr magnetons: $\bm{\hat{\mu}_S} = -\gamma_e \hbar \bm{\hat{S}} = -g_e \beta_e \bm{\hat{S}}$, and for a free electron spin $g_e \approx 2.0023$.		
-	\end{itemize}
+
 \end{frame}
 
 
@@ -363,32 +364,32 @@
 
 \subsection{Spin in a magnetic field}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-		\begin{itemize}[<+>]
-		\item Let's quantum mechanically describe the system of spins in the magnetic field. Eq. \ref{eq:classic_energy} can be rewritten in a form of Hamiltonian:
+
+ Let's quantum mechanically describe the system of spins in the magnetic field. Eq. \ref{eq:classic_energy} can be rewritten in a form of Hamiltonian:
 		\begin{equation}
 			E = -\bm{M} \cdot \bm{B}  \longleftrightarrow \mathcal{H}= - \bm{\hat{\mu}_N} \cdot \bm{B} 
 		\end{equation}
-		\item when the magnetic field is directed along z-axis $\bm{B}= (0,0,B_0)$:
+		\onslide<2-> when the magnetic field is directed along z-axis $\bm{B}= (0,0,B_0)$:
 		\begin{equation}
 		\mathcal{H}= - \bm{\hat{\mu}_N} \cdot \bm{B} = -\gamma_N \hbar B_0 \hat{I}_z
 		\end{equation}
-		\item For spin $I=\dfrac{1}{2}$ such Hamiltonian produces a two-level system. Its energy levels corresponding to eigenfunctions $\vert \alpha \rangle$ and $\vert \beta \rangle$:
+		\onslide<3-> For spin $I=\dfrac{1}{2}$ such Hamiltonian produces a two-level system. Its energy levels corresponding to eigenfunctions $\vert \alpha \rangle$ and $\vert \beta \rangle$:
 		\begin{figure}
 		    \includegraphics[width=0.5\textwidth]{two-level_system.png}
 		\end{figure}
 		
-	\end{itemize}
+
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item The transition between the two states requires an energy quantum\footnote{More can be found in Bruker Almanac at https://lsa.umich.edu/content/dam/chem-assets/chem-docs/BrukerAlmanac2011.pdf}:
+ The transition between the two states requires an energy quantum\footnote{More can be found in Bruker Almanac at https://lsa.umich.edu/content/dam/chem-assets/chem-docs/BrukerAlmanac2011.pdf}:
 		\begin{equation}
 			h \nu_L = \gamma \hbar B_0, \omega_L = \gamma B_0, \nu_L = \dfrac{\gamma B_0}{2 \pi}
 		\end{equation}
 		$\omega_L$ and $\nu_L$ is the Larmor frequency (anglular and cyclic respectively)
-		\item
+
 		
+\onslide<2->
 % TABLE OF MAGNETIC PROPERTIES
 \begin{table}[ht]
 	\centering
@@ -405,8 +406,7 @@
 	\end{tabular}
 \end{table}
 %%%%% END OF TABLE
-		
-	\end{itemize}
+
 \end{frame}
 
 \subsection{Equilibrium magnetization}
@@ -417,7 +417,7 @@
   \begin{equation}
     \dfrac{N_{\alpha}}{N_{\beta}} = e^{-\dfrac{\gamma B_0}{kT}} \approx (1 - \dfrac{\gamma B_0}{kT}),
   \end{equation} 
-  when $\gamma B_0 \ll kT$. Overall magnetization then can be calculated as:
+  when $\gamma B_0 \ll kT$. \onslide<2-> Overall magnetization then can be calculated as:
   \begin{equation}
     M_z = N_{\alpha}(-\dfrac{1}{2}\gamma \hbar) + N_{\beta}(\dfrac{1}{2}\gamma \hbar) = N \dfrac{\gamma^2 \hbar^2 B_0}{4kT} 
   \end{equation}
@@ -432,30 +432,28 @@
 	\end{block}
 	{\tiny
 	\begin{align*}
-	&\text{Electron charge } e = 1.602 \cdot 10^{-19} \text{C}\\
-	&\text{Electron mass } m_e = 9.109 \cdot 10^{-31} \text{kg} \\
-	&\text{Proton mass}  m_p =  1.673 \cdot 10^{-27} \text{kg}  \\
-	&\text{Plank constant}  \hbar =  1.054 \cdot 10^{-34} \dfrac{\text{J} \cdot \text{s}}{rad}  \\
-	&\text{Proton g-factor}  g_p =  5.585 \\
-	&\text{Electron g-factor}  g_e =  2.0023 \\
-	&\text{Nuclear magneton}  \beta_N =  5.05 \cdot 10^{-27}  \text{J}\cdot \text{T}^{-1} \\
-	&\text{Bohr magneton}  \beta_e =  9.27 \cdot 10^{-24}  \text{J}\cdot \text{T}^{-1} \\
-	&\text{Proton gyromagnetic ratio}  \gamma_N =  26.7519 \cdot 10^{7} \dfrac{\text{rad}}{T \cdot s}\\
-	&\text{Electron gyromagnetic ratio}  \gamma_e =  1.76 \cdot 10^{11} \dfrac{\text{rad}}{T \cdot s}\\
-	&\text{Boltzmann constant}  k =  1.38 \cdot 10^{-23} {\text{J}} \cdot \text{K}^{-1}\\
-	&\text{Avogadro's constant}  N_A =  6.023 \cdot 10^{23} \text{mol}^{-1}
+	&\text{Electron charge } &e &= 1.602 \cdot 10^{-19} \text{C}\\
+	&\text{Electron mass } &m_e &= 9.109 \cdot 10^{-31} \text{kg} \\
+	&\text{Proton mass}  &m_p &=  1.673 \cdot 10^{-27} \text{kg}  \\
+	&\text{Plank constant}  &\hbar &=  1.054 \cdot 10^{-34} \dfrac{\text{J} \cdot \text{s}}{rad}  \\
+	&\text{Proton g-factor}  &g_p &=  5.585 \\
+	&\text{Electron g-factor}  &g_e &=  2.0023 \\
+	&\text{Nuclear magneton}  &\beta_N &=  5.05 \cdot 10^{-27}  \text{J}\cdot \text{T}^{-1} \\
+	&\text{Bohr magneton}  &\beta_e &=  9.27 \cdot 10^{-24}  \text{J}\cdot \text{T}^{-1} \\
+	&\text{Proton gyromagnetic ratio}  &\gamma_N &=  26.7519 \cdot 10^{7} \dfrac{\text{rad}}{T \cdot s}\\
+	&\text{Electron gyromagnetic ratio}  &\gamma_e &=  1.76 \cdot 10^{11} \dfrac{\text{rad}}{T \cdot s}\\
+	&\text{Boltzmann constant}  &k &=  1.38 \cdot 10^{-23} {\text{J}} \cdot \text{K}^{-1}\\
+	&\text{Avogadro's constant}  &N_A &=  6.023 \cdot 10^{23} \text{mol}^{-1}
 	\end{align*}
     }%
 \end{frame}
 \subsection{Resonant energy absoption.}
 %%%%%RESONANT ABSORBTION SECTION
 
-\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+\begin{frame}[shrink=5]{\thesection.\thesubsection. \insertsubsection}
 
-	\begin{itemize}[<+>]
-
-		\item[]
-		{\small
+		\only<1-2>{\textbf{How does a system of spins interact with electromagnetic interaction?} \\}
+        \onslide<2->
 		Let's apply oscillating magnetic field to our system. A spin system Hamiltonian becomes time-dependent and for an oscillation along the $x$-axis we obtain:
 		\begin{equation} \label{eq:oscillating_field}
 		\begin{array}{lcl}
@@ -465,18 +463,17 @@
 		\end{array}
 		\end{equation}
 		where $H_1$ and $\omega$ are the amplitude and the frequency of the oscillating magnetic field.
-	}%
-		\item[]
-				{\small
+        \onslide<3->
 		According to perturbation theory the transition probability between the initial state $\vert a \rangle$ and the final state $\vert b \rangle$ with a time dependent Hamiltonian $ \hat{V} (t) = 2 \hat{F} \cos (\omega t ) $ is (Fermi's golden rule):
 		\begin{equation} \label{eq:probability}
 		P_{ab} = \frac{2 \pi}{\hbar} \vert \langle a \vert \hat{F} \vert \rangle b \vert ^2 \delta(E_{ab}-\hbar \omega),
 		\end{equation}
 		where $E_{ab} = E_a - E_b$ is an energy difference between the energies of levels $a$ and $b$. \\		
+		\onslide<4->
 		\textbf{Note!} The matrix element $\vert \langle a \vert \hat{F} \vert \rangle b \vert$ represents the selection rules for various levels, if it equals to zero, the transition in 
 		forbidden, otherwise - allowed.		    
-	}%
-	\end{itemize}
+
+
 
 \end{frame}	
 \subsection{Populations dynamics in two-level system.}
