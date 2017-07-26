@@ -1,26 +1,26 @@
-\beamer@slide {fig1}{4}
-\beamer@slide {fig3}{4}
-\beamer@slide {fig7}{5}
-\beamer@slide {fig5}{5}
-\beamer@slide {eq:1}{7}
-\beamer@slide {eq:classic_energy}{8}
-\beamer@slide {eq:precession_compact}{8}
-\beamer@slide {precession}{9}
-\beamer@slide {eq:Lz_commutation}{10}
-\beamer@slide {eq:L+}{11}
-\beamer@slide {eq:orbital_angular_momentum}{13}
-\beamer@slide {tab:mag_properties}{15}
-\beamer@slide {eq:oscillating_field}{21}
-\beamer@slide {eq:probability}{21}
-\beamer@slide {eq:two level transition probability}{22}
-\beamer@slide {sec: J-couplings in AX system}{36}
-\beamer@slide {fig1}{36}
-\beamer@slide {fig1}{38}
-\beamer@slide {fig1}{40}
-\beamer@slide {eq:equivalennce}{44}
-\beamer@slide {fig:dibromethiophene}{50}
-\beamer@slide {fig:AXABcouplings}{51}
-\beamer@slide {fig:NMRdoublets}{62}
-\beamer@slide {fig:powder_pattern}{63}
-\beamer@slide {eq:sigma_zz}{67}
-\beamer@slide {eq: MAS}{71}
+\beamer@slide {fig1}{7}
+\beamer@slide {fig3}{7}
+\beamer@slide {fig7}{8}
+\beamer@slide {fig5}{8}
+\beamer@slide {eq:1}{10}
+\beamer@slide {eq:classic_energy}{14}
+\beamer@slide {eq:precession_compact}{14}
+\beamer@slide {precession}{17}
+\beamer@slide {eq:Lz_commutation}{19}
+\beamer@slide {eq:L+}{22}
+\beamer@slide {eq:orbital_angular_momentum}{26}
+\beamer@slide {tab:mag_properties}{30}
+\beamer@slide {eq:oscillating_field}{42}
+\beamer@slide {eq:probability}{42}
+\beamer@slide {eq:two level transition probability}{46}
+\beamer@slide {sec: J-couplings in AX system}{78}
+\beamer@slide {fig1}{78}
+\beamer@slide {fig1}{80}
+\beamer@slide {fig1}{83}
+\beamer@slide {eq:equivalennce}{90}
+\beamer@slide {fig:dibromethiophene}{99}
+\beamer@slide {fig:AXABcouplings}{100}
+\beamer@slide {fig:NMRdoublets}{113}
+\beamer@slide {fig:powder_pattern}{114}
+\beamer@slide {eq:sigma_zz}{118}
+\beamer@slide {eq: MAS}{122}

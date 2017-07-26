@@ -386,7 +386,8 @@
 		\begin{equation}
 			h \nu_L = \gamma \hbar B_0, \omega_L = \gamma B_0, \nu_L = \dfrac{\gamma B_0}{2 \pi}
 		\end{equation}
-		$\omega_L$ and $\nu_L$ is the Larmor frequency (anglular and cyclic respectively)
+		$\omega_L$ and $\nu_L$ is the Larmor frequency (anglular and cyclic respectively).
+		For simplicity the Hamiltonian $\mathcal{H}$ can be written in frequency units: $\hat{H} = \dfrac{1}{2 \pi \hbar} \mathcal{H} = \nu_L \hat{I}_z $.
 
 		
 \onslide<2->
@@ -472,15 +473,12 @@
 		\onslide<4->
 		\textbf{Note!} The matrix element $\vert \langle a \vert \hat{F} \vert \rangle b \vert$ represents the selection rules for various levels, if it equals to zero, the transition in 
 		forbidden, otherwise - allowed.		    
-
-
-
 \end{frame}	
+
+
 \subsection{Populations dynamics in two-level system.}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[]
-		\item 
-		For a two level system described before, the matrix element $\langle \alpha \vert \hat{I_x} \vert \beta \rangle = \frac{1}{2}$. The transition probability then becomes:
+			For a two level system described before, the matrix element $\langle \alpha \vert \hat{I_x} \vert \beta \rangle = \frac{1}{2}$. The transition probability then becomes:
 		\begin{equation}\label{eq:two level transition probability}
 		P_{\alpha \beta} = \frac{\pi}{2\hbar} (\gamma H_1)^2 \delta(E_{\alpha \beta}-\hbar \omega),
 		\end{equation}
@@ -488,40 +486,35 @@
 			\centering
 			\includegraphics[width=0.5\textwidth]{two-level_excite.png}
 		\end{minipage}
-		\item
+		\onslide<2->
 		\textbf{The effect of resonant absorption (and emission) of electromagnetic irradiation at the frequency matching the energy difference in a nuclear system is called Nuclear Magnetic Resonance (NMR).} 		    
-		
-		
-	\end{itemize}
 	
 \end{frame}	
 
+
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-	\item In a two-level system the transition will take place due to the action of external irradiation, but also due to interaction with the environment.
+	In a two-level system the transition will take place due to the action of external irradiation, but also due to interaction with the environment.
 	\begin{minipage}{1.0\textwidth}
 		\centering\includegraphics[width=0.3\textwidth]{two_level_population.png}
 	\end{minipage}
 	$P$ - the rate of transitions driven by external field, $W_{\alpha \beta}, W_{\beta \alpha}$ - rates of spontaneous spin flips due to interaction with environment.
-	\item
+	\onslide<2->
 	In thermal equilibrium:
 	\begin{align}
 		&N_{\alpha}^0 W_{\alpha \beta} = N_{\beta}^0 W_{\beta \alpha}, \text{i.e.} \\
 		&\dfrac{ W_{\beta   \alpha }}{ W_{\alpha  \beta  }} = exp^{-\dfrac{\gamma \hbar B_0}{kT}} \approx 1-\dfrac{\gamma \beta B_0}{kT}
 	\end{align}
-	\end{itemize}
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item Equation for populations of levels:
+		Equation for populations of levels:
 		\begin{equation}
 		\begin{array}{lcl}
 		\dfrac{dN_{\alpha}}{dt} &=& -N_{\alpha}(P + W_{\alpha \beta}) + N_{\beta}(P+W_{\beta \alpha})  \\
 		\dfrac{dN_{\beta}}{dt} &=&  N_{\alpha}(P + W_{\alpha \beta}) - N_{\beta}(P+W_{\beta \alpha})  
 		\end{array}
 		\end{equation}
-		\item 
+		\onslide<2->
 		If we introduce the average rate of spontaneous transitions $W = \dfrac{1}{2}(W_{\alpha \beta} - W_{\beta \alpha})$, then $W_{\alpha \beta} = W(1 + \dfrac{\gamma \hbar B_0}{2kT})$ and $W_{ \beta \alpha} = W(1 - \dfrac{\gamma \hbar B_0}{2kT})$, the equations can be rewritten:
 		
 		\begin{equation}
@@ -530,12 +523,10 @@
 		\dfrac{dN_{\beta}}{dt} &=& -(N_{\beta} - N_{\alpha})P - (N_{\beta} - N_{\alpha})W + W\dfrac{\gamma \beta B_0}{2kT}N \\
 		\end{array}
 		\end{equation}		
-	\end{itemize}
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item Denote the population difference as $n = N_{\beta} - N_{\alpha}$ and thermal equilibrium population difference $n_0 = N_{\beta}^0 - N_{\alpha}^0 \approx N\dfrac{\gamma \hbar B_0}{2kT}$ the equations can be rewritten as:
+ Denote the population difference as $n = N_{\beta} - N_{\alpha}$ and thermal equilibrium population difference $n_0 = N_{\beta}^0 - N_{\alpha}^0 \approx N\dfrac{\gamma \hbar B_0}{2kT}$ the equations can be rewritten as:
 		\begin{equation}
 		   \dfrac{dn}{dt} = - 2 n P - 2 n W + 2W n_0,
 		\end{equation}
@@ -544,13 +535,12 @@
 		    \dfrac{dn}{dt} = - 2 n P -\dfrac{ (n - n_0)}{T_1},
 		\end{equation}
 		where $T_1 = \dfrac{1}{2W}$ is called \alert{spin-lattice relaxation time} determines how quickly a spin system reaches a thermal equilibrium with environment.
-		\item In equilibrium, when $\dfrac{dn}{dt} = 0$:
+		\onslide<2-> In equilibrium, when $\dfrac{dn}{dt} = 0$:
 		\begin{equation}
 			n = \dfrac{n_0}{1 + 2 P T_1}
 		\end{equation}
 		when the power is very large $PT_1 \gg 1$, $n \rightarrow 0$, i.e. the system is \alert{saturated} and no signal can be observed.
-			
-	\end{itemize}
+
 \end{frame}
 
 \begin{frame}{Summary of Lecture 2}
@@ -568,15 +558,15 @@
 
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item 
+
+		 
 			Electrons in atoms in molecules interact with external magnetic field and in turn produce their own magnetic field $B_0$. The Larmor frequency get shifted in a chemical specific manner - this is known as the \alert{chemical shift}.  The spin Hamiltonian for a nucleus is:
 		\begin{equation}
 			\hat{H} = -\gamma_N \hbar (1 - \sigma) B_0 \hat{I}_z,
 		\end{equation}
 	
 		
-		\item Classical illustration of diamagnetic chemical shift:	
+		\onslide<2-> Classical illustration of diamagnetic chemical shift:	
 			
 				\begin{minipage}{0.4\textwidth}
 					{\tiny
@@ -595,8 +585,7 @@
 				\begin{minipage}{0.45\textwidth}
 					\includegraphics[width = 0.8\textwidth]{diamagnetic_term.png}
 				\end{minipage}
-			
-	\end{itemize}
+
 \end{frame}
 
 	
@@ -614,31 +603,28 @@
 			\hspace{0.1cm}
 			{\tiny
 			\begin{minipage}{0.65\textwidth}
-				\begin{itemize}[<+>]
-					\item
+				  \onslide<2->
 									Larmor precession frequency of electrons $\omega_L = \frac{e B_0}{2 m_e}$. Current can be calculated as charge $6 e$, divided by precession period $\frac{2 \pi}{\omega_L}$:
 									\par
 									\begin{equation}				    
 									i = \dfrac{3e^2 B_0}{2 \pi m_e}
 									\end{equation}
-					\item 
+				  \onslide<3->
 					Circular conductor creates a magnetic moment $\mu = i \cdot \pi r^2 $, totalling in:				
 									\begin{equation}
 									\mu = -\dfrac{3 e^2 B_0 r^2}{2 m_e}
 									\end{equation}
-					\item
+				  \onslide<4->
 									The magnetic field created by a magnetic moment  $\bm{B} = \dfrac{\mu_0}{4 \pi}(\dfrac{\bm{r(mr)}}{r^5} - \dfrac{\bm{m}}{r^3}  )$ reduces to:
 									\begin{align}
 									B_i = -\dfrac{\mu_0}{4 \pi}\dfrac{m}{r^3} = \dfrac{3 \mu_0 e^2}{8 \pi} \dfrac{r^2}{(r+d)^3} B_0 \\
 									\sigma = --\dfrac{\mu_0}{4 \pi m_e}\dfrac{m}{r^3} = \dfrac{3 \mu_0 e^2}{8 \pi} \dfrac{r^2}{(r+d)^3}
 									\end{align}
-					\item
+				  \onslide<5->
 									Given benzene molecule radius $r=1.4$ \AA, CH-bond length $d = 1.1$ \AA we obtain:
 									\begin{equation}
 									\sigma \approx -5.3 \cdot 10^{-6}, \sigma_{iso} \approx -1.8 \cdot 10^{-6}
 									\end{equation}
-					
-				\end{itemize}
 
 			\end{minipage}
 			
@@ -663,8 +649,7 @@
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item Chemical shifts are usually measured in ppm's and are referenced with respect to the signals of tetramethylsilane (TMS).		
+ Chemical shifts are usually measured in ppm's and are referenced with respect to the signals of tetramethylsilane (TMS).		
 		
 		\begin{minipage}[b]{0.15\textwidth}
             \centering
@@ -684,16 +669,13 @@
 			
 		
 	
-		\item 
+		\onslide<2-> 
 		In general the \textsuperscript{1}H chemical shift is greater for nuclei to atoms/bonds that reduce the electron density at the atom. 
 		\begin{figure}
 		 		\centering
 			 	\includegraphics[width=0.50\textwidth]{proton_chemical_shifts.png}
 			 	\caption{Chemical shifts in various organic molecules Source: \url{http://orgchem.colorado.edu/Spectroscopy/nmrtheory/protonchemshift.html}}
 	 	\end{figure}
-
-	\end{itemize}
-	...
 \end{frame}
 
 
@@ -732,7 +714,7 @@
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	Nuclear spins interact with one another. In solution, one prominent spin-spin interaction is called \alert{J-coupling}.
 	
-	This intra-molecular scalar coupling is caused by the combination of two effects: the Pauli principle means that the electons in the bond have opposite spin-state(spin-up and spin-down), while hyperfine couplings (specifically Fermi contact interaction) meanse that it is energetically favourable for each nuclear spin to be anti-parallel to the electron spin. 
+	This intra-molecular scalar coupling is caused by the combination of two effects: the Pauli principle means that the electons in the bond have opposite spin-state(spin-up and spin-down), while hyperfine couplings (specifically Fermi contact interaction) means that it is energetically favourable for each nuclear spin to be anti-parallel to the electron spin. 
 	
   \begin{figure}
   	\includegraphics[scale =0.5]{J-coupling.png}
@@ -742,8 +724,7 @@
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item 
+	\textbf{Let's find the eigenstates  of a Hamiltonian with J-coupling} \\
 			Hamiltonian of J-coupling in solution (all anisotropy is averaged):
 			\begin{equation}
 			\begin{array}{lcl}
@@ -752,20 +733,41 @@
 			\end{array}
 			\end{equation}
 			J is usually measured in units of frequency, i.e. Hz. 
-			
-		\item
+		
+	\onslide<2->{
 		In frequency units the full spin Hamiltonian for a system of two nuclei A and B of the same kind would be:
 		\begin{equation}
 		\hat{H} = -\nu_0(1 - \sigma_A) \hat{I}_{Az} - \nu_0(1- \sigma_B) \hat{I}_{Bz} + J  \hat{I}_{Az} \hat{I}_{Bz} +\dfrac{J}{2} (\hat{I}_{A+} \hat{I}_{B-} + \hat{I}_{A-} \hat{I}_{B+} ) 
 		\end{equation}
-		
-	\end{itemize}
-		
-	
+	}
 \end{frame}
+
+
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	\begin{itemize}[<+>]
-		\item 
+	\textbf{Let's find the eigenstates  of a Hamiltonian with J-coupling} \\
+		For two coupled spins $\dfrac{1}{2}$ the Hamiltonian matrix in the basis of functions $\vert 1 \rangle =  \vert \alpha_1 \alpha_2 \rangle, \vert 2 \rangle =  \vert \alpha_1 \beta_2 \rangle, \vert 3 \rangle =  \vert \beta_1 \alpha_2 \rangle, \vert 4 \rangle =  \vert \beta_1 \beta_2 \rangle$
+		The Hamiltonian matrix of such a system are:
+		
+		{\tiny
+			\begin{equation}
+			H_{ik}= \langle i \vert \hat{H} \vert k \rangle = 
+			\begin{bmatrix}
+			-\dfrac{\nu_A+ \nu_{B}  }{2} + \dfrac{J}{4}   & 0 & 0 & 0 \\
+			0 & -\dfrac{\nu_A-\nu_B}{2} - \dfrac{J}{4}  & \dfrac{J}{2} & 0 \\
+			0 & \dfrac{J}{2} & \dfrac{\nu_A-\nu_B}{2} - \dfrac{J}{4}  & 0 \\
+			0 & 0 & 0 & -\dfrac{\nu_A+\nu_B}{2} + \dfrac{J}{4}                  
+			\end{bmatrix}
+			\end{equation}
+		}%
+		when $\mid \nu_A -\nu_B \mid \gg J $ the off-diagonal terms due to $\hat{I}_{A\pm} \hat{I}_{B\mp}$ can be neglected. That is a called \alert{AX system}. When off-diagonal terms cannot be neglected, we deal with a so called \alert{AB system}.
+	\onslide<2->		
+		Let's consider nuclei of the same type (i.e. both \textsuperscript{1}H or both \textsuperscript{13}C ). When $\gamma_N \hbar \mid \omega_1 -\omega_2 \mid \ll J $,
+\end{frame}
+
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+
+
 		For two coupled spins $\dfrac{1}{2}$ the Hamiltonian matrix in the basis of functions $\vert 1 \rangle =  \vert \alpha_1 \alpha_2 \rangle, \vert 2 \rangle =  \vert \alpha_1 \beta_2 \rangle, \vert 3 \rangle =  \vert \beta_1 \alpha_2 \rangle, \vert 4 \rangle =  \vert \beta_1 \beta_2 \rangle$
 		The Hamiltonian matrix of such a system are:
 		
@@ -782,11 +784,11 @@
 	    }%
 	    when $\mid \nu_A -\nu_B \mid \gg J $ the off-diagonal terms due to $\hat{I}_{A\pm} \hat{I}_{B\mp}$ can be neglected. That is a called \alert{AX system}. When off-diagonal terms cannot be neglected, we deal with a so called \alert{AB system}.
 	
-		\item 
+		\onslide<2->
 		
 		Let's consider nuclei of the same type (i.e. both \textsuperscript{1}H or both \textsuperscript{13}C ). When $\gamma_N \hbar \mid \omega_1 -\omega_2 \mid \ll J $,
 		
-	\end{itemize}
+
 	
 	
 \end{frame}
@@ -925,34 +927,31 @@ For three:
 Are protons in CH3 or CH2 groups coupled to one another? \\
 \textbf{Yes.} But they are equivalent and therefore not observed.
 
-\begin{itemize}[<+>]
-	\item 
+
 	
 	\begin{equation}
 	\hat{H} = - \nu_0 (\hat{I}_{1z} + \hat{I}_{2z}+ \hat{I}_{3z}) + J (\bm{I}_1 \bm{I}_2 + \bm{I}_2 \bm{I}_3  + \bm{I}_1 \bm{I}_3 )
 	\end{equation}
 	
-	\item
+	\onslide<2->
 	Let's rewrite the last term as:
 	\begin{equation}
 	\bm{I}_1 \bm{I}_2 + \bm{I}_2 \bm{I}_3  + \bm{I}_1 \bm{I}_3 = \dfrac{1}{2} (\bm{I}_1 + \bm{I}_2 + \bm{I}_3 )^2 - \dfrac{1}{2} ( \bm{I}_1^2 + \bm{I}_2^2 + \bm{I}_3^2)
 	\end{equation}
 	
-	\item	
+	\onslide<3->
 	We can introduce new operator: $\bm{F} =\bm{I}_1 + \bm{I}_2 + \bm{I}_3$. Given that $I_1=I_2=I_3=\dfrac{1}{2}$ the Hamiltonian can be rewritten using this new operator:
 	\begin{equation}
 	\hat{H} = - \nu_0 \hat{F}_{z} + J (\bm{F}^2 - \dfrac{9}{4} )    
 	\end{equation}
 	
-	\item	
+	\onslide<4->
 	Eigenfunctions of this Hamiltonian are functions $\vert F M_F \rangle$, where $F=\dfrac{1}{2}$ or $\dfrac{3}{2}$.
-\end{itemize}
+
 
 \end{frame}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 
-\begin{itemize}[<+>]
-	\item
 	
 	\begin{equation}\label{eq:equivalennce}
 	\hat{H} = - \nu_0 \hat{F}_{z} + J (\bm{F}^2 - \dfrac{9}{4} )    
@@ -961,11 +960,11 @@ Are protons in CH3 or CH2 groups coupled to one another? \\
 	Selection rules for transitions: $\langle i \vert  \hat{F}_x \vert k \rangle \neq 0$, since $\hat{F}_x = \dfrac{\hat{F}_{+} + \hat{F}_{-}}{2}$, the selection rules then are: $\langle i \vert  \hat{F}_{\pm} \vert k \rangle \neq 0$
 	Since $\hat{F}_{\pm} = const \vert F M_F\pm1 \rangle$, the allowed transition does not change the second term in Eq.\ref{eq:equivalennce}.
 	
-	\item
+	\onslide<2->
 	Strictly speaking if a molecule contains only nuclei of one type, and no other $J$-splitting will not be observed. Examples: tetramethylsilane (TMS), benzene
     \includegraphics[scale = 0.5]{tetramethylsilane.png}
     \includegraphics[scale = 0.15]{Benzene-2D-flat.png}
-\end{itemize}
+
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
@@ -1127,7 +1126,7 @@ For all the transitions we obtain:
 \end{frame}
 
 \section{NMR spectra of solids.}
-\subsection{Dipolar coupling.}
+\subsection{Dipolar coupling Hamiltonian.}
 
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
@@ -1154,7 +1153,7 @@ For all the transitions we obtain:
 		
 		\item In quantum mechanics the magnetic moments $\bm{m_1}$,$\bm{m_2}$ are replaced with operators  $g_{1,2} \beta_{1,2} \hat{I}_{1,2} = \gamma_{1,2} \hbar \hat{I}_{1,2}$, giving rise to a spin Hamiltonian of dipolar interaction:
 		\begin{equation}
-		   \hat{H}_{dip} = \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar^2  }{r^3} \sum_{i,j=x,y,z} ( 3 \hat{I}_{1i} \hat{I}_{2j} - \bm{\hat{I}_{1} \hat{I}_{2}} )
+		   \mathcal{H}_{dip} = \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar^2  }{r^3} \sum_{i,j=x,y,z} ( 3 \hat{I}_{1i} \hat{I}_{2j} - \bm{\hat{I}_{1} \hat{I}_{2}} )
 		\end{equation}
 
 	\end{itemize}
@@ -1165,7 +1164,7 @@ For all the transitions we obtain:
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	Expanding the spin operator products and using spherical polar coordinates ($r$, $\theta$, $\phi$):
 	\begin{equation}
-	\hat{H}_{dip} = \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3} (A+B+C+D+E+F)  \text{, where} 
+	\hat{H}_{dip} = \dfrac{\mu_0}{8 \pi^2} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3} (A+B+C+D+E+F)  \text{, where} 
 	\end{equation}
 	\begin{equation}
 	\begin{array}{cll}
@@ -1192,15 +1191,15 @@ For all the transitions we obtain:
 	The spin Hamiltonian of two dipolar coupled nuclei including the nuclear Zeeman interactions has the following form:
 	
 	\begin{equation}
-	  \hat{H} = -\gamma_1 B_0 \hat{I}_{1z} -\gamma_2 B_0 \hat{I}_{1z}  + H_{dip} 
+	  \hat{H} = -\nu_1 \hat{I}_{1z} -\nu_2 \hat{I}_{1z}  + H_{dip},
 	\end{equation}
-	If  $\mid \nu_1 -\nu_2 \mid \gg \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3}$ then all non-diagonal terms in the Hamiltonian can be neglected:
+    where $\nu1,\nu_2$ are the nuclear Larmor frequencies. If  $\mid \nu_1 -\nu_2 \mid \gg \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3}$ then all non-diagonal terms in the Hamiltonian can be neglected:
 	
 	\begin{align}
 	\hat{H} &= -\gamma_1 B_0 \hat{I}_{1z} -\gamma_2 B_0 \hat{I}_{1z}  + \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3} (3 \cos^2 \theta -1)  \hat{I}_{1z} \hat{I}_{2z} =  \\
 	&= -\nu_1 m_1 - \nu_2 m_2 + \Delta m_1 m_2,
 	\end{align}
-	where $\Delta = \dfrac{\mu_0}{4 \pi} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3} (3 \cos^2 \theta -1)$.
+	where $\Delta = \dfrac{\mu_0}{8 \pi^2} \dfrac{\gamma_1 \gamma_2 \hbar}{r^3} (3 \cos^2 \theta -1)$.
 	The spectrum then would consist of two doublets centered around $\nu_1$ and $\nu_2$ and split by $\Delta$.
 	
 	
@@ -1252,7 +1251,7 @@ For all the transitions we obtain:
 	\begin{block}{Problem}
 		Which transitions are allowed? (Hint: use Eq.\ref{eq:probability})
 	\end{block}
-	Singlet and triplet functions belong have a total spin of 0 and 1 respectively.  
+	Singlet and triplet functions have a total spin of 0 and 1 respectively.  
 	Introduce an operator of total spin $\bm{\hat{F}} = \bm{\hat{I}_{1}} + \bm{\hat{I}_2}$.  Its eigenfunctions $\vert F M_F \rangle$ coincide with singlet (F = 0) and triplet (F=1) functions. 
 	$F_{+} \vert F M_F \rangle = \sqrt{F(F+1)-M_F(M_F+1)} \vert F M_F+1 \rangle$ operator can only change functions within one manifold, i.e a transition between singlet and triplet is forbidden.
 	The only allowed transitions are in triplet manifold, changing $\delta M_F = \pm 1$. These are $\vert t_0 \rangle \leftrightarrow \vert t_1 \rangle$ and  $\vert t_0 \rangle \leftrightarrow \vert t_{-1} \rangle$.
@@ -1273,6 +1272,9 @@ For all the transitions we obtain:
     	\caption{Schematic representation of single orientation spectra for (A) $\mid \nu_1 - \nu_2 \mid  \gg \Delta$ and (B) $\nu_1 = \nu_2$.  }
     \end{figure}
 \end{frame}
+
+\subsection{Powder spectra of dipolar coupled nuclei.}
+
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	\begin{minipage}[c]{0.3\textwidth}
 		\begin{figure} \label{fig:powder_pattern}
@@ -1311,12 +1313,12 @@ For all the transitions we obtain:
     \end{figure}
 \end{frame}
 
-\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+\begin{frame}[shrink=5]{\thesection.\thesubsection. \insertsubsection}
 	Chemical shift anisotropy results from the dependence of the level of shielding of a nucleus on the orientation of nearby bonds with respect to the magnetic field.
 	
 	\begin{figure}
 		\centering
-		\includegraphics[scale=0.1]{CSA1.png}
+		\includegraphics[scale=0.6]{CSA1.png}
 		\caption{Dependence of shielding on the molecular orientation with respect to external magnetic field. (\url{www.solidstatenmr.org.uk})}
 	\end{figure}	
 	
@@ -1349,7 +1351,7 @@ For all the transitions we obtain:
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
     In secular approximation, when the nuclear Zeeman interaction $\gamma B_0 \gg \gamma \sigma_{i,j} B_0$, which is why the secular spin Hamiltonian is truncated to:
     \begin{equation}
-       \hat{H_{CSA}} = \gamma \sigma_{zz} B_0
+       \hat{H}_{CSA} = \gamma \sigma_{zz} B_0
     \end{equation}
     In the laboratory frame in order  $\sigma_{zz}$ component can be found from a full tensor using a product with a unit vector along the direction of $B_0$:
     \begin{equation} \label{eq:sigma_zz}
