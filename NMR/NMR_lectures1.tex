@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[handout]{beamer}
 \usepackage[latin1]{inputenc}
 \usepackage{bm, array, graphicx, hyperref, amsmath, setspace, geometry, wrapfig}
 \usepackage{hanging}
@@ -987,8 +987,6 @@ Are protons in CH3 or CH2 groups coupled to one another? \\
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	What happens if $\nu_A - \nu_B \gg J$ is no longer true?
 	
-	\begin{itemize}[<+>]
-		\item 
 		The matrix of spin Hamiltonian is:
 		
 			
@@ -1002,8 +1000,8 @@ Are protons in CH3 or CH2 groups coupled to one another? \\
 				\end{bmatrix}
 				\end{equation}
 			}%
-		\item The general way of solving is finding the eigenvalues and eigenvalues and eigenfunctions of this Hamiltonian.
-		\item
+		\onslide<2-> The general way of solving is finding the eigenvalues and eigenvalues and eigenfunctions of this Hamiltonian.
+		\onslide<3->
 		the solution can be represented by following replacements:
 		\begin{equation}
 		\begin{array}{l}
@@ -1012,7 +1010,6 @@ Are protons in CH3 or CH2 groups coupled to one another? \\
 		C = \dfrac{1}{2}\sqrt{\delta^2 + J^2}, \tan 2\theta = \dfrac{J}{\delta}, \bar{\nu} = \dfrac{\nu_A + \nu_B}{2}
 		\end{array}
 		\end{equation}
-	\end{itemize}
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
@@ -1322,6 +1319,7 @@ For all the transitions we obtain:
 		\caption{Dependence of shielding on the molecular orientation with respect to external magnetic field. (\url{www.solidstatenmr.org.uk})}
 	\end{figure}	
 	
+	\onslide<2->
 	The effect is characterized by a shielding tensor which relates the induced shielding $\bm{\delta B}$ to the applied field $B_0$ taking into account the orientational dependence.
 	
 	\begin{equation}
@@ -1375,15 +1373,38 @@ For all the transitions we obtain:
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 
    In the principle axis system the tensor has the following form:
-   \begin{equation}
-     \bm{\sigma}=
-      \begin{bmatrix}
-  	\sigma_{1} & 0 & 0 \\
-  	0 & \sigma_{2} & 0 \\
-  	0 & 0 & \sigma_{3} \\
-  \end{bmatrix}    
-   \end{equation}
-   The expression in Eq.\ref{eq:sigma_zz} is a true scalar, i.e. it does not depend in which reference frame it is written. We can write it in the principle axis system of the tensor, where the direction of magnetic field is $\bm{b_{PAS}} = \begin{bmatrix} \sin \theta \cos \phi, & \sin \theta \sin \phi,   & \cos \theta \end{bmatrix}  $.
+   
+   \begin{minipage}{0.45\textwidth}
+	  \begin{equation}
+	  \bm{\sigma}=
+	  \begin{bmatrix}
+	  \sigma_{1} & 0 & 0 \\
+	  0 & \sigma_{2} & 0 \\
+	  0 & 0 & \sigma_{3} \\
+	  \end{bmatrix}    
+     \end{equation}
+   \end{minipage}
+   \hspace{0.1cm}
+   \begin{minipage}{0.45\textwidth}
+     \begin{figure}
+     	\centering
+     	\includegraphics[scale=0.30]{CSA_tensor.png}
+     	\caption{Schematic representation of CSA tensor components.}
+     \end{figure}
+   \end{minipage}
+
+   
+%   \begin{equation}
+%     \bm{\sigma}=
+%      \begin{bmatrix}
+%  	\sigma_{1} & 0 & 0 \\
+%  	0 & \sigma_{2} & 0 \\
+%  	0 & 0 & \sigma_{3} \\
+%  \end{bmatrix}    
+%   \end{equation}
+   
+   \onslide<2->
+   The expression for $\sigma_{zz}^{lab}$ in Eq.\ref{eq:sigma_zz} is a true scalar, i.e. it does not depend in which reference frame it is written. We can write it in the principle axis system of the tensor, where the direction of magnetic field is $\bm{b_{PAS}} = \begin{bmatrix} \sin \theta \cos \phi, & \sin \theta \sin \phi,   & \cos \theta \end{bmatrix}  $.
    \begin{align}
       \sigma_zz^{lab} &= \bm{b_0}^{\rm T} \bm{\sigma^{lab}} \bm{b_0} = \bm{b_{PAS}}^{\rm T} \bm{\sigma^{PAS}} \bm{b_{PAS}} = \\
       &= \sigma_1 \sin^2 \theta \cos^2 \phi + \sigma_2 \sin^2 \theta \sin^2 \phi + \sigma_3 \cos^2 \theta 
@@ -1403,60 +1424,112 @@ For all the transitions we obtain:
     \end{equation}
 \end{frame}
 
-\subsection{Magic angle spinning.}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
+   \begin{equation*}
+   \sigma_{zz}^{lab} = \sigma_{iso} + \dfrac{\Delta}{2}(3 \cos^2 \theta -1 + \eta \sin^2 \theta \cos 2 \phi)
+   \end{equation*}
+   Spectra of polycrystalline samples would produce broad patterns shown in Fig.\ref{fig: CSA}
+   
+   \begin{figure}\label{fig: CSA}
+      \centering
+      \includegraphics[scale=0.4]{CSA2.png}
+      \caption{Powder patterns for (a) $\sigma_1 = \sigma_2= \sigma_{\perp}, \sigma_3 = \sigma_{\parallel}$, (b) $\sigma_1 \neq \sigma_2 \neq \sigma_3$ }  
+   \end{figure}
+   
+\end{frame}
+
+\begin{frame}{Summary of Lecture 5.}
+     \begin{itemize}
+     	\item 	Spin magnetic moments interact via dipolar interaction
+     	\item Spectra of dipolar coupled spins are anisotropic
+     	\item Chemical shift is anisotric as well
+     \end{itemize}
+\end{frame}
+
+\subsection{Magic angle spinning.}
+\begin{frame}[shrink = 5]{\thesection.\thesubsection. \insertsubsection}
+	\textbf{How can we make the spectra simpler?} \onslide <2->
     Magic angle spinning is a technique where the sample is rapidly spun around the axis tilted with respect to $54.5 \deg$ with respect to magnetic field. It allows to removing (almost) all anisotropy arising from the dipolar and CSA interactions. 
     For instance, for dipolar interaction consider two nuclei $A$ and $B$. Place the beginning of coordinates at $A$, $Z$-axis is pointed along the rotation axis and choose $X,Y$-axis such that magnetic field $\bm{B}$ is in $xz$-plane  $\bm{B} = B_0 \begin{bmatrix} 
     \sin \alpha,  &  0, & \cos \alpha
-    \end{bmatrix}$.
-    
+    \end{bmatrix}$.    
      The radius-vector connecting the two nuclei:
-    \begin{equation}
+       \begin{equation}
       \bm{r_{AB}} = r_{AB} 
       \begin{bmatrix} 
         \sin \gamma_{AB} \cos \phi_{AB},  &  \sin \gamma_{AB} \phi_{AB}, & \cos \gamma_{AB}
       \end{bmatrix}
     \end{equation}
-    Since the sample is spinning, then:
-    \begin{equation}
-       \phi_{AB} = \phi_{AB}^0 + \Omega t,
-    \end{equation}
-    where $\phi_{AB}^0$ is some initial phase. 
+     \begin{figure}
+     	\centering
+     	\includegraphics[scale=0.4]{MAS.png}
+     \end{figure}
+     
+    
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-   We are interested averaging of $(1 - 3 \cos^2 \theta_{AB})$. Since:
+	 Since the sample is spinning, then:
+	 \begin{equation}
+	 \phi_{AB} = \phi_{AB}^0 + \Omega t,
+	 \end{equation}
+	 where $\phi_{AB}^0$ is some initial phase.
+   \onslide<2->
+   We are interested averaging of $(1 - 3 \cos^2 \theta_{AB})$.\onslide<3-> Since:
    \begin{equation}
       \cos \theta_{AB} = \dfrac{(\bm{r_{AB}}  \bm{B})}{r_{AB} B_0} = \sin \gamma_{AB} \cos \phi_{AB} \sin \alpha + \cos \gamma_{AB} \cos \alpha
    \end{equation}
-   then:
+   \onslide<4-> then:
    \begin{align}
      1 - 3 \cos^2 \theta &= 1 - 3 \sin^2 \gamma_{AB} \cos^2 \phi_{AB} \sin^2 \alpha -3 \cos^2 \gamma_{AB} \cos^2 \alpha - \\
      &- 6 \sin \gamma_{AB} \cos_{AB} \sin \alpha \cos \gamma_{AB} \cos \alpha
    \end{align}
+   \onslide<5->
    For phases linearly varying with time $\overline{\cos \phi_{AB}} = 0 $,  $\overline{\cos^2 \phi_{AB}} = \dfrac{1}{2} $, therefore:
-   \begin{equation} \label{eq: MAS}
-      \overline{1-3 \cos^2 \theta_{AB}} = -\dfrac{1}{2}(1 - 3 \cos^2 \alpha)(1 - 3 \cos^2 \gamma_{AB})
-   \end{equation}
+  
 
    
 \end{frame}
 
-\begin{frame}
-	 When $\alpha$ is to the "magic angle" of $\theta_m =54.7 \deg$, $\cos^2 \theta_m = \dfrac{1}{3}$ and the expression in Eq.\ref{eq: MAS} is zero and independet on $\gamma_{AB}$. It means the dipolar interaction is averaged to zero and it does not show up in the spectrum. 
-	 So if the spinning is fast enough (i.e. $\Omega \gg \ \dfrac{\gamma_1 \gamma2 \hbar}{r^3} \text{ or } \gamma \sigma_{max} B_0$  )instead of wide lines due to CSA or dipolar only sharp lines (liquid-state like) spectrum arises. 
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	 For phases linearly varying with time $\overline{\cos \phi_{AB}} = 0 $,  $\overline{\cos^2 \phi_{AB}} = \dfrac{1}{2} $, therefore:
+	 \begin{equation} \label{eq: MAS}
+	 \overline{1-3 \cos^2 \theta_{AB}} = -\dfrac{1}{2}(1 - 3 \cos^2 \alpha)(1 - 3 \cos^2 \gamma_{AB})
+	 \end{equation}
+	
+	\onslide<2->
+	 When $\alpha$ is to the "magic angle" of $\theta_m =54.7 \deg$, $\cos^2 \theta_m = \dfrac{1}{3}$ and the expression in Eq.\ref{eq: MAS} is zero and independent on $\gamma_{AB}$. It means the dipolar interaction is averaged to zero and it does not show up in the spectrum. 
+	 So if the spinning is fast enough (i.e. $\Omega \gg \ \dfrac{\gamma_1 \gamma2 \hbar}{r^3} \text{ or } \gamma \sigma_{max} B_0$) instead of wide lines due to CSA or dipolar only sharp lines (liquid-state like) spectrum arises. 
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	The technique of sample spinning under the angle of $\theta_m =54.7 \deg$ is called \alert{Magic Angle Spinning}.
+   \begin{figure}
+   	  \centering
+   	  \includegraphics[scale=0.3]{MAS2.png}
+   	  \caption{(A) MAS rotors (B) NMR spectrum of \textsuperscript{207}Pb in lead nitrate under static and MAS conditions.}
+   \end{figure}
 \end{frame}
 
 \subsection{Quadrupolar interaction.}
-\begin{frame}
-	All nuclei with a spin greated that $\dfrac{1}{2}$ have an electric quadrupole moment in a ddition to the magnetic dipole moment, possessed by spin-$\dfrac{1}{2}$ nuclei. Electric quadrupoles interact with electric field gradients. 
-	In atoms and molecules the electrons and nuclei create electric fields (and electric field gradients) at the location of a nucleus. Effectively, one can say that electric fields of a molecule tend to reorient a nucleus in a certain way.  Quadrupolar moment is a tensor and is proportional to a tensor combined of spin components (Wigner-Eckart theorem). We will not derive the equation for such coupling, but go straight to the result. The quadrupolar coupling Hamiltonian is:
-	\begin{equation}
-	   \hat{H_Q} = \dfrac{eQ}{6I(2I-1)\hbar} \sum_{i,j=x,y,z} \hat{I}_i e q_{ij}  \hat{I}_j, 
-	\end{equation}
+\begin{frame}[shrink=5]{\thesection.\thesubsection. \insertsubsection}
+	All nuclei with a spin greater that $\dfrac{1}{2}$ have an electric quadrupole moment.Electric quadrupoles interact with electric field gradients. 
+	In atoms and molecules the electrons and nuclei create electric fields (and electric field gradients) at the location of a nucleus.
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{Quadrupole.png}
+\end{figure}
+     \onslide<2->
+	 Quadrupolar moment is a tensor and is proportional to a tensor combined of spin components (Wigner-Eckart theorem). The quadrupolar coupling Hamiltonian is:
+
+		\begin{equation}
+		\hat{H_Q} = \dfrac{eQ}{6I(2I-1)\hbar} \sum_{i,j=x,y,z} \hat{I}_i e q_{ij}  \hat{I}_j, 
+		\end{equation}
+
 	where $eQ$ is a quadrupole moment, a constant depends only on a nuclear species, $e q_{ij}$ are the components of electric field gradient tensor. 
 \end{frame}
-\begin{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
 	
 	The quadrupolar interaction tensor is traceless, i.e. has only two independent components. If its principal components are defined as $q_{xx}^{PAS}, q_{yy}^{PAS}, q_{zz}^{PAS}$, then two parameters describing the tensor can be introduced:
 	\begin{align}
@@ -1470,7 +1543,7 @@ For all the transitions we obtain:
 	\end{equation}
 
 \end{frame}	
-\begin{frame}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
 
 
 	In case of axial symmetry,$\eta_Q = 0$, the Hamiltonian of a quadrupolar nucleus in the magnetic field:
@@ -1483,6 +1556,52 @@ For all the transitions we obtain:
 	\end{equation}
 	 
 \end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+    	\begin{equation}
+    	\nu = \nu_0 -\dfrac{3}{8} \chi \dfrac{2 m_I -1}{I(2I -1)}(3 \cos^2 \theta - 1)
+    	\end{equation}
+    	
+    	\begin{figure}
+    		\centering
+    		\includegraphics[scale=0.4]{Quadrupole2.png}
+    		\caption{(A) Level diagram for $I=\dfrac{3}{2}$ nucleus, (B) Schematic representation of its spectrum in a polycrystalline sample}
+    	\end{figure}
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	The magnitude of quadrupolar coupling could be rather large (up to 1000 MHz). Even for the same nucleus in different chemical environment could have very different quadrupolar coupling.
+	
+	For instance $NaCl$ crystals have very high cubic symmetry, and electric field gradient at the location of $Na$ is zero. While in $NaNO_2$ crystal the electric field gradient is not zero due to the shape of $NO_2$, $\chi \approx 1.1$ MHz.
+	\begin{figure}
+      \centering
+      \includegraphics[scale=0.5]{Quadrupole3.png}
+	\end{figure}
+	
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\begin{equation}
+	\nu = \nu_0 -\dfrac{3}{8} \chi \dfrac{2 m_I -1}{I(2I -1)}(3 \cos^2 \theta - 1)
+	\end{equation}
+	In principle, the transitions between sublevels of quadrupolar nuclei can be observed even at zero magnetic field. The technique for this is called \alert{Nuclear Quadrupolar Resonance}.
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.5]{Quadrupole_ZF.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Summary of Lecture 6.}
+	\begin{itemize}[<+>]
+		\item 	Magic Angle Spinning removes most of anisotropy of dipolar, CSA and quadrupolar coupling.
+		\item Quadrupolar coupling emerges dues to interaction of quadrupolar moment with electric field gradient
+		\item Spectra of quadrupolar nuclei in solids are anisotropic
+		\item Strength of electric field gradient matters (symmetric environment is better)
+		\item Sometimes no magnetic field is needed to observe transitions in a spin system.
+	\end{itemize}
+\end{frame}
+
+
 %%%%% END OF RESONANT ABSORPTION
 
 
