@@ -1442,8 +1442,10 @@ For all the transitions we obtain:
      \begin{itemize}
      	\item 	Spin magnetic moments interact via dipolar interaction
      	\item Spectra of dipolar coupled spins are anisotropic
-     	\item Chemical shift is anisotric as well
+     	\item Chemical shift is anisotropic as well
      \end{itemize}
+     
+     \textbf{Suggested reading:}  Harris 6.6, 6.7, 4.1, 4.2, Slichter 3.1
 \end{frame}
 
 \subsection{Magic angle spinning.}
@@ -1599,8 +1601,157 @@ For all the transitions we obtain:
 		\item Strength of electric field gradient matters (symmetric environment is better)
 		\item Sometimes no magnetic field is needed to observe transitions in a spin system.
 	\end{itemize}
+	
+    \textbf{Suggested reading:}  Harris  Appendix 5, ch.5.9,5.10,5.11,5.12,5.13, Slichter 3.1, for more detailed explanation of origins of the quadrupolar coupling - Slichter ch 10.\\
+    In addition "Solid-state NMR Spectroscopy Principles and Applications" by M. Duer: Ch 1.4 "Nuclear spin interactions".
+    
 \end{frame}
 
+
+\section{Spin dynamics.}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	Let's recap the solution for the equations of motion of a magnetic moment:
+	
+		    In a uniform magnetic field directed along $z$-axis $\bm{B} = (0, 0, B_0)$, the equation for individual components of $\bm{M}$ follow the equations:
+		    
+		    \begin{minipage}[b][4cm]{0.4\textwidth}
+		    	\centering
+		    	\includegraphics[width=0.7\textwidth]{precession.png}
+		    \end{minipage}
+		    \hspace{0.1cm}		    
+		    \begin{minipage}[b][4cm]{0.4\textwidth}
+		    	\centering
+		    	\begin{equation} \label{precession}
+		    	\setlength{\jot}{5pt}
+		    	\begin{aligned}
+		    	\dfrac{dM_x}{dt} & =  \omega_L M_y \\
+		    	\dfrac{dM_y}{dt} & =  -\omega_L M_x \\
+		    	\dfrac{dM_z}{dt} & =  0,
+		    	\end{aligned}
+		    	\end{equation}
+		    	where $\omega_L = \gamma B_0$ - \alert{Larmor frequency}.
+		    \end{minipage}
+		    
+		    
+		    \onslide<2->
+		    A solution to this system of differential equations with initial values of $M_x(0), M_y(0), M_z(0)$ has the following form:
+		    
+		    \begin{equation} 
+		    \begin{array}{lcl}
+		    M_x(t) &=& M_x(0) \cos(\omega_L t) + M_y(0) \sin (\omega_L t) \\
+		    M_y(t) &=& -M_y(0) \sin(\omega_L t) + M_y(0) \cos (\omega_L t) \\
+		    M_z(t) &=& M_z(0) 
+		    \end{array}
+		    \end{equation}		
+
+		    	    
+\end{frame}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+  \textbf{ Let's explore, how oscillating transverse magnetic fields affect the evolution of a magnetic moment.}
+
+	
+	
+ Section \ref{Res_absorbtion} suggests a potential method for detecting NMR, based on absorption of electromagnetic irradiation by a system of spins, however such approach is not commonly used any more. In fact, most modern NMR (and MRI) detection is based on the detection of precessing magnetization. We will use classical description based of precessing magnetization to find out the effect of oscillating magnetic field beyond simple perturbation theory presented in section \ref{Res_absorbtion}.
+ 
+ As shown above, in the laboratory frame the magnetization vector $\bm{M}$ precesses around the direction of magnetic field $H_0$ with Larmor frequency $\omega_0$, which is described by Eqs.\ref{precession}. Now we  want to transform these equations into a frame which rotates at the angular velocity $\omega$.  The coordinates in the laboratory frame $(x,y,z)$ can be expressed through the coordinates of the lefthand-rotating frame $(\tilde{x}, \tilde{y}, \tilde{z})$, shown schematically in Fig.\ref{fig:rot_frame}A:
+ \begin{equation}
+ \begin{array}{lcl}
+ x &=& \tilde{x} \cos \omega t + \tilde{y} \sin \omega t \\
+ y &=& -\tilde{x} \sin \omega t + \tilde{y} \cos \omega t \\
+ z &=& \tilde{z}
+ \end{array}
+ \end{equation}
+ 
+\end{frame}
+\begin{frame}
+
+ For a point $(\tilde{x},\tilde{y},\tilde{z})$ stationary in the rotating frame, the time change of the laboratory frame coordinates becomes:
+ 
+ \begin{equation} \label{eq:rotating_frame_derivative}
+ \begin{array}{lcl}
+ \dfrac{dx}{dt} &= \omega {y}  \\
+ \dfrac{dy}{dt} &= -\omega {x}  \\
+ \dfrac{dz}{dt} &= 0  \\
+ \end{array}
+ \end{equation} 
+ 
+ For any vector $\bm{a}$ stationary in the rotating frame Eqs.\ref{eq:rotating_frame_derivative} can be rewritten in a compact form:
+ \begin{equation}
+ \dfrac{d\bm{a}}{dt} = \bm{\Omega} \times \bm{a},
+ \end{equation}
+ where $\bm{\Omega} = (0,0, -\omega)$ is an angular velocity vector.
+
+
+\end{frame}
+\begin{frame}
+
+ Magnetization vector $\bm{M}$ in the laboratory frame can be represented as a sum of its individual components along the main axis of the rotating frame $\bm{M} = \tilde{M_x} \bm{\tilde{e_x}} + \tilde{M_y} \bm{\tilde{e_y}}+ \tilde{M_z} \bm{\tilde{e_z}}$.  The time derivative for such a vector can then be calculated as:
+ 
+ \begin{equation}
+ \begin{array} {lcl}
+ \dfrac{d\bm{M}}{dt} &=& \dfrac{d\tilde{M_x}}{dt} \bm{\tilde{e_x}} + \tilde{M_x} \dfrac{d\bm{\tilde{e_x}}}{dt} + \dfrac{\tilde{dM_y}}{dt} \bm{\tilde{e_y}} + \tilde{M_y} \dfrac{\bm{d\tilde{e_y}}}{dt} + \dfrac{\tilde{dM_z}}{dt} \bm{\tilde{e_z}} + \tilde{M_z} \dfrac{d\bm{\tilde{e_z}}}{dt} = \\
+ &=& \dfrac{\delta \bm{M}}{\delta t} + \Omega \times \bm{M}
+ \end{array},
+ \end{equation}
+ where symbol $\dfrac{\delta \bm{M}}{\delta t}$ represents a change of magnetization with respect to rotating frame unit vectors $\bm{\tilde{e_x}}, \bm{\tilde{e_y}}, \bm{\tilde{e_z}}$. Using  Eq.\ref{eq:precession_compact} $\dfrac{\delta \bm{M}}{\delta t}$ can be expressed as:
+
+
+\end{frame}
+\begin{frame}
+ 
+ \begin{equation}
+ \dfrac{\delta \bm{M}}{\delta t} = \dfrac{d\bm{M}}{dt} - \Omega \times \bm{M} = \gamma \bm{M} \times \bm{H} + \bm{M} \times \Omega = \gamma \bm{M} \times \bm{H_{eff}},
+ \end{equation}
+ where  $\bm {H_{eff}} = \bm{H_0} + \dfrac{\bm {\Omega}}{\gamma}$ is an effective magnetic field. Overall it means that Eq.\ref{eq:precession_compact} is also good for describing the evolution of magnetization in the rotating frame, where the external magnetic field $\bm{H}$ is replaced by an effective field $\bm {H_{eff}}$. Obviously, in the frame rotating with Larmor frequency $\gamma H_0 $,  $H_{eff}=0$ and the magnetization vector is stationary.
+ 
+ Let us find out the effect of oscillating magnetic field in the rotating frame. The magnetic field oscillating at some frequency $\omega$ as $ 2 H_1 \cos \omega t $ can be represented as two rotating fields, where one field rotates left with amplitude $H_1$ and the other one rotating right with the same amplitude $H_1$, as shown schematically in Fig.\ref{fig:rot_frame}B. In the frame rotating left, the effective magnetic field then becomes:
+ \begin{equation} \label{eq:H_eff}
+ \bm{H_{eff}} = \bm{H_0} + \dfrac{\bm{\Omega}}{\gamma} + \bm{H_1}
+ \end{equation}
+ Here, the terms associated with the right rotation are discarded, because the oscillate at a very high frequency $2 \omega$ in the left rotating frame and have little effect.
+ 
+ %%%% FIGURE ROTATING FRAME
+ \begin{figure}[ht]
+ 	\caption{(A)Rotating frame coordinates ($\tilde{x}$,$\tilde{y}$,$\tilde{z}$) with respect to laboratory frame coordinates ($x$,$y$,$z$). (B) Oscillating field decomposed into two components, where one rotates clockwise and the other counterclockwise. (C) Schematic representation of effective field $\bm{H_{eff}}$ in the rotating frame. (D) action of a pulse on the magnetization vector $\bm{M}$.}
+ 	\label{fig:rot_frame}
+ 	\centering
+ 	\includegraphics[scale=0.7]{rotating_frame.png}
+ \end{figure}
+ %%%% END OF FIGURE
+
+\end{frame}
+\begin{frame}
+	 
+ Magnetization in the rotating frame precesses with its respective Larmor frequency around the direction of an effective magnetic field $\bm{H_{eff}}$ given by Eq.\ref{eq:H_eff}. For a field oscillating on resonance (i.e. exactly at the Larmor frequency) the effective field has components only along $x,y$-axis. If the oscillating magnetic field is applied for a brief period of time $t_p$, i.e. in a form of a pulse, the effect of such a pulse is a rotation of magnetization by a finite angle:
+ 
+ \begin{equation}
+ \theta = \gamma H_1 t_p
+ \end{equation}
+ 
+ Now if a starting magnetization of our sample is directed along $z$-axis, a pulse having a nominal flip angle $\pi/2$ with an effective field $\bm{H_{eff}}$ along the $x$-axis in the rotating frame, would align the magnetization vector along the $y$-axis. When the oscillating field is switched off, the magnetization would stay stationary in the rotating frame which means it will precess with its own Larmor frequency in the laboratory frame.
+ 
+ %%%% FIGURE SAMPLE COIL
+ \begin{figure}[ht]
+ 	\caption{(A) A sample with magnetization $\bm{M}$ placed inside a coil. (B) FID following a $\pi/2$ pulse is being Fourier transformed to give a NMR spectrum.}
+ 	\label{fig:sample_coil}
+ 	\centering
+ 	\includegraphics[scale=0.5]{sample_coil.png}
+ \end{figure}
+ %%%% END OF FIGURE
+
+\end{frame}
+\begin{frame} 
+ The oscillating magnetic field in NMR spectrometers is usually produced by a coil would around as shown in Fig.\ref{fig:sample_coil}A. Moreover the same coil is being used for the detection of NMR signals. The precessing magnetization produces magnetic field, oscillating with the Larmor frequency and therefore produces oscillating  magnetic field flux through the coil. The oscillating magnetic field flux in turn induces small voltages across the coil which can be detected. The detection of NMR signals in almost all modern day spectrometers (and MRI machines) is based on this simple scheme. The signal following a $\pi/2$ pulse is called free induction decay or FID(it does not last forever as will be shown later ), which Fourier transform gives a NMR spectrum as shown in Fig.\ref{fig:sample_coil}B.
+ 
+ Detection of FID following a single pulse often provides very limited information. The power of modern magnetic resonance lies in the design of specialized trains of pulses or pulse sequences, which can reveal a variety of interactions and connections of the materials under study (an example of 2D spectrum produced by a pulse sequence is shown in Fig.\ref{fig:fibrils}B).
+ 
+ \textbf{Further reading:} Slichter, Ch. 2.1, 2.4 
+ 
+	
+	
+	
+\end{frame}
 
 %%%%% END OF RESONANT ABSORPTION
 

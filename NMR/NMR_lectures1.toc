@@ -24,3 +24,4 @@
 \beamer@subsectionintoc {3}{3}{Chemical shift anisotropy.}{66}{0}{3}
 \beamer@subsectionintoc {3}{4}{Magic angle spinning.}{73}{0}{3}
 \beamer@subsectionintoc {3}{5}{Quadrupolar interaction.}{77}{0}{3}
+\beamer@sectionintoc {4}{Spin dynamics.}{84}{0}{4}
