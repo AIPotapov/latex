@@ -1609,9 +1609,10 @@ For all the transitions we obtain:
 
 
 \section{Spin dynamics.}
+\subsection{Rotating frame.}
 
-\begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	Let's recap the solution for the equations of motion of a magnetic moment:
+\begin{frame}[shrink=5]{\thesection.\thesubsection. \insertsubsection}
+	Let's recall the solution for the equations of motion of a magnetic moment:
 	
 		    In a uniform magnetic field directed along $z$-axis $\bm{B} = (0, 0, B_0)$, the equation for individual components of $\bm{M}$ follow the equations:
 		    
@@ -1647,14 +1648,13 @@ For all the transitions we obtain:
 
 		    	    
 \end{frame}
-\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+\begin{frame}[shrink=5]{\thesection.\thesubsection. \insertsubsection}
   \textbf{ Let's explore, how oscillating transverse magnetic fields affect the evolution of a magnetic moment.}
-
+  This can be done by recording the equations for magnetization in the \alert{rotating frame}.
+  \onslide<2-> 
 	
-	
- Section \ref{Res_absorbtion} suggests a potential method for detecting NMR, based on absorption of electromagnetic irradiation by a system of spins, however such approach is not commonly used any more. In fact, most modern NMR (and MRI) detection is based on the detection of precessing magnetization. We will use classical description based of precessing magnetization to find out the effect of oscillating magnetic field beyond simple perturbation theory presented in section \ref{Res_absorbtion}.
- 
- As shown above, in the laboratory frame the magnetization vector $\bm{M}$ precesses around the direction of magnetic field $H_0$ with Larmor frequency $\omega_0$, which is described by Eqs.\ref{precession}. Now we  want to transform these equations into a frame which rotates at the angular velocity $\omega$.  The coordinates in the laboratory frame $(x,y,z)$ can be expressed through the coordinates of the lefthand-rotating frame $(\tilde{x}, \tilde{y}, \tilde{z})$, shown schematically in Fig.\ref{fig:rot_frame}A:
+  
+  Now we  want to transform these equations into a frame which rotates at the angular velocity $\omega$.  The coordinates in the laboratory frame $(x,y,z)$ can be expressed through the coordinates of the lefthand-rotating frame $(\tilde{x}, \tilde{y}, \tilde{z})$, shown schematically in Fig.\ref{fig:rot_frame}:
  \begin{equation}
  \begin{array}{lcl}
  x &=& \tilde{x} \cos \omega t + \tilde{y} \sin \omega t \\
@@ -1663,10 +1663,16 @@ For all the transitions we obtain:
  \end{array}
  \end{equation}
  
+  %%%% FIGURE ROTATING FRAME
+  \begin{figure}[ht] 
+  	\caption{Rotating frame coordinates ($\tilde{x}$,$\tilde{y}$,$\tilde{z}$) with respect to laboratory frame coordinates ($x$,$y$,$z$). }
+  	\label{fig:rot_frame}
+  	\centering
+  	\includegraphics[scale=0.3]{rotating_frame.png}
+  \end{figure}
+  %%%% END OF FIGURE 
 \end{frame}
-\begin{frame}
-
- For a point $(\tilde{x},\tilde{y},\tilde{z})$ stationary in the rotating frame, the time change of the laboratory frame coordinates becomes:
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}For a point $(\tilde{x},\tilde{y},\tilde{z})$ stationary in the rotating frame, the time change of the laboratory frame coordinates becomes:
  
  \begin{equation} \label{eq:rotating_frame_derivative}
  \begin{array}{lcl}
@@ -1685,6 +1691,8 @@ For all the transitions we obtain:
 
 \end{frame}
 \begin{frame}
+	
+
 
  Magnetization vector $\bm{M}$ in the laboratory frame can be represented as a sum of its individual components along the main axis of the rotating frame $\bm{M} = \tilde{M_x} \bm{\tilde{e_x}} + \tilde{M_y} \bm{\tilde{e_y}}+ \tilde{M_z} \bm{\tilde{e_z}}$.  The time derivative for such a vector can then be calculated as:
  
@@ -1694,16 +1702,31 @@ For all the transitions we obtain:
  &=& \dfrac{\delta \bm{M}}{\delta t} + \Omega \times \bm{M}
  \end{array},
  \end{equation}
- where symbol $\dfrac{\delta \bm{M}}{\delta t}$ represents a change of magnetization with respect to rotating frame unit vectors $\bm{\tilde{e_x}}, \bm{\tilde{e_y}}, \bm{\tilde{e_z}}$. Using  Eq.\ref{eq:precession_compact} $\dfrac{\delta \bm{M}}{\delta t}$ can be expressed as:
+ where symbol $\dfrac{\delta \bm{M}}{\delta t}$ represents a change of magnetization with respect to rotating frame unit vectors $\bm{\tilde{e_x}}, \bm{\tilde{e_y}}, \bm{\tilde{e_z}}$. Recalling equation describing precession  Eq.\ref{eq:precession_compact}  $\dfrac{\delta \bm{M}}{\delta t}$ can be expressed as:
+
+ \begin{equation}
+ \dfrac{\delta \bm{M}}{\delta t} = \dfrac{d\bm{M}}{dt} - \Omega \times \bm{M} = \gamma \bm{M} \times \bm{H} + \bm{M} \times \Omega = \gamma \bm{M} \times \bm{H_{eff}},
+ \end{equation}
+ where  $\bm {H_{eff}} = \bm{H_0} + \dfrac{\bm {\Omega}}{\gamma}$ is an effective magnetic field. 
 
 
 \end{frame}
 \begin{frame}
+	
+
+	
+
  
- \begin{equation}
- \dfrac{\delta \bm{M}}{\delta t} = \dfrac{d\bm{M}}{dt} - \Omega \times \bm{M} = \gamma \bm{M} \times \bm{H} + \bm{M} \times \Omega = \gamma \bm{M} \times \bm{H_{eff}},
- \end{equation}
- where  $\bm {H_{eff}} = \bm{H_0} + \dfrac{\bm {\Omega}}{\gamma}$ is an effective magnetic field. Overall it means that Eq.\ref{eq:precession_compact} is also good for describing the evolution of magnetization in the rotating frame, where the external magnetic field $\bm{H}$ is replaced by an effective field $\bm {H_{eff}}$. Obviously, in the frame rotating with Larmor frequency $\gamma H_0 $,  $H_{eff}=0$ and the magnetization vector is stationary.
+ 	%%%% FIGURE ROTATING FRAME
+ 	\begin{figure}[ht] 
+ 		\caption{(A)Rotating frame coordinates ($\tilde{x}$,$\tilde{y}$,$\tilde{z}$) with respect to laboratory frame coordinates ($x$,$y$,$z$). (B) Oscillating field decomposed into two components, where one rotates clockwise and the other counterclockwise. (C) Schematic representation of effective field $\bm{H_{eff}}$ in the rotating frame. (D) action of a pulse on the magnetization vector $\bm{M}$.}
+ 		\label{fig:rot_frame}
+ 		\centering
+ 		\includegraphics[scale=0.7]{rotating_frame.png}
+ 	\end{figure}
+ 	%%%% END OF FIGURE 
+ 
+ 
  
  Let us find out the effect of oscillating magnetic field in the rotating frame. The magnetic field oscillating at some frequency $\omega$ as $ 2 H_1 \cos \omega t $ can be represented as two rotating fields, where one field rotates left with amplitude $H_1$ and the other one rotating right with the same amplitude $H_1$, as shown schematically in Fig.\ref{fig:rot_frame}B. In the frame rotating left, the effective magnetic field then becomes:
  \begin{equation} \label{eq:H_eff}
@@ -1711,14 +1734,7 @@ For all the transitions we obtain:
  \end{equation}
  Here, the terms associated with the right rotation are discarded, because the oscillate at a very high frequency $2 \omega$ in the left rotating frame and have little effect.
  
- %%%% FIGURE ROTATING FRAME
- \begin{figure}[ht]
- 	\caption{(A)Rotating frame coordinates ($\tilde{x}$,$\tilde{y}$,$\tilde{z}$) with respect to laboratory frame coordinates ($x$,$y$,$z$). (B) Oscillating field decomposed into two components, where one rotates clockwise and the other counterclockwise. (C) Schematic representation of effective field $\bm{H_{eff}}$ in the rotating frame. (D) action of a pulse on the magnetization vector $\bm{M}$.}
- 	\label{fig:rot_frame}
- 	\centering
- 	\includegraphics[scale=0.7]{rotating_frame.png}
- \end{figure}
- %%%% END OF FIGURE
+
 
 \end{frame}
 \begin{frame}

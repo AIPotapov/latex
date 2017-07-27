@@ -25,7 +25,9 @@
 \beamer@slide {eq:sigma_zz}{68}
 \beamer@slide {fig: CSA}{71}
 \beamer@slide {eq: MAS}{75}
-\beamer@slide {eq:rotating_frame_derivative}{86}
-\beamer@slide {eq:H_eff}{88}
-\beamer@slide {fig:rot_frame}{88}
-\beamer@slide {fig:sample_coil}{89}
+\beamer@slide {precession}{85}
+\beamer@slide {fig:rot_frame}{86}
+\beamer@slide {eq:rotating_frame_derivative}{87}
+\beamer@slide {fig:rot_frame}{89}
+\beamer@slide {eq:H_eff}{89}
+\beamer@slide {fig:sample_coil}{90}

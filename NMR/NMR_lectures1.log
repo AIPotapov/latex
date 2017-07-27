@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.10)  27 JUL 2017 11:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.10)  27 JUL 2017 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -774,6 +774,12 @@ LaTeX Warning: Label `fig1' multiply defined.
 
 LaTeX Warning: Label `fig1' multiply defined.
 
+
+LaTeX Warning: Label `precession' multiply defined.
+
+
+LaTeX Warning: Label `fig:rot_frame' multiply defined.
+
 )
 \openout1 = `NMR_lectures1.aux'.
 
@@ -951,7 +957,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [3
 
-] <wine_spectrum.jpg, id=168, 722.7pt x 542.025pt>
+] <wine_spectrum.jpg, id=172, 722.7pt x 542.025pt>
 File: wine_spectrum.jpg Graphic file (type jpg)
 
 <use wine_spectrum.jpg>
@@ -967,7 +973,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 96.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<prion.jpg, id=171, 1284.8pt x 1055.945pt>
+<prion.jpg, id=175, 1284.8pt x 1055.945pt>
 File: prion.jpg Graphic file (type jpg)
  <use prion.jpg>
 Package pdftex.def Info: prion.jpg used on input line 96.
@@ -985,19 +991,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--96
 [4
 
  <./wine_spectrum.jpg> <./prion.jpg>]
-<well_logging1.jpg, id=184, 147.46986pt x 415.0642pt>
+<well_logging1.jpg, id=188, 147.46986pt x 415.0642pt>
 File: well_logging1.jpg Graphic file (type jpg)
  <use well_logging1.jpg>
 Package pdftex.def Info: well_logging1.jpg used on input line 129.
 (pdftex.def)             Requested size: 46.0916pt x 129.72623pt.
 
-<well_logging2.png, id=185, 198.7425pt x 326.21875pt>
+<well_logging2.png, id=189, 198.7425pt x 326.21875pt>
 File: well_logging2.png Graphic file (type png)
  <use well_logging2.png>
 Package pdftex.def Info: well_logging2.png used on input line 129.
 (pdftex.def)             Requested size: 46.0916pt x 75.65591pt.
 
-<well_logging3.png, id=187, 361.35pt x 864.22874pt>
+<well_logging3.png, id=191, 361.35pt x 864.22874pt>
 File: well_logging3.png Graphic file (type png)
  <use well_logging3.png>
 Package pdftex.def Info: well_logging3.png used on input line 129.
@@ -1006,7 +1012,7 @@ Package pdftex.def Info: well_logging3.png used on input line 129.
 [5
 
  <./well_logging1.jpg> <./well_logging2.png> <./well_logging3.png>]
-<mri.jpeg, id=199, 1499.6025pt x 1220.56pt>
+<mri.jpeg, id=203, 1499.6025pt x 1220.56pt>
 File: mri.jpeg Graphic file (type jpg)
  <use mri.jpeg>
 Package pdftex.def Info: mri.jpeg used on input line 141.
@@ -1030,7 +1036,7 @@ ad of 5 percent on input line 174.
 
 ] [8
 
-] <precession.png, id=228, 170.0754pt x 205.2468pt>
+] <precession.png, id=232, 170.0754pt x 205.2468pt>
 File: precession.png Graphic file (type png)
  <use precession.png>
 Package pdftex.def Info: precession.png used on input line 230.
@@ -1071,7 +1077,7 @@ Overfull \vbox (1.47937pt too high) detected at line 350
 
 ] [16
 
-] <two-level_system.png, id=290, 446.6286pt x 298.2342pt>
+] <two-level_system.png, id=294, 446.6286pt x 298.2342pt>
 File: two-level_system.png Graphic file (type png)
 
 <use two-level_system.png>
@@ -1116,7 +1122,7 @@ ead of 5 percent on input line 476.
 
 [21
 
-] <two-level_excite.png, id=329, 445.1832pt x 298.2342pt>
+] <two-level_excite.png, id=333, 445.1832pt x 298.2342pt>
 File: two-level_excite.png Graphic file (type png)
 
 <use two-level_excite.png>
@@ -1125,7 +1131,7 @@ Package pdftex.def Info: two-level_excite.png used on input line 492.
  [22
 
  <./two-level_excite.png>]
-<two_level_population.png, id=337, 306.9066pt x 232.7094pt>
+<two_level_population.png, id=341, 306.9066pt x 232.7094pt>
 File: two_level_population.png Graphic file (type png)
 
 <use two_level_population.png>
@@ -1143,7 +1149,7 @@ Package pdftex.def Info: two_level_population.png used on input line 507.
 ] (./NMR_lectures1.toc) [27
 
 ]
-<diamagnetic_term.png, id=387, 245.718pt x 246.6816pt>
+<diamagnetic_term.png, id=391, 245.718pt x 246.6816pt>
 File: diamagnetic_term.png Graphic file (type png)
 
 <use diamagnetic_term.png>
@@ -1152,13 +1158,13 @@ Package pdftex.def Info: diamagnetic_term.png used on input line 589.
  [28
 
  <./diamagnetic_term.png>]
-<benzene1.png, id=396, 516.4896pt x 159.9576pt>
+<benzene1.png, id=400, 516.4896pt x 159.9576pt>
 File: benzene1.png Graphic file (type png)
  <use benzene1.png>
 Package pdftex.def Info: benzene1.png used on input line 649.
 (pdftex.def)             Requested size: 92.1879pt x 28.54948pt.
 
-<benzene2.png, id=397, 468.7914pt x 384.9582pt>
+<benzene2.png, id=401, 468.7914pt x 384.9582pt>
 File: benzene2.png Graphic file (type png)
  <use benzene2.png>
 Package pdftex.def Info: benzene2.png used on input line 649.
@@ -1196,7 +1202,7 @@ Underfull \hbox (badness 1270) in paragraph at lines 649--649
 [29
 
  <./benzene1.png> <./benzene2.png>]
-<tetramethylsilane.png, id=408, 99.31142pt x 76.3517pt>
+<tetramethylsilane.png, id=412, 99.31142pt x 76.3517pt>
 File: tetramethylsilane.png Graphic file (type png)
 
 <use tetramethylsilane.png>
@@ -1207,7 +1213,7 @@ Overfull \hbox (3.56398pt too wide) in paragraph at lines 679--679
  [][] 
  []
 
-<proton_chemical_shifts.png, id=409, 418.13358pt x 264.99pt>
+<proton_chemical_shifts.png, id=413, 418.13358pt x 264.99pt>
 File: proton_chemical_shifts.png Graphic file (type png)
 
 <use proton_chemical_shifts.png>
@@ -1226,7 +1232,7 @@ Overfull \vbox (2.89871pt too high) detected at line 679
 [30
 
  <./tetramethylsilane.png> <./proton_chemical_shifts.png>]
-<methyl_acetate.png, id=424, 410.53375pt x 238.8925pt>
+<methyl_acetate.png, id=428, 410.53375pt x 238.8925pt>
 File: methyl_acetate.png Graphic file (type png)
 
 <use methyl_acetate.png>
@@ -1250,7 +1256,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 703--703
 [31
 
  <./methyl_acetate.png>]
-<carbon_chemical_shifts.png, id=436, 688.5725pt x 211.79124pt>
+<carbon_chemical_shifts.png, id=440, 688.5725pt x 211.79124pt>
 File: carbon_chemical_shifts.png Graphic file (type png)
 
 <use carbon_chemical_shifts.png>
@@ -1259,7 +1265,7 @@ Package pdftex.def Info: carbon_chemical_shifts.png used on input line 711.
  [32
 
  <./carbon_chemical_shifts.png>]
-<J-coupling.png, id=445, 436.9926pt x 185.0112pt>
+<J-coupling.png, id=449, 436.9926pt x 185.0112pt>
 File: J-coupling.png Graphic file (type png)
  <use J-coupling.png>
 Package pdftex.def Info: J-coupling.png used on input line 724.
@@ -1277,7 +1283,7 @@ Overfull \vbox (4.98111pt too high) detected at line 724
 ] [36
 
 ]
-<AXsystem.png, id=471, 840.741pt x 628.749pt>
+<AXsystem.png, id=476, 840.741pt x 628.749pt>
 File: AXsystem.png Graphic file (type png)
  <use AXsystem.png>
 Package pdftex.def Info: AXsystem.png used on input line 810.
@@ -1296,7 +1302,7 @@ Overfull \vbox (23.52281pt too high) detected at line 810
  <./AXsystem.png>] [38
 
 ]
-<nmracetaldehyde.png, id=487, 970.3452pt x 443.7378pt>
+<nmracetaldehyde.png, id=491, 970.3452pt x 443.7378pt>
 File: nmracetaldehyde.png Graphic file (type png)
 
 <use nmracetaldehyde.png>
@@ -1310,13 +1316,13 @@ l.853 \end{frame}
                   [39
 
  <./nmracetaldehyde.png>]
-<ethyl_alcohol.jpg, id=495, 200.75pt x 200.75pt>
+<ethyl_alcohol.jpg, id=499, 200.75pt x 200.75pt>
 File: ethyl_alcohol.jpg Graphic file (type jpg)
  <use ethyl_alcohol.jpg>
 Package pdftex.def Info: ethyl_alcohol.jpg used on input line 870.
 (pdftex.def)             Requested size: 40.14928pt x 40.14928pt.
 
-<ethyl_alcohol_nmr.png, id=496, 622.325pt x 456.70625pt>
+<ethyl_alcohol_nmr.png, id=500, 622.325pt x 456.70625pt>
 File: ethyl_alcohol_nmr.png Graphic file (type png)
 
 <use ethyl_alcohol_nmr.png>
@@ -1329,7 +1335,7 @@ Overfull \vbox (8.14804pt too high) detected at line 870
 [40
 
  <./ethyl_alcohol.jpg> <./ethyl_alcohol_nmr.png>]
-<j-couplings.png, id=504, 385.44pt x 166.6225pt>
+<j-couplings.png, id=508, 385.44pt x 166.6225pt>
 File: j-couplings.png Graphic file (type png)
  <use j-couplings.png>
 Package pdftex.def Info: j-couplings.png used on input line 902.
@@ -1340,7 +1346,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 902--902
 chem . libretexts . org / Textbook _ Maps /
  []
 
-<C2H2Cl4.png, id=507, 820.9872pt x 399.4122pt>
+<C2H2Cl4.png, id=511, 820.9872pt x 399.4122pt>
 File: C2H2Cl4.png Graphic file (type png)
  <use C2H2Cl4.png>
 Package pdftex.def Info: C2H2Cl4.png used on input line 902.
@@ -1362,7 +1368,7 @@ Overfull \vbox (6.36618pt too high) detected at line 902
 [41
 
  <./j-couplings.png> <./C2H2Cl4.png>]
-<CF3H.png, id=517, 466.8642pt x 383.031pt>
+<CF3H.png, id=521, 466.8642pt x 383.031pt>
 File: CF3H.png Graphic file (type png)
  <use CF3H.png>
 Package pdftex.def Info: CF3H.png used on input line 911.
@@ -1380,7 +1386,7 @@ File: tetramethylsilane.png Graphic file (type png)
 Package pdftex.def Info: tetramethylsilane.png used on input line 968.
 (pdftex.def)             Requested size: 49.65558pt x 38.17575pt.
 
-<Benzene-2D-flat.png, id=536, 275.0275pt x 295.1025pt>
+<Benzene-2D-flat.png, id=540, 275.0275pt x 295.1025pt>
 File: Benzene-2D-flat.png Graphic file (type png)
 
 <use Benzene-2D-flat.png>
@@ -1389,7 +1395,7 @@ Package pdftex.def Info: Benzene-2D-flat.png used on input line 968.
  [45
 
  <./Benzene-2D-flat.png>]
-<DBTproblem1.png, id=545, 461.0826pt x 176.8206pt>
+<DBTproblem1.png, id=549, 461.0826pt x 176.8206pt>
 File: DBTproblem1.png Graphic file (type png)
  <use DBTproblem1.png>
 Package pdftex.def Info: DBTproblem1.png used on input line 976.
@@ -1403,7 +1409,7 @@ File: DBTproblem1.png Graphic file (type png)
 Package pdftex.def Info: DBTproblem1.png used on input line 983.
 (pdftex.def)             Requested size: 184.42976pt x 70.72697pt.
 
-<DBTproblem2.png, id=553, 785.8158pt x 276.0714pt>
+<DBTproblem2.png, id=557, 785.8158pt x 276.0714pt>
 File: DBTproblem2.png Graphic file (type png)
  <use DBTproblem2.png>
 Package pdftex.def Info: DBTproblem2.png used on input line 983.
@@ -1417,7 +1423,7 @@ Overfull \hbox (7.03088pt too wide) in paragraph at lines 983--983
 
  <./DBTproblem2.png>] [48
 
-] <ABsystem.png, id=566, 796.8972pt x 619.5948pt>
+] <ABsystem.png, id=570, 796.8972pt x 619.5948pt>
 File: ABsystem.png Graphic file (type png)
 
 <use ABsystem.png>
@@ -1436,7 +1442,7 @@ Overfull \hbox (27.82126pt too wide) in paragraph at lines 1054--1054
 
 [50
 
-] <bromothiophene.png, id=583, 596.2275pt x 445.665pt>
+] <bromothiophene.png, id=587, 596.2275pt x 445.665pt>
 File: bromothiophene.png Graphic file (type png)
 
 <use bromothiophene.png>
@@ -1445,14 +1451,14 @@ Package pdftex.def Info: bromothiophene.png used on input line 1077.
  [51
 
  <./bromothiophene.png>]
-<ABspectra.png, id=594, 1009.8528pt x 276.0714pt>
+<ABspectra.png, id=598, 1009.8528pt x 276.0714pt>
 File: ABspectra.png Graphic file (type png)
  <use ABspectra.png>
 Package pdftex.def Info: ABspectra.png used on input line 1107.
 (pdftex.def)             Requested size: 252.46259pt x 69.01767pt.
  [52
 
- <./ABspectra.png>] <ABspectra2.png, id=603, 442.2924pt x 470.7186pt>
+ <./ABspectra.png>] <ABspectra2.png, id=607, 442.2924pt x 470.7186pt>
 File: ABspectra2.png Graphic file (type png)
 
 <use ABspectra2.png>
@@ -1470,7 +1476,7 @@ Overfull \hbox (13.68913pt too wide) in paragraph at lines 1158--1158
 [] 
  []
 
-<dipolar_fields.png, id=634, 718.685pt x 555.07375pt>
+<dipolar_fields.png, id=638, 718.685pt x 555.07375pt>
 File: dipolar_fields.png Graphic file (type png)
  <use dipolar_fields.png>
 Package pdftex.def Info: dipolar_fields.png used on input line 1158.
@@ -1494,7 +1500,7 @@ Overfull \vbox (3.49156pt too high) detected at line 1158
 ] [62
 
 ]
-<NMRdoublets.png, id=681, 748.2354pt x 246.1998pt>
+<NMRdoublets.png, id=685, 748.2354pt x 246.1998pt>
 File: NMRdoublets.png Graphic file (type png)
  <use NMRdoublets.png>
 Package pdftex.def Info: NMRdoublets.png used on input line 1271.
@@ -1503,7 +1509,7 @@ Package pdftex.def Info: NMRdoublets.png used on input line 1271.
 [63
 
  <./NMRdoublets.png>]
-<powder_pattern.png, id=690, 249.93375pt x 307.1475pt>
+<powder_pattern.png, id=694, 249.93375pt x 307.1475pt>
 File: powder_pattern.png Graphic file (type png)
 
 <use powder_pattern.png>
@@ -1527,7 +1533,7 @@ Underfull \hbox (badness 4217) in paragraph at lines 1291--1291
 [64
 
  <./powder_pattern.png (PNG copy)>]
-<powder_pattern2.png, id=698, 748.2354pt x 509.2626pt>
+<powder_pattern2.png, id=702, 748.2354pt x 509.2626pt>
 File: powder_pattern2.png Graphic file (type png)
 
 <use powder_pattern2.png>
@@ -1536,7 +1542,7 @@ Package pdftex.def Info: powder_pattern2.png used on input line 1301.
  [65
 
  <./powder_pattern2.png>]
-<solid-liquid_NMR.png, id=706, 2310.6325pt x 1227.58624pt>
+<solid-liquid_NMR.png, id=710, 2310.6325pt x 1227.58624pt>
 File: solid-liquid_NMR.png Graphic file (type png)
 
 <use solid-liquid_NMR.png>
@@ -1545,7 +1551,7 @@ Package pdftex.def Info: solid-liquid_NMR.png used on input line 1311.
  [66
 
  <./solid-liquid_NMR.png>]
-<CSA1.png, id=713, 475.54764pt x 129.09297pt>
+<CSA1.png, id=717, 475.54764pt x 129.09297pt>
 File: CSA1.png Graphic file (type png)
  <use CSA1.png>
 Package pdftex.def Info: CSA1.png used on input line 1346.
@@ -1559,7 +1565,7 @@ ead of 5 percent on input line 1346.
 
  <./CSA1.png>] [68
 
-] <CSA_tensor.png, id=732, 306.4248pt x 323.7696pt>
+] <CSA_tensor.png, id=736, 306.4248pt x 323.7696pt>
 File: CSA_tensor.png Graphic file (type png)
 
 <use CSA_tensor.png>
@@ -1573,7 +1579,7 @@ Overfull \vbox (0.807pt too high) detected at line 1413
 
  <./CSA_tensor.png>] [70
 
-] <CSA2.png, id=749, 262.581pt x 368.0952pt>
+] <CSA2.png, id=753, 262.581pt x 368.0952pt>
 File: CSA2.png Graphic file (type png)
 
 <use CSA2.png>
@@ -1587,7 +1593,7 @@ Overfull \vbox (10.02727pt too high) detected at line 1439
 
  <./CSA2.png>] [72
 
-] <MAS.png, id=763, 285.7074pt x 255.8358pt>
+] <MAS.png, id=767, 285.7074pt x 255.8358pt>
 File: MAS.png Graphic file (type png)
 
 <use MAS.png>
@@ -1604,7 +1610,7 @@ ad of 5 percent on input line 1471.
 
 ] [75
 
-] <MAS2.png, id=785, 897.5934pt x 525.162pt>
+] <MAS2.png, id=789, 897.5934pt x 525.162pt>
 File: MAS2.png Graphic file (type png)
 
 <use MAS2.png>
@@ -1613,7 +1619,7 @@ Package pdftex.def Info: MAS2.png used on input line 1514.
  [76
 
  <./MAS2.png>]
-<Quadrupole.png, id=793, 310.761pt x 147.4308pt>
+<Quadrupole.png, id=797, 310.761pt x 147.4308pt>
 File: Quadrupole.png Graphic file (type png)
  <use Quadrupole.png>
 Package pdftex.def Info: Quadrupole.png used on input line 1532.
@@ -1630,7 +1636,7 @@ ad of 5 percent on input line 1532.
 ] [79
 
 ]
-<Quadrupole2.png, id=813, 691.383pt x 392.667pt>
+<Quadrupole2.png, id=817, 691.383pt x 392.667pt>
 File: Quadrupole2.png Graphic file (type png)
  <use Quadrupole2.png>
 Package pdftex.def Info: Quadrupole2.png used on input line 1572.
@@ -1641,7 +1647,7 @@ Overfull \vbox (6.91434pt too high) detected at line 1572
 
 [80
 
- <./Quadrupole2.png>] <Quadrupole3.png, id=821, 516.9714pt x 245.2362pt>
+ <./Quadrupole2.png>] <Quadrupole3.png, id=825, 516.9714pt x 245.2362pt>
 File: Quadrupole3.png Graphic file (type png)
 
 <use Quadrupole3.png>
@@ -1650,7 +1656,7 @@ Package pdftex.def Info: Quadrupole3.png used on input line 1583.
  [81
 
  <./Quadrupole3.png>]
-<Quadrupole_ZF.png, id=829, 258.2448pt x 214.8828pt>
+<Quadrupole_ZF.png, id=833, 258.2448pt x 214.8828pt>
 File: Quadrupole_ZF.png Graphic file (type png)
  <use Quadrupole_ZF.png>
 Package pdftex.def Info: Quadrupole_ZF.png used on input line 1594.
@@ -1663,65 +1669,87 @@ Package pdftex.def Info: Quadrupole_ZF.png used on input line 1594.
 ] (./NMR_lectures1.toc) [84
 
 ]
+File: precession.png Graphic file (type png)
 
-LaTeX Warning: Reference `Res_absorbtion' on page 85 undefined on input line 16
-26.
+<use precession.png>
+Package pdftex.def Info: precession.png used on input line 1650.
+(pdftex.def)             Requested size: 90.64235pt x 109.38783pt.
+pdfTeX warning (ext4): destination with the same identifier (name{precession}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1650 \end{frame}
+                  
 
-
-LaTeX Warning: Reference `Res_absorbtion' on page 85 undefined on input line 16
-26.
+Class beamer Warning: Frame text is shrunk by a factor of 5.38177 percent inste
+ad of 5 percent on input line 1650.
 
 [85
 
-] [86
-
-]
-Overfull \hbox (33.08994pt too wide) detected at line 1660
-[]\OML/cmm/m/it/10.95 ;
- []
-
-[87
-
-] <rotating_frame.png, id=875, 574.3056pt x 510.708pt>
+] <rotating_frame.png, id=861, 292.4526pt x 242.8272pt>
 File: rotating_frame.png Graphic file (type png)
 
 <use rotating_frame.png>
-Package pdftex.def Info: rotating_frame.png used on input line 1683.
-(pdftex.def)             Requested size: 402.01118pt x 357.49315pt.
+Package pdftex.def Info: rotating_frame.png used on input line 1674.
+(pdftex.def)             Requested size: 87.73645pt x 72.84871pt.
 
-Overfull \hbox (94.72131pt too wide) in paragraph at lines 1683--1683
- [] 
+
+Class beamer Warning: Frame text is shrunk by a factor of 15.75165 percent inst
+ead of 5 percent on input line 1674.
+
+[86
+
+ <./rotating_frame.png>] [87
+
+]
+Overfull \hbox (33.08994pt too wide) detected at line 1719
+[]\OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \vbox (467.2291pt too high) detected at line 1683
+Overfull \vbox (57.91988pt too high) detected at line 1719
  []
 
 [88
 
- <./rotating_frame.png>] <sample_coil.png, id=885, 893.2572pt x 233.1912pt>
-File: sample_coil.png Graphic file (type png)
+]pdfTeX warning (ext4): destination with the same identifier (name{fig:rot_fram
+e}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1742 \end{frame}
+                  
+File: rotating_frame.png Graphic file (type png)
+ <use rotating_frame.png>
+Package pdftex.def Info: rotating_frame.png used on input line 1742.
+(pdftex.def)             Requested size: 204.71542pt x 169.97787pt.
 
-<use sample_coil.png>
-Package pdftex.def Info: sample_coil.png used on input line 1703.
-(pdftex.def)             Requested size: 446.6275pt x 116.5953pt.
-
-Overfull \hbox (139.33763pt too wide) in paragraph at lines 1703--1703
- [] 
- []
-
-
-Overfull \vbox (130.14879pt too high) detected at line 1703
+Overfull \vbox (132.55476pt too high) detected at line 1742
  []
 
 [89
 
- <./sample_coil.png>]
+] <sample_coil.png, id=893, 893.2572pt x 233.1912pt>
+File: sample_coil.png Graphic file (type png)
+ <use sample_coil.png>
+Package pdftex.def Info: sample_coil.png used on input line 1762.
+(pdftex.def)             Requested size: 446.6275pt x 116.5953pt.
 
-LaTeX Warning: Reference `fig:fibrils' on page 90 undefined on input line 1714.
+Overfull \hbox (139.33763pt too wide) in paragraph at lines 1762--1762
+ [] 
+ []
 
+
+Overfull \vbox (130.14879pt too high) detected at line 1762
+ []
 
 [90
+
+ <./sample_coil.png>]
+
+LaTeX Warning: Reference `fig:fibrils' on page 91 undefined on input line 1773.
+
+
+[91
 
 ]
 \tf@nav=\write6
@@ -1733,14 +1761,14 @@ LaTeX Warning: Reference `fig:fibrils' on page 90 undefined on input line 1714.
 \tf@snm=\write8
 \openout8 = `NMR_lectures1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1742.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1742.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1801.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1801.
  (./NMR_lectures1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1742.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1742.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1801.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1801.
 
 Package rerunfilecheck Info: File `NMR_lectures1.out' has not changed.
-(rerunfilecheck)             Checksum: 47424829C1061B7C7A276E1BF72E31A6;2034.
+(rerunfilecheck)             Checksum: F03CB9D5E2E6ABCE098EA92C14753BA2;2100.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1755,21 +1783,18 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1742.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1801.
  ) 
 Here is how much of TeX's memory you used:
- 17838 strings out of 494953
- 337460 string characters out of 6180976
- 412882 words of memory out of 5000000
- 20387 multiletter control sequences out of 15000+600000
+ 17854 strings out of 494953
+ 337607 string characters out of 6180976
+ 409392 words of memory out of 5000000
+ 20401 multiletter control sequences out of 15000+600000
  23921 words of font info for 86 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,20n,64p,828b,664s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{fig:fibrils} has been referenced but does not exi
 st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Res_absorbtion} has been referenced but does not ex
-ist, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share
@@ -1797,10 +1822,10 @@ ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on NMR_lectures1.pdf (90 pages, 5327748 bytes).
+Output written on NMR_lectures1.pdf (91 pages, 5173113 bytes).
 PDF statistics:
- 1046 PDF objects out of 1200 (max. 8388607)
- 807 compressed objects within 9 object streams
- 237 named destinations out of 1000 (max. 500000)
- 539 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1055 PDF objects out of 1200 (max. 8388607)
+ 815 compressed objects within 9 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 547 words of extra memory for PDF output out of 10000 (max. 10000000)
 
