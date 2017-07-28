@@ -1690,9 +1690,7 @@ For all the transitions we obtain:
 
 
 \end{frame}
-\begin{frame}
-	
-
+\begin{frame}[shrink=5]{\thesection.\thesubsection. \insertsubsection}
 
  Magnetization vector $\bm{M}$ in the laboratory frame can be represented as a sum of its individual components along the main axis of the rotating frame $\bm{M} = \tilde{M_x} \bm{\tilde{e_x}} + \tilde{M_y} \bm{\tilde{e_y}}+ \tilde{M_z} \bm{\tilde{e_z}}$.  The time derivative for such a vector can then be calculated as:
  
@@ -1711,39 +1709,77 @@ For all the transitions we obtain:
 
 
 \end{frame}
-\begin{frame}
-	
-
-	
-
- 
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
  	%%%% FIGURE ROTATING FRAME
  	\begin{figure}[ht] 
- 		\caption{(A)Rotating frame coordinates ($\tilde{x}$,$\tilde{y}$,$\tilde{z}$) with respect to laboratory frame coordinates ($x$,$y$,$z$). (B) Oscillating field decomposed into two components, where one rotates clockwise and the other counterclockwise. (C) Schematic representation of effective field $\bm{H_{eff}}$ in the rotating frame. (D) action of a pulse on the magnetization vector $\bm{M}$.}
+ 		\caption{(A) Oscillating field decomposed into two components, where one rotates clockwise and the other counterclockwise. (B) Schematic representation of effective field $\bm{H_{eff}}$ in the rotating frame. (C) action of a pulse on the magnetization vector $\bm{M}$.}
  		\label{fig:rot_frame}
  		\centering
- 		\includegraphics[scale=0.7]{rotating_frame.png}
+ 		\includegraphics[scale=0.3]{rotating_frame.png}
  	\end{figure}
  	%%%% END OF FIGURE 
  
  
+
+ The magnetic field oscillating at frequency $\omega$  can be represented as two fields rotating clockwise and anti-clockwise
+ \begin{equation}
+    2 H_1 \cos \omega t  = H_1  \exp(i\omega t) + \exp(-i \omega t)
+ \end{equation}
  
- Let us find out the effect of oscillating magnetic field in the rotating frame. The magnetic field oscillating at some frequency $\omega$ as $ 2 H_1 \cos \omega t $ can be represented as two rotating fields, where one field rotates left with amplitude $H_1$ and the other one rotating right with the same amplitude $H_1$, as shown schematically in Fig.\ref{fig:rot_frame}B. In the frame rotating left, the effective magnetic field then becomes:
+   shown schematically in Fig.\ref{fig:rot_frame}B. 
+   
+   
+\end{frame}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+ 
+ 
+	%%%% FIGURE ROTATING FRAME
+	\begin{figure}[ht] 
+		\caption{(A) Oscillating field decomposed into two components, where one rotates clockwise and the other counterclockwise. (B) Schematic representation of effective field $\bm{H_{eff}}$ in the rotating frame. (C) action of a pulse on the magnetization vector $\bm{M}$.}
+		%\label{fig:rot_frame}
+		\centering
+		\includegraphics[scale=0.3]{rotating_frame.png}
+	\end{figure}
+	%%%% END OF FIGURE 
+  
+   
+    In the frame rotating left, the effective magnetic field then becomes:
  \begin{equation} \label{eq:H_eff}
  \bm{H_{eff}} = \bm{H_0} + \dfrac{\bm{\Omega}}{\gamma} + \bm{H_1}
  \end{equation}
- Here, the terms associated with the right rotation are discarded, because the oscillate at a very high frequency $2 \omega$ in the left rotating frame and have little effect.
- 
-
+  where terms associated with the right rotation are discarded, because the oscillate at a very high frequency $2 \omega$ in the left rotating frame and have little effect.
+  
+  
+  
 
 \end{frame}
-\begin{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+
+	%%%% FIGURE ROTATING FRAME
+	\begin{figure}[ht] 
+		\caption{(A) Oscillating field decomposed into two components, where one rotates clockwise and the other counterclockwise. (B) Schematic representation of effective field $\bm{H_{eff}}$ in the rotating frame. (C) action of a pulse on the magnetization vector $\bm{M}$.}
+		%\label{fig:rot_frame}
+		\centering
+		\includegraphics[scale=0.3]{rotating_frame.png}
+	\end{figure}
+	%%%% END OF FIGURE 	
+	
+	 Magnetization in the rotating frame precesses with its respective Larmor frequency around the direction of an effective magnetic field $\bm{H_{eff}}$ given by Eq.\ref{eq:H_eff}. For a field oscillating on resonance (i.e. exactly at the Larmor frequency) the effective field has components only along $x,y$-axis. If the oscillating magnetic field is applied for a brief period of time $t_p$, i.e. in a form of a pulse, the effect of such a pulse is a rotation of magnetization by a finite angle:
 	 
- Magnetization in the rotating frame precesses with its respective Larmor frequency around the direction of an effective magnetic field $\bm{H_{eff}}$ given by Eq.\ref{eq:H_eff}. For a field oscillating on resonance (i.e. exactly at the Larmor frequency) the effective field has components only along $x,y$-axis. If the oscillating magnetic field is applied for a brief period of time $t_p$, i.e. in a form of a pulse, the effect of such a pulse is a rotation of magnetization by a finite angle:
- 
- \begin{equation}
- \theta = \gamma H_1 t_p
- \end{equation}
+	 \begin{equation}
+	 \theta = \gamma H_1 t_p
+	 \end{equation}
+	 
+	 
+	
+	
+\end{frame}
+
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	 
+
  
  Now if a starting magnetization of our sample is directed along $z$-axis, a pulse having a nominal flip angle $\pi/2$ with an effective field $\bm{H_{eff}}$ along the $x$-axis in the rotating frame, would align the magnetization vector along the $y$-axis. When the oscillating field is switched off, the magnetization would stay stationary in the rotating frame which means it will precess with its own Larmor frequency in the laboratory frame.
  

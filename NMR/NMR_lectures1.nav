@@ -216,8 +216,12 @@
 \headcommand {\beamer@framepages {90}{90}}
 \headcommand {\slideentry {4}{1}{7}{91/91}{Rotating frame.}{0}}
 \headcommand {\beamer@framepages {91}{91}}
-\headcommand {\beamer@partpages {1}{91}}
-\headcommand {\beamer@subsectionpages {85}{91}}
-\headcommand {\beamer@sectionpages {84}{91}}
-\headcommand {\beamer@documentpages {91}}
-\headcommand {\def \inserttotalframenumber {91}}
+\headcommand {\slideentry {4}{1}{8}{92/92}{Rotating frame.}{0}}
+\headcommand {\beamer@framepages {92}{92}}
+\headcommand {\slideentry {4}{1}{9}{93/93}{Rotating frame.}{0}}
+\headcommand {\beamer@framepages {93}{93}}
+\headcommand {\beamer@partpages {1}{93}}
+\headcommand {\beamer@subsectionpages {85}{93}}
+\headcommand {\beamer@sectionpages {84}{93}}
+\headcommand {\beamer@documentpages {93}}
+\headcommand {\def \inserttotalframenumber {93}}

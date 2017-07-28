@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.10)  27 JUL 2017 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.10)  28 JUL 2017 13:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1702,13 +1702,13 @@ ead of 5 percent on input line 1674.
  <./rotating_frame.png>] [87
 
 ]
-Overfull \hbox (33.08994pt too wide) detected at line 1719
+Overfull \hbox (16.65076pt too wide) detected at line 1711
 []\OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \vbox (57.91988pt too high) detected at line 1719
- []
+Class beamer Warning: Frame text is shrunk by a factor of 7.51648 percent inste
+ad of 5 percent on input line 1711.
 
 [88
 
@@ -1716,40 +1716,55 @@ Overfull \vbox (57.91988pt too high) detected at line 1719
 e}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1742 \end{frame}
+l.1732 \end{frame}
                   
 File: rotating_frame.png Graphic file (type png)
  <use rotating_frame.png>
-Package pdftex.def Info: rotating_frame.png used on input line 1742.
-(pdftex.def)             Requested size: 204.71542pt x 169.97787pt.
+Package pdftex.def Info: rotating_frame.png used on input line 1732.
+(pdftex.def)             Requested size: 87.73645pt x 72.84871pt.
+ [89
 
-Overfull \vbox (132.55476pt too high) detected at line 1742
+]
+File: rotating_frame.png Graphic file (type png)
+ <use rotating_frame.png>
+Package pdftex.def Info: rotating_frame.png used on input line 1755.
+(pdftex.def)             Requested size: 87.73645pt x 72.84871pt.
+
+[90
+
+]
+File: rotating_frame.png Graphic file (type png)
+ <use rotating_frame.png>
+Package pdftex.def Info: rotating_frame.png used on input line 1777.
+(pdftex.def)             Requested size: 87.73645pt x 72.84871pt.
+
+Overfull \vbox (13.43777pt too high) detected at line 1777
  []
 
-[89
+[91
 
-] <sample_coil.png, id=893, 893.2572pt x 233.1912pt>
+] <sample_coil.png, id=908, 893.2572pt x 233.1912pt>
 File: sample_coil.png Graphic file (type png)
  <use sample_coil.png>
-Package pdftex.def Info: sample_coil.png used on input line 1762.
+Package pdftex.def Info: sample_coil.png used on input line 1795.
 (pdftex.def)             Requested size: 446.6275pt x 116.5953pt.
 
-Overfull \hbox (139.33763pt too wide) in paragraph at lines 1762--1762
+Overfull \hbox (139.33763pt too wide) in paragraph at lines 1795--1795
  [] 
  []
 
 
-Overfull \vbox (130.14879pt too high) detected at line 1762
+Overfull \vbox (27.38632pt too high) detected at line 1795
  []
 
-[90
+[92
 
  <./sample_coil.png>]
 
-LaTeX Warning: Reference `fig:fibrils' on page 91 undefined on input line 1773.
+LaTeX Warning: Reference `fig:fibrils' on page 93 undefined on input line 1806.
 
 
-[91
+[93
 
 ]
 \tf@nav=\write6
@@ -1761,11 +1776,11 @@ LaTeX Warning: Reference `fig:fibrils' on page 91 undefined on input line 1773.
 \tf@snm=\write8
 \openout8 = `NMR_lectures1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1801.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1801.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1834.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1834.
  (./NMR_lectures1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1801.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1801.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1834.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1834.
 
 Package rerunfilecheck Info: File `NMR_lectures1.out' has not changed.
 (rerunfilecheck)             Checksum: F03CB9D5E2E6ABCE098EA92C14753BA2;2100.
@@ -1783,13 +1798,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1801.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1834.
  ) 
 Here is how much of TeX's memory you used:
- 17854 strings out of 494953
- 337607 string characters out of 6180976
- 409392 words of memory out of 5000000
- 20401 multiletter control sequences out of 15000+600000
+ 17862 strings out of 494953
+ 337681 string characters out of 6180976
+ 409492 words of memory out of 5000000
+ 20405 multiletter control sequences out of 15000+600000
  23921 words of font info for 86 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,20n,64p,828b,664s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1822,10 +1837,10 @@ ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on NMR_lectures1.pdf (91 pages, 5173113 bytes).
+Output written on NMR_lectures1.pdf (93 pages, 5174879 bytes).
 PDF statistics:
- 1055 PDF objects out of 1200 (max. 8388607)
- 815 compressed objects within 9 object streams
- 239 named destinations out of 1000 (max. 500000)
+ 1071 PDF objects out of 1200 (max. 8388607)
+ 829 compressed objects within 9 object streams
+ 243 named destinations out of 1000 (max. 500000)
  547 words of extra memory for PDF output out of 10000 (max. 10000000)
 
