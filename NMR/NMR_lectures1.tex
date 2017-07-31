@@ -1,4 +1,4 @@
-\documentclass[handout]{beamer}
+\documentclass{beamer}
 \usepackage[latin1]{inputenc}
 \usepackage{bm, array, graphicx, hyperref, amsmath, setspace, geometry, wrapfig}
 \usepackage{hanging}
@@ -476,7 +476,7 @@
 \end{frame}	
 
 
-\subsection{Populations dynamics in two-level system.}
+\subsection{Populations dynamics in two-level system.} \label{seq: population dynamics }
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
 			For a two level system described before, the matrix element $\langle \alpha \vert \hat{I_x} \vert \beta \rangle = \frac{1}{2}$. The transition probability then becomes:
 		\begin{equation}\label{eq:two level transition probability}
@@ -1703,19 +1703,19 @@ For all the transitions we obtain:
  where symbol $\dfrac{\delta \bm{M}}{\delta t}$ represents a change of magnetization with respect to rotating frame unit vectors $\bm{\tilde{e_x}}, \bm{\tilde{e_y}}, \bm{\tilde{e_z}}$. Recalling equation describing precession  Eq.\ref{eq:precession_compact}  $\dfrac{\delta \bm{M}}{\delta t}$ can be expressed as:
 
  \begin{equation}
- \dfrac{\delta \bm{M}}{\delta t} = \dfrac{d\bm{M}}{dt} - \Omega \times \bm{M} = \gamma \bm{M} \times \bm{H} + \bm{M} \times \Omega = \gamma \bm{M} \times \bm{H_{eff}},
+ \dfrac{\delta \bm{M}}{\delta t} = \dfrac{d\bm{M}}{dt} - \Omega \times \bm{M} = \gamma \bm{M} \times \bm{H} + \bm{M} \times \Omega = \gamma \bm{M} \times \bm{B_{eff}},
  \end{equation}
- where  $\bm {H_{eff}} = \bm{H_0} + \dfrac{\bm {\Omega}}{\gamma}$ is an effective magnetic field. 
+ where  $\bm {B_{eff}} = \bm{B_0} + \dfrac{\bm {\Omega}}{\gamma}$ is an effective magnetic field. 
 
 
 \end{frame}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
  	%%%% FIGURE ROTATING FRAME
  	\begin{figure}[ht] 
- 		\caption{(A) Oscillating field decomposed into two components, where one rotates clockwise and the other counterclockwise. (B) Schematic representation of effective field $\bm{H_{eff}}$ in the rotating frame. (C) action of a pulse on the magnetization vector $\bm{M}$.}
+ 		\caption{ Oscillating field decomposed into two components, where one rotates clockwise and the other counterclockwise.}
  		\label{fig:rot_frame}
  		\centering
- 		\includegraphics[scale=0.3]{rotating_frame.png}
+ 		\includegraphics[scale=0.3]{rotating_frame_b.png}
  	\end{figure}
  	%%%% END OF FIGURE 
  
@@ -1723,7 +1723,7 @@ For all the transitions we obtain:
 
  The magnetic field oscillating at frequency $\omega$  can be represented as two fields rotating clockwise and anti-clockwise
  \begin{equation}
-    2 H_1 \cos \omega t  = H_1  \exp(i\omega t) + \exp(-i \omega t)
+    2 B_1 \cos \omega t  = B_1  \exp(i\omega t) + \exp(-i \omega t)
  \end{equation}
  
    shown schematically in Fig.\ref{fig:rot_frame}B. 
@@ -1735,17 +1735,17 @@ For all the transitions we obtain:
  
 	%%%% FIGURE ROTATING FRAME
 	\begin{figure}[ht] 
-		\caption{(A) Oscillating field decomposed into two components, where one rotates clockwise and the other counterclockwise. (B) Schematic representation of effective field $\bm{H_{eff}}$ in the rotating frame. (C) action of a pulse on the magnetization vector $\bm{M}$.}
+		\caption{ Schematic representation of effective field $\bm{B_{eff}}$ in the rotating frame.}
 		%\label{fig:rot_frame}
 		\centering
-		\includegraphics[scale=0.3]{rotating_frame.png}
+		\includegraphics[scale=0.3]{rotating_frame_c.png}
 	\end{figure}
 	%%%% END OF FIGURE 
   
    
     In the frame rotating left, the effective magnetic field then becomes:
  \begin{equation} \label{eq:H_eff}
- \bm{H_{eff}} = \bm{H_0} + \dfrac{\bm{\Omega}}{\gamma} + \bm{H_1}
+ \bm{B_{eff}} = \bm{B_0} + \dfrac{\bm{\Omega}}{\gamma} + \bm{B_1}
  \end{equation}
   where terms associated with the right rotation are discarded, because the oscillate at a very high frequency $2 \omega$ in the left rotating frame and have little effect.
   
@@ -1758,54 +1758,128 @@ For all the transitions we obtain:
 
 	%%%% FIGURE ROTATING FRAME
 	\begin{figure}[ht] 
-		\caption{(A) Oscillating field decomposed into two components, where one rotates clockwise and the other counterclockwise. (B) Schematic representation of effective field $\bm{H_{eff}}$ in the rotating frame. (C) action of a pulse on the magnetization vector $\bm{M}$.}
+		\caption{ Action of a pulse on the magnetization vector $\bm{M}$.}
 		%\label{fig:rot_frame}
 		\centering
-		\includegraphics[scale=0.3]{rotating_frame.png}
+		\includegraphics[scale=0.3]{rotating_frame_d.png}
 	\end{figure}
 	%%%% END OF FIGURE 	
 	
 	 Magnetization in the rotating frame precesses with its respective Larmor frequency around the direction of an effective magnetic field $\bm{H_{eff}}$ given by Eq.\ref{eq:H_eff}. For a field oscillating on resonance (i.e. exactly at the Larmor frequency) the effective field has components only along $x,y$-axis. If the oscillating magnetic field is applied for a brief period of time $t_p$, i.e. in a form of a pulse, the effect of such a pulse is a rotation of magnetization by a finite angle:
 	 
 	 \begin{equation}
-	 \theta = \gamma H_1 t_p
+	 \theta = \gamma B_1 t_p
 	 \end{equation}
-	 
-	 
-	
-	
 \end{frame}
 
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
-	 
+	\begin{minipage}{0.6\textwidth}
+			The evolution of magnetization is more complex when viewed in the laboratory frame as it involves precession about both applied fields ($B_0$ and $B_eff$)
+			If a 90$^\circ$ on-resonance pulse ($\gamma B_0 t_p = \dfrac{\pi}{2}$) is applied the magnetization is rotated to point along the y-axis in the rotating frame. If the pulse duration is such that $\gamma B_0 t_p = \dfrac{\pi}{2}$ (a 180$^\circ$ RF pulse) the magnetization is rotated to point along the z-axis.
+	\end{minipage}
+	\hspace{0.1cm}
+	\begin{minipage}{0.35\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.3]{pi_pulses.png}
+            \caption{(A) Evolution of magnetization in the laboratory frame; (B) Magnetization in the rotating frames immidiately after a 90$^\circ$ pulse and (C) 180$^\circ$}
+        \end{figure}
+	\end{minipage}
+\end{frame}
 
- 
- Now if a starting magnetization of our sample is directed along $z$-axis, a pulse having a nominal flip angle $\pi/2$ with an effective field $\bm{H_{eff}}$ along the $x$-axis in the rotating frame, would align the magnetization vector along the $y$-axis. When the oscillating field is switched off, the magnetization would stay stationary in the rotating frame which means it will precess with its own Larmor frequency in the laboratory frame.
+\subsection{Detection of NMR signals.}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	After a 90$^\circ$ RF pulse the equilibrium magnetization has been rotated into the transverse $(x,y)$-plane, and will then precess about the $z$-axis in the laboratory frame at the Larmor frequency, $\omega = \gamma B_0$ (but remains stationary in the rotating frame).
+	
+	The precessing magnetization generates a magnetic field which varies sinusoidally with time at the Larmor frequency. The field will induce a voltage in a nearby coil, by electromagnetic induction. The resulting voltage also varies sinusoidally with time at the Larmor frequency. The voltage is the NMR signal that we measure. 
+\end{frame}
+
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+ Now if a starting magnetization of our sample is directed along $z$-axis, a pulse having a nominal flip angle $\pi/2$ with an effective field $\bm{B_{eff}}$ along the $x$-axis in the rotating frame, would align the magnetization vector along the $y$-axis. When the oscillating field is switched off, the magnetization would stay stationary in the rotating frame which means it will precess with its own Larmor frequency in the laboratory frame.
  
  %%%% FIGURE SAMPLE COIL
  \begin{figure}[ht]
- 	\caption{(A) A sample with magnetization $\bm{M}$ placed inside a coil. (B) FID following a $\pi/2$ pulse is being Fourier transformed to give a NMR spectrum.}
+ 	\caption{ A sample with magnetization $\bm{M}$ placed inside a coil.}
  	\label{fig:sample_coil}
  	\centering
- 	\includegraphics[scale=0.5]{sample_coil.png}
+ 	\includegraphics[scale=0.5]{coil.png}
  \end{figure}
  %%%% END OF FIGURE
 
 \end{frame}
-\begin{frame} 
- The oscillating magnetic field in NMR spectrometers is usually produced by a coil would around as shown in Fig.\ref{fig:sample_coil}A. Moreover the same coil is being used for the detection of NMR signals. The precessing magnetization produces magnetic field, oscillating with the Larmor frequency and therefore produces oscillating  magnetic field flux through the coil. The oscillating magnetic field flux in turn induces small voltages across the coil which can be detected. The detection of NMR signals in almost all modern day spectrometers (and MRI machines) is based on this simple scheme. The signal following a $\pi/2$ pulse is called free induction decay or FID(it does not last forever as will be shown later ), which Fourier transform gives a NMR spectrum as shown in Fig.\ref{fig:sample_coil}B.
+
+
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+    \begin{figure}
+    	\centering
+    	\includegraphics[scale=0.4]{tuned_coils.png}
+    	\caption{(A) Saddle and solenoidal RF coils (B) The RF coil with inductance $L$ is tuned (with capacitor, $C_1$ to resonate at frequency $\omega_0$) and is matched to an impedance of 50 $\Omega$) (with capacitor $C_2$) (C) A photograph of a solution NMR probe}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+ %The oscillating magnetic field in NMR spectrometers is usually produced by a coil would around as shown in Fig.\ref{fig:sample_coil}A. Moreover the same coil is being used for the detection of NMR signals. The precessing magnetization produces magnetic field, oscillating with the Larmor frequency and therefore produces oscillating  magnetic field flux through the coil. The oscillating magnetic field flux in turn induces small voltages across the coil which can be detected. The detection of NMR signals in almost all modern day spectrometers (and MRI machines) is based on this simple scheme. The signal following a $\pi/2$ pulse is called free induction decay or FID(it does not last forever as will be shown later ), which Fourier transform gives a NMR spectrum as shown in Fig.\ref{fig:sample_coil}B.
  
- Detection of FID following a single pulse often provides very limited information. The power of modern magnetic resonance lies in the design of specialized trains of pulses or pulse sequences, which can reveal a variety of interactions and connections of the materials under study (an example of 2D spectrum produced by a pulse sequence is shown in Fig.\ref{fig:fibrils}B).
+ %Detection of FID following a single pulse often provides very limited information. The power of modern magnetic resonance lies in the design of specialized trains of pulses or pulse sequences, which can reveal a variety of interactions and connections of the materials under study (an example of 2D spectrum produced by a pulse sequence is shown in Fig.\ref{fig:fibrils}B).
  
  \textbf{Further reading:} Slichter, Ch. 2.1, 2.4 
  
-	
+\end{frame}
+
+\subsection{Relaxation and Bloch equations}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	\only<1>{
+	Let's recall the equations guiding the motion of magnetization vector:
+	\begin{equation} \label{precession}
+	\setlength{\jot}{5pt}
+	\begin{aligned}
+	\dfrac{dM_x}{dt} & =  \omega_L M_y \\
+	\dfrac{dM_y}{dt} & =  -\omega_L M_x \\
+	\dfrac{dM_z}{dt} & =  0,
+	\end{aligned}
+	\end{equation}
+	where $\omega_L = \gamma B_0$ - \alert{Larmor frequency}.
+    }
+	\only<2>{
+	They can be modified to include relaxation terms:
+	\begin{equation} 
+	\setlength{\jot}{5pt}
+	\begin{aligned}
+	\dfrac{dM_x}{dt} & =  \omega_L M_y - \dfrac{M_x}{T_2}\\
+	\dfrac{dM_y}{dt} & =  -\omega_L M_x - \dfrac{M_y}{T_2}\\
+	\dfrac{dM_z}{dt} & =  -\dfrac{M_z - M_0}{T_1},
+	\end{aligned}
+	\end{equation}
+	where $T_1, T_2$ - are time constants called \alert{longitudinal} and \alert{transverse} relaxation times respectively. We dealt with $T_1$ earlier when studied the population dynamics in a two level system in Sec.  \ref{seq: population dynamics }. $M_0$ is a sample magnetization at a thermal equilibrium.
+    }
+   
 	
 	
 \end{frame}
 
-%%%%% END OF RESONANT ABSORPTION
+
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	If we consider the evolution of magnetization in the absence of RF, then for longitidinal magnetization $M_z$ we obtain a solution:
+	\begin{equation}
+		M_z(t) = M_0 - (M_0 - M_z(0)  ) e^{-t/T_1}		
+	\end{equation}
+	
+	
+	The transverse magnetization has a solution:
+	\begin{equation}
+	\begin{array}{lcl}
+       M_x(t)&=& (M_x(0) \cos( \omega t)  + M_y(0) \sin( \omega t)) e^{t/T_2} \\     
+       M_y(t)&=& (M_y(0) \cos( \omega t)  - M_x(0) \sin( \omega t)) e^{t/T_2} 
+	\end{array}
+	\end{equation}
+	In effect these equations describe magnetization following a $\dfrac{\pi}{2}$ pulse. 
+\end{frame}
+
+
 
 
 
