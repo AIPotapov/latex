@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.10)  1 AUG 2017 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.10)  1 AUG 2017 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1810,17 +1810,40 @@ Package pdftex.def Info: spin_echo.png used on input line 1895.
 ] (./NMR_lectures1.toc) [99
 
 ]
-Overfull \hbox (31.40929pt too wide) in paragraph at lines 1924--1924
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1902.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1902.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1902.
+
+[100
+
+]
+Overfull \hbox (31.40929pt too wide) in paragraph at lines 1944--1944
 []  
  []
 
 
-Overfull \vbox (37.27881pt too high) detected at line 1924
+Overfull \vbox (17.28151pt too high) detected at line 1944
  []
 
-[100
+[101
 
-] [101
+] [102
+
+] [103
+
+] [104
+
+] [105
+
+] [106
 
 ]
 \tf@nav=\write6
@@ -1832,11 +1855,11 @@ Overfull \vbox (37.27881pt too high) detected at line 1924
 \tf@snm=\write8
 \openout8 = `NMR_lectures1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1964.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1964.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2054.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2054.
  (./NMR_lectures1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1964.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1964.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2054.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2054.
 
 Package rerunfilecheck Info: File `NMR_lectures1.out' has not changed.
 (rerunfilecheck)             Checksum: CF7CB21FA2BDF9495F748D64979AC9C0;2443.
@@ -1851,14 +1874,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1964.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2054.
  ) 
 Here is how much of TeX's memory you used:
- 17951 strings out of 494953
- 338991 string characters out of 6180976
- 411329 words of memory out of 5000000
- 20463 multiletter control sequences out of 15000+600000
- 23921 words of font info for 86 fonts, out of 8000000 for 9000
+ 17987 strings out of 494953
+ 339401 string characters out of 6180976
+ 410720 words of memory out of 5000000
+ 20484 multiletter control sequences out of 15000+600000
+ 26745 words of font info for 96 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,20n,64p,829b,664s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
@@ -1879,19 +1902,19 @@ r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
->
-Output written on NMR_lectures1.pdf (101 pages, 6309405 bytes).
+st/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on NMR_lectures1.pdf (106 pages, 6325110 bytes).
 PDF statistics:
- 1164 PDF objects out of 1200 (max. 8388607)
- 901 compressed objects within 10 object streams
- 266 named destinations out of 1000 (max. 500000)
+ 1203 PDF objects out of 1440 (max. 8388607)
+ 934 compressed objects within 10 object streams
+ 277 named destinations out of 1000 (max. 500000)
  617 words of extra memory for PDF output out of 10000 (max. 10000000)
 

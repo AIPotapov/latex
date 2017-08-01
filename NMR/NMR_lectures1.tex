@@ -1899,7 +1899,7 @@ For all the transitions we obtain:
 \end{frame}
 
 \section{NMR Relaxation Mechanisms}
-\subsection{T1 relaxation}
+\subsection{$T_1$ relaxation}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
   Let's consider relaxation mechanism in a two level system. 	
@@ -1917,13 +1917,16 @@ For all the transitions we obtain:
     \begin{equation} \label{eq: relaxation_Psi}
        \Psi = c_1(t) e^{-i \omega_1 t} \vert 1 \rangle + c_2(t) \vert 2 \rangle e^{-i \omega_2 t}
     \end{equation}
-    After substituting Eq.\ref{eq: relaxation_Psi} into Eq.\ref{eq: relaxation_Schredinger} we obtain:
-    \begin{align}
-       i\hbar e^{-i \omega_1 t} \dfrac{c_1(t)}{d t} \vert 1 \rangle + i\hbar e^{-i \omega_2 t} \dfrac{c_2(t)}{d t} \vert 2 \rangle = c_1(t) \hat{V} \vert 1 \rangle e^{-i \omega_1 t} + c_2(t) \hat{V} \vert 2 \rangle e^{-i \omega_2 t}
-    \end{align}
+  
 \end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	  After substituting Eq.\ref{eq: relaxation_Psi} into Eq.\ref{eq: relaxation_Schredinger} we obtain:
+	  \begin{align}
+	  i\hbar e^{-i \omega_1 t} \dfrac{c_1(t)}{d t} \vert 1 \rangle + i\hbar e^{-i \omega_2 t} \dfrac{c_2(t)}{d t} \vert 2 \rangle = c_1(t) \hat{V} \vert 1 \rangle e^{-i \omega_1 t} + c_2(t) \hat{V} \vert 2 \rangle e^{-i \omega_2 t}
+	  \end{align}
+	
+	
 	After multiplying both parts first by $\langle 1 \vert e^{i \omega_2 t}$, and second by $\langle 2 \vert e^{i \omega_2 t}$ we obtain two equations:
 	\begin{equation}
 	  \begin{array}{lcl}
@@ -1935,7 +1938,94 @@ For all the transitions we obtain:
 	\begin{equation}
 	    i \hbar \dfrac{d c_2}{d t}  = V_{12} e^{i \omega t}	    
 	\end{equation}
-	The probability to find a system in state 2 is $c_2 c_2^*$
+	
+
+
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+		That means that at some time moment $T > 0$:
+		\begin{equation}
+		c_2(T) = - \dfrac{i}{\hbar} \int_{0}^{T} V_{21}(t) e^{i \omega t} dt
+		\end{equation}
+	
+	The probability to find a system in state 2 is $c_2 c_2^*$:
+	\begin{equation}
+	   c_2(T) c_2^*(T) = \dfrac{1}{\hbar^2} \int_{0}^{T} dt_1 \int_{0}^{T} dt_2 V_{12}(t_1) V_{21}(t_2) e^{i \omega (t_2-t_1)}
+	\end{equation}
+	After replacing $t_1 = t$, $t_2 = t+ \tau$ we obtain:
+	\begin{equation}
+	   c_2(T) c_2^*(T) = \dfrac{1}{\hbar^2} \int_{0}^{T} dt \int_{-t}^{T-t} dt_2 V_{12}(t) V_{21}(t+ \tau) e^{i \omega \tau}
+	\end{equation}
+	
+
+	
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	Let's consider that random time-dependent perturbation operator $\hat{V}(t)$ can be represented in the form $\hat{V}(t) = \hat{A} f(t)$, where $\hat{A}$ is a time independent operator and $f(t)$ is a random noise function, such that $\overline{f(t)} = 0$.
+	We assume that the noise is stationary, i.e. the correlation function:
+	\begin{equation}
+	\overline{f(t)f(t+ \tau)}=G(\tau)
+	\end{equation}
+	does not depend on $t$. The correlation time of random process is defined as:
+	\begin{equation}
+	\tau_c = \dfrac{1}{G(0)} \int_{0}^{inf} G(\tau) d\tau
+	\end{equation}
+	Therefore after averaging over all realizations of a random process:
+	\begin{equation}
+	\overline{c_2(T) c_2^*(T)} = \dfrac{1}{\hbar^2}\mid A_{21} \mid^2 \int_{0}^{t}dt \int_{-t}^{T-t} d\tau G(\tau) e^{i \omega \tau}
+	\end{equation}
+	
+\end{frame}
+
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	
+	when $T \gg \tau_2$ the limits in the internal integral can be replaced with $-\inf$ and $\inf$. 
+	
+	\begin{align} \label{eq: T1_rate}
+	\overline{c_2(T) c_2^*(T)}=\dfrac{1}{\hbar^2}\mid \hat{A}_{21}\mid^2 T J(\omega), \text{ where} \\
+	J(\omega)= \int_{-\inf}^{\inf} d\tau G(\tau) e^{i \omega t}
+	\end{align}
+	$J(\omega)$  is  Fourier transform of the correlation function, it determines the spectral density of noise at the frequency $\omega$. Eq.\ref{eq: T1_rate} shows that population of level 2 grows linearly with time. The transition probability rate is therefore:
+	\begin{equation}
+	   W = \dfrac{1}{2 T_1} = \dfrac{1}{\hbar^2} \mid A_{21} \mid^2 J(\omega)
+	\end{equation}
+	We have therefore justified introduction of $T_1$ rate in Bloch equations and have provided a way for calculating it from from the basic quantum mechanical principles.
+	
+
+	
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+    Very often the correlation function is exponential:
+    \begin{equation}
+       G(\tau) = \exp (-\dfrac{\mid t \mid}{\tau_c})
+    \end{equation}
+    in this case the transition rate is:
+    \begin{equation}
+      W = \dfrac{1}{2 T_1}= \dfrac{1}{\hbar^2} \mid A_{21} \mid \dfrac{2 \tau_2 }{1 + \omega^2 \tau_c^2}
+    \end{equation}
+    
+    
+        \begin{block}{Problem}
+        	Consider a nucleus with a chemical shift anisotropy in a molecule  randomly reorienting in liquid. Explain how such reorientation can cause longitudinal relaxation?
+       	\end{block}
+        \begin{equation}
+            \hat{H}_{CS} = - \gamma (\bm{\delta B} \cdot \bm{\hat{I}}) = -\gamma B_0 ( \sigma_{xz} \hat{I}_x + \sigma_{yz} \hat{I}_y + \sigma_{zz} \hat{I}_z )  .
+        \end{equation}
+       	
+       	\begin{equation}
+       	\hat{H}_{CS} = - \gamma (\bm{\delta B} \cdot \bm{\hat{I}}) = -\gamma B_0 ( \sigma_{xz}(t) \hat{I}_x + \sigma_{yz}(t) \hat{I}_y + \sigma_{zz}(t) \hat{I}_z )  .
+       	\end{equation}
+       	
+       	
+\end{frame}
+
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+
 \end{frame}
 
 

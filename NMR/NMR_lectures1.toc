@@ -30,4 +30,4 @@
 \beamer@subsectionintoc {4}{3}{Relaxation and Bloch equations}{95}{0}{4}
 \beamer@subsectionintoc {4}{4}{Spin echo}{97}{0}{4}
 \beamer@sectionintoc {5}{NMR Relaxation Mechanisms}{99}{0}{5}
-\beamer@subsectionintoc {5}{1}{T1 relaxation}{100}{0}{5}
+\beamer@subsectionintoc {5}{1}{$T_1$ relaxation}{100}{0}{5}
