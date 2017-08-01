@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[handout]{beamer}
 \usepackage[latin1]{inputenc}
 \usepackage{bm, array, graphicx, hyperref, amsmath, setspace, geometry, wrapfig}
 \usepackage{hanging}
@@ -1793,24 +1793,32 @@ For all the transitions we obtain:
 	After a 90$^\circ$ RF pulse the equilibrium magnetization has been rotated into the transverse $(x,y)$-plane, and will then precess about the $z$-axis in the laboratory frame at the Larmor frequency, $\omega = \gamma B_0$ (but remains stationary in the rotating frame).
 	
 	The precessing magnetization generates a magnetic field which varies sinusoidally with time at the Larmor frequency. The field will induce a voltage in a nearby coil, by electromagnetic induction. The resulting voltage also varies sinusoidally with time at the Larmor frequency. The voltage is the NMR signal that we measure. 
+	
+	%%%% FIGURE SAMPLE COIL
+	\begin{figure}[ht]
+		\caption{ A sample with magnetization $\bm{M}$ placed inside a coil.}
+		\label{fig:sample_coil}
+		\centering
+		\includegraphics[scale=0.4]{coil.png}
+	\end{figure}
+	%%%% END OF FIGURE
+	
 \end{frame}
 
 
-\begin{frame}{\thesection.\thesubsection. \insertsubsection}
- Now if a starting magnetization of our sample is directed along $z$-axis, a pulse having a nominal flip angle $\pi/2$ with an effective field $\bm{B_{eff}}$ along the $x$-axis in the rotating frame, would align the magnetization vector along the $y$-axis. When the oscillating field is switched off, the magnetization would stay stationary in the rotating frame which means it will precess with its own Larmor frequency in the laboratory frame.
- 
- %%%% FIGURE SAMPLE COIL
- \begin{figure}[ht]
- 	\caption{ A sample with magnetization $\bm{M}$ placed inside a coil.}
- 	\label{fig:sample_coil}
- 	\centering
- 	\includegraphics[scale=0.5]{coil.png}
- \end{figure}
- %%%% END OF FIGURE
-
-\end{frame}
-
-
+%\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+% Now if a starting magnetization of our sample is directed along $z$-axis, a pulse having a nominal flip angle $\pi/2$ with an effective field $\bm{B_{eff}}$ along the $x$-axis in the rotating frame, would align the magnetization vector along the $y$-axis. When the oscillating field is switched off, the magnetization would stay stationary in the rotating frame which means it will precess with its own Larmor frequency in the laboratory frame.
+% 
+% %%%% FIGURE SAMPLE COIL
+% \begin{figure}[ht]
+% 	\caption{ A sample with magnetization $\bm{M}$ placed inside a coil.}
+% 	\label{fig:sample_coil}
+% 	\centering
+% 	\includegraphics[scale=0.5]{coil.png}
+% \end{figure}
+% %%%% END OF FIGURE
+%
+%\end{frame}
 
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
     \begin{figure}
@@ -1820,14 +1828,14 @@ For all the transitions we obtain:
     \end{figure}
 \end{frame}
 
-\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+%\begin{frame}{\thesection.\thesubsection. \insertsubsection}
  %The oscillating magnetic field in NMR spectrometers is usually produced by a coil would around as shown in Fig.\ref{fig:sample_coil}A. Moreover the same coil is being used for the detection of NMR signals. The precessing magnetization produces magnetic field, oscillating with the Larmor frequency and therefore produces oscillating  magnetic field flux through the coil. The oscillating magnetic field flux in turn induces small voltages across the coil which can be detected. The detection of NMR signals in almost all modern day spectrometers (and MRI machines) is based on this simple scheme. The signal following a $\pi/2$ pulse is called free induction decay or FID(it does not last forever as will be shown later ), which Fourier transform gives a NMR spectrum as shown in Fig.\ref{fig:sample_coil}B.
  
  %Detection of FID following a single pulse often provides very limited information. The power of modern magnetic resonance lies in the design of specialized trains of pulses or pulse sequences, which can reveal a variety of interactions and connections of the materials under study (an example of 2D spectrum produced by a pulse sequence is shown in Fig.\ref{fig:fibrils}B).
  
- \textbf{Further reading:} Slichter, Ch. 2.1, 2.4 
+% \textbf{Further reading:} Slichter, Ch. 2.1, 2.4 
  
-\end{frame}
+%\end{frame}
 
 \subsection{Relaxation and Bloch equations}
 \begin{frame}{\thesection.\thesubsection. \insertsubsection}
@@ -1855,9 +1863,6 @@ For all the transitions we obtain:
 	\end{equation}
 	where $T_1, T_2$ - are time constants called \alert{longitudinal} and \alert{transverse} relaxation times respectively. We dealt with $T_1$ earlier when studied the population dynamics in a two level system in Sec.  \ref{seq: population dynamics }. $M_0$ is a sample magnetization at a thermal equilibrium.
     }
-   
-	
-	
 \end{frame}
 
 
@@ -1877,10 +1882,61 @@ For all the transitions we obtain:
 	\end{array}
 	\end{equation}
 	In effect these equations describe magnetization following a $\dfrac{\pi}{2}$ pulse. 
+    $T_2$ relaxation is responsible for so called \alert{homogeneous} broadening of NMR line. Previously we have seen examples of \alert{inhomogeneous} broadening, where the line has a complex pattern, due to a CSA, dipolar or quadrupolar interaction. After an applied $\pi/2$ pulse the magnetization dephases due to differences in precession frequencies, however, there is a way to refocus it. 
 \end{frame}
 
+\subsection{Spin echo}
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+  Consider magnetization in the rotating frame.  After a $\pi/2$ pulse the magnetization is rotated into $X,Y$-plane and then it dephases due to differences in precession frequencies in different molecules. At the moment $\tau$ a $\pi$-pulse instantaneously changes the phases of magnetization vectors. In the next interval they continue precessing with their respective frequencies and refocus at $t = 2 \tau$. 
+  \begin{figure}
+  	\centering
+  	\includegraphics[scale =0.3]{spin_echo.png}
+  \end{figure}
+\end{frame}
 
+\begin{frame}{Summary of Lecture 7.}
+	content...
+\end{frame}
 
+\section{NMR Relaxation Mechanisms}
+\subsection{T1 relaxation}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+  Let's consider relaxation mechanism in a two level system. 	
+	
+   NMR relaxation is driven by temporal fluctuations of the terms in the spin Hamiltonian:
+   \begin{equation}
+     \hat{H}_{spin} = \hat{H}_Z + \hat{H}_{CS} + \hat{H}_J + \hat{H}_{dip} + \hat{H}_Q, 
+   \end{equation} 
+   usually resulting from molecular motion. Variations in non-secular terms of the Hamiltonian drive $T_1$-relaxation. \\
+    Let's consider relaxation in a two level system described by unperturbed Hamiltonian $\hat{H}_0$ with eigenfunctions $\vert 1 \rangle, \vert 2 \rangle$, and corresponding energies $E_1, E_2$. $\hat{V}(t)$ is a time-dependent perturbation. Wavefunction $\Psi$ is a solution of a full Hamiltonian $\hat{H}$:
+    \begin{equation} \label{eq: relaxation_Schredinger}
+       i\hbar \dfrac{ \partial \Psi}{\partial t} = (\hat{H}_0 + \hat{V}(t))
+    \end{equation}
+    The solution for $\Psi$ can be represented as:
+    \begin{equation} \label{eq: relaxation_Psi}
+       \Psi = c_1(t) e^{-i \omega_1 t} \vert 1 \rangle + c_2(t) \vert 2 \rangle e^{-i \omega_2 t}
+    \end{equation}
+    After substituting Eq.\ref{eq: relaxation_Psi} into Eq.\ref{eq: relaxation_Schredinger} we obtain:
+    \begin{align}
+       i\hbar e^{-i \omega_1 t} \dfrac{c_1(t)}{d t} \vert 1 \rangle + i\hbar e^{-i \omega_2 t} \dfrac{c_2(t)}{d t} \vert 2 \rangle = c_1(t) \hat{V} \vert 1 \rangle e^{-i \omega_1 t} + c_2(t) \hat{V} \vert 2 \rangle e^{-i \omega_2 t}
+    \end{align}
+\end{frame}
+
+\begin{frame}{\thesection.\thesubsection. \insertsubsection}
+	After multiplying both parts first by $\langle 1 \vert e^{i \omega_2 t}$, and second by $\langle 2 \vert e^{i \omega_2 t}$ we obtain two equations:
+	\begin{equation}
+	  \begin{array}{lcl}
+         i \hbar \dfrac{d c_1(t)}{d t} &=& c_1(t) V_{11}(t) + c_2(t)V_{12}(t) e^{-i \omega t} \\
+         i \hbar \dfrac{d c_2(t)}{d t} &=& c_1(t) V_{21}(t)  e^{ i \omega t} + c_2(t)V_{22}(t),
+	  \end{array}
+	\end{equation}
+	where $V_{ik}(t)$ - are matrix elements of perturbation $\hat{V}(t)$. The longitudinal relaxation is the rate of transfer from level 1 to 2. Taking that initially the system is in state $\vert 1 \rangle$, i.e. $c_1(0)=1$, $c_2(0)=0$. Considering that perturbation $\hat{V}$ is small, we will search the solution in the form: $c_1 = 1 + c_1^{(1)}$, $c_2 = c_2^{(1)}$, where $c_1^{(1)}, c_2^{(1)}$ are small. We find then:
+	\begin{equation}
+	    i \hbar \dfrac{d c_2}{d t}  = V_{12} e^{i \omega t}	    
+	\end{equation}
+	The probability to find a system in state 2 is $c_2 c_2^*$
+\end{frame}
 
 
 %\begin{frame}
