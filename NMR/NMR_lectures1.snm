@@ -1,35 +1,36 @@
-\beamer@slide {fig1}{4}
-\beamer@slide {fig3}{4}
-\beamer@slide {fig7}{5}
-\beamer@slide {fig5}{5}
-\beamer@slide {eq:1}{7}
-\beamer@slide {eq:classic_energy}{8}
-\beamer@slide {eq:precession_compact}{8}
-\beamer@slide {precession}{9}
-\beamer@slide {eq:Lz_commutation}{10}
-\beamer@slide {eq:L+}{11}
-\beamer@slide {eq:orbital_angular_momentum}{13}
-\beamer@slide {tab:mag_properties}{15}
-\beamer@slide {eq:oscillating_field}{21}
-\beamer@slide {eq:probability}{21}
-\beamer@slide {seq: population dynamics }{22}
-\beamer@slide {eq:two level transition probability}{22}
-\beamer@slide {sec: J-couplings in AX system}{37}
-\beamer@slide {fig1}{37}
-\beamer@slide {fig1}{39}
-\beamer@slide {fig1}{41}
-\beamer@slide {eq:equivalennce}{45}
-\beamer@slide {fig:dibromethiophene}{51}
-\beamer@slide {fig:AXABcouplings}{52}
-\beamer@slide {fig:NMRdoublets}{63}
-\beamer@slide {fig:powder_pattern}{64}
-\beamer@slide {eq:sigma_zz}{68}
-\beamer@slide {fig: CSA}{71}
-\beamer@slide {eq: MAS}{75}
-\beamer@slide {precession}{85}
-\beamer@slide {fig:rot_frame}{86}
-\beamer@slide {eq:rotating_frame_derivative}{87}
-\beamer@slide {fig:rot_frame}{89}
-\beamer@slide {eq:H_eff}{90}
-\beamer@slide {fig:sample_coil}{93}
-\beamer@slide {precession}{95}
+\beamer@slide {fig1}{7}
+\beamer@slide {fig3}{7}
+\beamer@slide {fig7}{8}
+\beamer@slide {fig5}{8}
+\beamer@slide {eq:1}{10}
+\beamer@slide {eq:classic_energy}{14}
+\beamer@slide {eq:precession_compact}{14}
+\beamer@slide {precession}{17}
+\beamer@slide {eq:Lz_commutation}{19}
+\beamer@slide {eq:L+}{22}
+\beamer@slide {eq:orbital_angular_momentum}{26}
+\beamer@slide {tab:mag_properties}{30}
+\beamer@slide {eq:oscillating_field}{42}
+\beamer@slide {eq:probability}{42}
+\beamer@slide {seq: population dynamics }{46}
+\beamer@slide {eq:two level transition probability}{46}
+\beamer@slide {sec: J-couplings in AX system}{78}
+\beamer@slide {fig1}{78}
+\beamer@slide {fig1}{80}
+\beamer@slide {fig1}{83}
+\beamer@slide {eq:equivalennce}{90}
+\beamer@slide {fig:dibromethiophene}{99}
+\beamer@slide {fig:AXABcouplings}{100}
+\beamer@slide {fig:NMRdoublets}{113}
+\beamer@slide {fig:powder_pattern}{114}
+\beamer@slide {eq:sigma_zz}{119}
+\beamer@slide {fig: CSA}{123}
+\beamer@slide {eq: MAS}{132}
+\beamer@slide {precession}{148}
+\beamer@slide {fig:rot_frame}{150}
+\beamer@slide {eq:rotating_frame_derivative}{152}
+\beamer@slide {fig:rot_frame}{154}
+\beamer@slide {eq:H_eff}{155}
+\beamer@slide {fig:sample_coil}{158}
+\beamer@slide {precession}{160}
+\beamer@slide {eq: T2_relax}{175}
